@@ -522,9 +522,11 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     }
 
     const enabled = !!state.capture_enabled;
+    const browserPollingEnabled = !!state.browser_polling_enabled;
     const lastOk = state.last_capture_success_unix ? formatUnix(state.last_capture_success_unix) : 'never';
     const err = state.last_error ? ` | last error: ${state.last_error}` : '';
-    captureState.textContent = `Capture ${enabled ? 'enabled' : 'disabled'} (change in Settings) | last success: ${lastOk}${err}`;
+    const mode = browserPollingEnabled ? 'browser polling on' : 'cron mode (browser polling off)';
+    captureState.textContent = `Capture ${enabled ? 'enabled' : 'disabled'} (${mode}; change in Settings) | last success: ${lastOk}${err}`;
   }
 
   function formatDuration(totalSeconds) {
@@ -627,6 +629,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
 
   async function refreshStatus() {
     if (!isCurrentLaunch) return;
+    if (!state.browser_polling_enabled) return;
 
     const res = await fetch('api.php?action=status');
     const raw = await res.text();
@@ -645,6 +648,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
 
   async function captureTick() {
     if (!isCurrentLaunch) return;
+    if (!state.browser_polling_enabled) return;
     if (!state.capture_enabled) return;
     try {
       const payload = await postAction('capture_now', {});
@@ -662,7 +666,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
       captureTimer = null;
     }
 
-    if (isCurrentLaunch && state.capture_enabled) {
+    if (isCurrentLaunch && state.capture_enabled && state.browser_polling_enabled) {
       captureTimer = setInterval(captureTick, 60000);
     }
   }

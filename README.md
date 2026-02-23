@@ -60,3 +60,52 @@ Options:
 - Timestamp display defaults to Central Time and can be toggled to UTC or browser local time.
 - The main page uses Plotly for altitude and Leaflet + OpenStreetMap for the flight-path map (CDN/network access required).
 - Altitude display can be toggled between meters and feet on both main and editor pages.
+
+## Server-Side Auto Capture (Cron)
+
+If you want capture to run without keeping `index.php` open in a browser, use cron with:
+
+```bash
+php scripts/capture_once.php
+```
+
+This script:
+- Reads the existing `capture_enabled` toggle from `data/state.json`.
+- Reads `browser_polling_enabled` to let you disable browser-side polling while using cron.
+- Skips cleanly if capture is disabled.
+- Fetches APRS once and appends new datapoints when enabled.
+
+### 1) Test manually first
+
+From project root:
+
+```bash
+php scripts/capture_once.php
+```
+
+### 2) Add a crontab entry
+
+Open crontab:
+
+```bash
+crontab -e
+```
+
+Example (run every minute):
+
+```cron
+* * * * * cd /Users/falvear/code/wxballoon-liveplot && /usr/bin/php scripts/capture_once.php >> /Users/falvear/code/wxballoon-liveplot/data/cron_capture.log 2>&1
+```
+
+### 3) Verify cron is installed
+
+```bash
+crontab -l
+```
+
+### Notes
+
+- Use full paths in cron (`/usr/bin/php`, absolute project path).
+- If your PHP binary is elsewhere, find it with `which php`.
+- Keep the web capture toggle enabled in Settings for cron captures to run.
+- In Settings, disable `Allow browser polling API calls` when cron is handling capture, so public browser sessions do not trigger API polling.

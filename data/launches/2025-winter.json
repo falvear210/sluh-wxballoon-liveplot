@@ -1,0 +1,1402 @@
+[
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740154117,
+        "unix_time": 1740154117,
+        "timestamp_utc": "2025-02-21 16:08:37 UTC",
+        "altitude_m": 99.97,
+        "station": "N0YD-11",
+        "latitude": 38.62717,
+        "longitude": -90.26733
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156216,
+        "unix_time": 1740156216,
+        "timestamp_utc": "2025-02-21 16:43:36 UTC",
+        "altitude_m": 150.88,
+        "station": "N0YD-11",
+        "latitude": 38.627,
+        "longitude": -90.26767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156276,
+        "unix_time": 1740156276,
+        "timestamp_utc": "2025-02-21 16:44:36 UTC",
+        "altitude_m": 388.01,
+        "station": "N0YD-11",
+        "latitude": 38.62717,
+        "longitude": -90.267
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156336,
+        "unix_time": 1740156336,
+        "timestamp_utc": "2025-02-21 16:45:36 UTC",
+        "altitude_m": 697.99,
+        "station": "N0YD-11",
+        "latitude": 38.62683,
+        "longitude": -90.2655
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156396,
+        "unix_time": 1740156396,
+        "timestamp_utc": "2025-02-21 16:46:36 UTC",
+        "altitude_m": 983.89,
+        "station": "N0YD-11",
+        "latitude": 38.626,
+        "longitude": -90.26333
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156456,
+        "unix_time": 1740156456,
+        "timestamp_utc": "2025-02-21 16:47:36 UTC",
+        "altitude_m": 1296.01,
+        "station": "N0YD-11",
+        "latitude": 38.62767,
+        "longitude": -90.26217
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156516,
+        "unix_time": 1740156516,
+        "timestamp_utc": "2025-02-21 16:48:36 UTC",
+        "altitude_m": 1585.87,
+        "station": "N0YD-11",
+        "latitude": 38.62967,
+        "longitude": -90.262
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156576,
+        "unix_time": 1740156576,
+        "timestamp_utc": "2025-02-21 16:49:36 UTC",
+        "altitude_m": 1853.79,
+        "station": "N0YD-11",
+        "latitude": 38.6315,
+        "longitude": -90.26167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156636,
+        "unix_time": 1740156636,
+        "timestamp_utc": "2025-02-21 16:50:36 UTC",
+        "altitude_m": 2162.86,
+        "station": "N0YD-11",
+        "latitude": 38.63317,
+        "longitude": -90.261
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156696,
+        "unix_time": 1740156696,
+        "timestamp_utc": "2025-02-21 16:51:36 UTC",
+        "altitude_m": 2468.88,
+        "station": "N0YD-11",
+        "latitude": 38.63533,
+        "longitude": -90.25933
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156756,
+        "unix_time": 1740156756,
+        "timestamp_utc": "2025-02-21 16:52:36 UTC",
+        "altitude_m": 2784.96,
+        "station": "N0YD-11",
+        "latitude": 38.63733,
+        "longitude": -90.25683
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156816,
+        "unix_time": 1740156816,
+        "timestamp_utc": "2025-02-21 16:53:36 UTC",
+        "altitude_m": 3104.08,
+        "station": "N0YD-11",
+        "latitude": 38.63883,
+        "longitude": -90.25367
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156876,
+        "unix_time": 1740156876,
+        "timestamp_utc": "2025-02-21 16:54:36 UTC",
+        "altitude_m": 3414.98,
+        "station": "N0YD-11",
+        "latitude": 38.6405,
+        "longitude": -90.24917
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156936,
+        "unix_time": 1740156936,
+        "timestamp_utc": "2025-02-21 16:55:36 UTC",
+        "altitude_m": 3705.15,
+        "station": "N0YD-11",
+        "latitude": 38.641,
+        "longitude": -90.24417
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740156996,
+        "unix_time": 1740156996,
+        "timestamp_utc": "2025-02-21 16:56:36 UTC",
+        "altitude_m": 4037.08,
+        "station": "N0YD-11",
+        "latitude": 38.6405,
+        "longitude": -90.23933
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157056,
+        "unix_time": 1740157056,
+        "timestamp_utc": "2025-02-21 16:57:36 UTC",
+        "altitude_m": 4357.12,
+        "station": "N0YD-11",
+        "latitude": 38.63933,
+        "longitude": -90.23117
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157116,
+        "unix_time": 1740157116,
+        "timestamp_utc": "2025-02-21 16:58:36 UTC",
+        "altitude_m": 4684.17,
+        "station": "N0YD-11",
+        "latitude": 38.63717,
+        "longitude": -90.222
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157176,
+        "unix_time": 1740157176,
+        "timestamp_utc": "2025-02-21 16:59:36 UTC",
+        "altitude_m": 4998.11,
+        "station": "N0YD-11",
+        "latitude": 38.63467,
+        "longitude": -90.211
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157236,
+        "unix_time": 1740157236,
+        "timestamp_utc": "2025-02-21 17:00:36 UTC",
+        "altitude_m": 5309.01,
+        "station": "N0YD-11",
+        "latitude": 38.63133,
+        "longitude": -90.1985
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157296,
+        "unix_time": 1740157296,
+        "timestamp_utc": "2025-02-21 17:01:36 UTC",
+        "altitude_m": 5626,
+        "station": "N0YD-11",
+        "latitude": 38.62817,
+        "longitude": -90.1835
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157356,
+        "unix_time": 1740157356,
+        "timestamp_utc": "2025-02-21 17:02:36 UTC",
+        "altitude_m": 5945.12,
+        "station": "N0YD-11",
+        "latitude": 38.62467,
+        "longitude": -90.16767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157416,
+        "unix_time": 1740157416,
+        "timestamp_utc": "2025-02-21 17:03:36 UTC",
+        "altitude_m": 6252.06,
+        "station": "N0YD-11",
+        "latitude": 38.62167,
+        "longitude": -90.1475
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157476,
+        "unix_time": 1740157476,
+        "timestamp_utc": "2025-02-21 17:04:36 UTC",
+        "altitude_m": 6602.27,
+        "station": "N0YD-11",
+        "latitude": 38.62,
+        "longitude": -90.12583
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157536,
+        "unix_time": 1740157536,
+        "timestamp_utc": "2025-02-21 17:05:36 UTC",
+        "altitude_m": 6930.24,
+        "station": "N0YD-11",
+        "latitude": 38.61933,
+        "longitude": -90.09967
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157596,
+        "unix_time": 1740157596,
+        "timestamp_utc": "2025-02-21 17:06:36 UTC",
+        "altitude_m": 7290.21,
+        "station": "N0YD-11",
+        "latitude": 38.61883,
+        "longitude": -90.07283
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157656,
+        "unix_time": 1740157656,
+        "timestamp_utc": "2025-02-21 17:07:36 UTC",
+        "altitude_m": 7640.12,
+        "station": "N0YD-11",
+        "latitude": 38.61667,
+        "longitude": -90.0445
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157716,
+        "unix_time": 1740157716,
+        "timestamp_utc": "2025-02-21 17:08:36 UTC",
+        "altitude_m": 7967.17,
+        "station": "N0YD-11",
+        "latitude": 38.61483,
+        "longitude": -90.01517
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157776,
+        "unix_time": 1740157776,
+        "timestamp_utc": "2025-02-21 17:09:36 UTC",
+        "altitude_m": 8324.39,
+        "station": "N0YD-11",
+        "latitude": 38.61183,
+        "longitude": -89.9845
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157836,
+        "unix_time": 1740157836,
+        "timestamp_utc": "2025-02-21 17:10:36 UTC",
+        "altitude_m": 8656.32,
+        "station": "N0YD-11",
+        "latitude": 38.60917,
+        "longitude": -89.94917
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157896,
+        "unix_time": 1740157896,
+        "timestamp_utc": "2025-02-21 17:11:36 UTC",
+        "altitude_m": 9005.32,
+        "station": "N0YD-11",
+        "latitude": 38.60667,
+        "longitude": -89.9095
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740157956,
+        "unix_time": 1740157956,
+        "timestamp_utc": "2025-02-21 17:12:36 UTC",
+        "altitude_m": 9327.18,
+        "station": "N0YD-11",
+        "latitude": 38.60367,
+        "longitude": -89.86917
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158016,
+        "unix_time": 1740158016,
+        "timestamp_utc": "2025-02-21 17:13:36 UTC",
+        "altitude_m": 9688.37,
+        "station": "N0YD-11",
+        "latitude": 38.60083,
+        "longitude": -89.832
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158076,
+        "unix_time": 1740158076,
+        "timestamp_utc": "2025-02-21 17:14:36 UTC",
+        "altitude_m": 10048.34,
+        "station": "N0YD-11",
+        "latitude": 38.59933,
+        "longitude": -89.79733
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158136,
+        "unix_time": 1740158136,
+        "timestamp_utc": "2025-02-21 17:15:36 UTC",
+        "altitude_m": 10366.25,
+        "station": "N0YD-11",
+        "latitude": 38.59917,
+        "longitude": -89.75933
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158196,
+        "unix_time": 1740158196,
+        "timestamp_utc": "2025-02-21 17:16:36 UTC",
+        "altitude_m": 10709.45,
+        "station": "N0YD-11",
+        "latitude": 38.59717,
+        "longitude": -89.7195
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158256,
+        "unix_time": 1740158256,
+        "timestamp_utc": "2025-02-21 17:17:36 UTC",
+        "altitude_m": 11040.47,
+        "station": "N0YD-11",
+        "latitude": 38.59317,
+        "longitude": -89.68517
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158316,
+        "unix_time": 1740158316,
+        "timestamp_utc": "2025-02-21 17:18:36 UTC",
+        "altitude_m": 11343.44,
+        "station": "N0YD-11",
+        "latitude": 38.59017,
+        "longitude": -89.65283
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158376,
+        "unix_time": 1740158376,
+        "timestamp_utc": "2025-02-21 17:19:36 UTC",
+        "altitude_m": 11660.43,
+        "station": "N0YD-11",
+        "latitude": 38.58717,
+        "longitude": -89.6215
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158436,
+        "unix_time": 1740158436,
+        "timestamp_utc": "2025-02-21 17:20:36 UTC",
+        "altitude_m": 11972.54,
+        "station": "N0YD-11",
+        "latitude": 38.58567,
+        "longitude": -89.59033
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158496,
+        "unix_time": 1740158496,
+        "timestamp_utc": "2025-02-21 17:21:36 UTC",
+        "altitude_m": 12269.42,
+        "station": "N0YD-11",
+        "latitude": 38.58383,
+        "longitude": -89.56033
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158556,
+        "unix_time": 1740158556,
+        "timestamp_utc": "2025-02-21 17:22:36 UTC",
+        "altitude_m": 12603.48,
+        "station": "N0YD-11",
+        "latitude": 38.58333,
+        "longitude": -89.52883
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158616,
+        "unix_time": 1740158616,
+        "timestamp_utc": "2025-02-21 17:23:36 UTC",
+        "altitude_m": 12889.38,
+        "station": "N0YD-11",
+        "latitude": 38.5815,
+        "longitude": -89.49817
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158676,
+        "unix_time": 1740158676,
+        "timestamp_utc": "2025-02-21 17:24:36 UTC",
+        "altitude_m": 13201.5,
+        "station": "N0YD-11",
+        "latitude": 38.582,
+        "longitude": -89.46783
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158736,
+        "unix_time": 1740158736,
+        "timestamp_utc": "2025-02-21 17:25:36 UTC",
+        "altitude_m": 13518.49,
+        "station": "N0YD-11",
+        "latitude": 38.58167,
+        "longitude": -89.43667
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158796,
+        "unix_time": 1740158796,
+        "timestamp_utc": "2025-02-21 17:26:36 UTC",
+        "altitude_m": 13803.48,
+        "station": "N0YD-11",
+        "latitude": 38.57933,
+        "longitude": -89.40567
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158856,
+        "unix_time": 1740158856,
+        "timestamp_utc": "2025-02-21 17:27:36 UTC",
+        "altitude_m": 14077.49,
+        "station": "N0YD-11",
+        "latitude": 38.57733,
+        "longitude": -89.37683
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158916,
+        "unix_time": 1740158916,
+        "timestamp_utc": "2025-02-21 17:28:36 UTC",
+        "altitude_m": 14351.51,
+        "station": "N0YD-11",
+        "latitude": 38.577,
+        "longitude": -89.34967
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740158976,
+        "unix_time": 1740158976,
+        "timestamp_utc": "2025-02-21 17:29:36 UTC",
+        "altitude_m": 14632.53,
+        "station": "N0YD-11",
+        "latitude": 38.57917,
+        "longitude": -89.321
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159036,
+        "unix_time": 1740159036,
+        "timestamp_utc": "2025-02-21 17:30:36 UTC",
+        "altitude_m": 14942.52,
+        "station": "N0YD-11",
+        "latitude": 38.57933,
+        "longitude": -89.29167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159096,
+        "unix_time": 1740159096,
+        "timestamp_utc": "2025-02-21 17:31:36 UTC",
+        "altitude_m": 15228.72,
+        "station": "N0YD-11",
+        "latitude": 38.578,
+        "longitude": -89.2655
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159156,
+        "unix_time": 1740159156,
+        "timestamp_utc": "2025-02-21 17:32:36 UTC",
+        "altitude_m": 15504.57,
+        "station": "N0YD-11",
+        "latitude": 38.577,
+        "longitude": -89.24017
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159249,
+        "unix_time": 1740159249,
+        "timestamp_utc": "2025-02-21 17:34:09 UTC",
+        "altitude_m": 15783.76,
+        "station": "N0YD-11",
+        "latitude": 38.57567,
+        "longitude": -89.21817
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159276,
+        "unix_time": 1740159276,
+        "timestamp_utc": "2025-02-21 17:34:36 UTC",
+        "altitude_m": 16045.59,
+        "station": "N0YD-11",
+        "latitude": 38.57317,
+        "longitude": -89.1965
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159336,
+        "unix_time": 1740159336,
+        "timestamp_utc": "2025-02-21 17:35:36 UTC",
+        "altitude_m": 16301.62,
+        "station": "N0YD-11",
+        "latitude": 38.56983,
+        "longitude": -89.17483
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159396,
+        "unix_time": 1740159396,
+        "timestamp_utc": "2025-02-21 17:36:36 UTC",
+        "altitude_m": 16583.56,
+        "station": "N0YD-11",
+        "latitude": 38.56683,
+        "longitude": -89.15317
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159456,
+        "unix_time": 1740159456,
+        "timestamp_utc": "2025-02-21 17:37:36 UTC",
+        "altitude_m": 16877.69,
+        "station": "N0YD-11",
+        "latitude": 38.566,
+        "longitude": -89.13283
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159516,
+        "unix_time": 1740159516,
+        "timestamp_utc": "2025-02-21 17:38:36 UTC",
+        "altitude_m": 17166.64,
+        "station": "N0YD-11",
+        "latitude": 38.56617,
+        "longitude": -89.11383
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159576,
+        "unix_time": 1740159576,
+        "timestamp_utc": "2025-02-21 17:39:36 UTC",
+        "altitude_m": 17461.69,
+        "station": "N0YD-11",
+        "latitude": 38.56517,
+        "longitude": -89.09633
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159636,
+        "unix_time": 1740159636,
+        "timestamp_utc": "2025-02-21 17:40:36 UTC",
+        "altitude_m": 17748.81,
+        "station": "N0YD-11",
+        "latitude": 38.56417,
+        "longitude": -89.07883
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159696,
+        "unix_time": 1740159696,
+        "timestamp_utc": "2025-02-21 17:41:36 UTC",
+        "altitude_m": 18035.63,
+        "station": "N0YD-11",
+        "latitude": 38.5635,
+        "longitude": -89.06283
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159756,
+        "unix_time": 1740159756,
+        "timestamp_utc": "2025-02-21 17:42:36 UTC",
+        "altitude_m": 18300.8,
+        "station": "N0YD-11",
+        "latitude": 38.55933,
+        "longitude": -89.04617
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159816,
+        "unix_time": 1740159816,
+        "timestamp_utc": "2025-02-21 17:43:36 UTC",
+        "altitude_m": 18586.7,
+        "station": "N0YD-11",
+        "latitude": 38.55533,
+        "longitude": -89.0315
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159876,
+        "unix_time": 1740159876,
+        "timestamp_utc": "2025-02-21 17:44:36 UTC",
+        "altitude_m": 18878.7,
+        "station": "N0YD-11",
+        "latitude": 38.55167,
+        "longitude": -89.01767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159936,
+        "unix_time": 1740159936,
+        "timestamp_utc": "2025-02-21 17:45:36 UTC",
+        "altitude_m": 19168.87,
+        "station": "N0YD-11",
+        "latitude": 38.54867,
+        "longitude": -89.00467
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740159996,
+        "unix_time": 1740159996,
+        "timestamp_utc": "2025-02-21 17:46:36 UTC",
+        "altitude_m": 19437.71,
+        "station": "N0YD-11",
+        "latitude": 38.545,
+        "longitude": -88.992
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160056,
+        "unix_time": 1740160056,
+        "timestamp_utc": "2025-02-21 17:47:36 UTC",
+        "altitude_m": 19717.82,
+        "station": "N0YD-11",
+        "latitude": 38.54233,
+        "longitude": -88.97983
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160116,
+        "unix_time": 1740160116,
+        "timestamp_utc": "2025-02-21 17:48:36 UTC",
+        "altitude_m": 20005.85,
+        "station": "N0YD-11",
+        "latitude": 38.54017,
+        "longitude": -88.96767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160176,
+        "unix_time": 1740160176,
+        "timestamp_utc": "2025-02-21 17:49:36 UTC",
+        "altitude_m": 20301.81,
+        "station": "N0YD-11",
+        "latitude": 38.5375,
+        "longitude": -88.95667
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160236,
+        "unix_time": 1740160236,
+        "timestamp_utc": "2025-02-21 17:50:36 UTC",
+        "altitude_m": 20591.98,
+        "station": "N0YD-11",
+        "latitude": 38.53367,
+        "longitude": -88.94567
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160296,
+        "unix_time": 1740160296,
+        "timestamp_utc": "2025-02-21 17:51:36 UTC",
+        "altitude_m": 20880.93,
+        "station": "N0YD-11",
+        "latitude": 38.52983,
+        "longitude": -88.935
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160356,
+        "unix_time": 1740160356,
+        "timestamp_utc": "2025-02-21 17:52:36 UTC",
+        "altitude_m": 21193.96,
+        "station": "N0YD-11",
+        "latitude": 38.52667,
+        "longitude": -88.92617
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160416,
+        "unix_time": 1740160416,
+        "timestamp_utc": "2025-02-21 17:53:36 UTC",
+        "altitude_m": 21507.91,
+        "station": "N0YD-11",
+        "latitude": 38.52483,
+        "longitude": -88.9165
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160476,
+        "unix_time": 1740160476,
+        "timestamp_utc": "2025-02-21 17:54:36 UTC",
+        "altitude_m": 21814.84,
+        "station": "N0YD-11",
+        "latitude": 38.52333,
+        "longitude": -88.90517
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160536,
+        "unix_time": 1740160536,
+        "timestamp_utc": "2025-02-21 17:55:36 UTC",
+        "altitude_m": 22113.85,
+        "station": "N0YD-11",
+        "latitude": 38.52083,
+        "longitude": -88.89233
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160596,
+        "unix_time": 1740160596,
+        "timestamp_utc": "2025-02-21 17:56:36 UTC",
+        "altitude_m": 22405.85,
+        "station": "N0YD-11",
+        "latitude": 38.5175,
+        "longitude": -88.87883
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160656,
+        "unix_time": 1740160656,
+        "timestamp_utc": "2025-02-21 17:57:36 UTC",
+        "altitude_m": 22721.93,
+        "station": "N0YD-11",
+        "latitude": 38.51233,
+        "longitude": -88.866
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160836,
+        "unix_time": 1740160836,
+        "timestamp_utc": "2025-02-21 18:00:36 UTC",
+        "altitude_m": 23640.9,
+        "station": "N0YD-11",
+        "latitude": 38.4985,
+        "longitude": -88.83033
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160856,
+        "unix_time": 1740160856,
+        "timestamp_utc": "2025-02-21 18:00:56 UTC",
+        "altitude_m": 23340.97,
+        "station": "N0YD-11",
+        "latitude": 38.503,
+        "longitude": -88.84317
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160896,
+        "unix_time": 1740160896,
+        "timestamp_utc": "2025-02-21 18:01:36 UTC",
+        "altitude_m": 23952.1,
+        "station": "N0YD-11",
+        "latitude": 38.49367,
+        "longitude": -88.818
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740160956,
+        "unix_time": 1740160956,
+        "timestamp_utc": "2025-02-21 18:02:36 UTC",
+        "altitude_m": 24294.08,
+        "station": "N0YD-11",
+        "latitude": 38.49067,
+        "longitude": -88.8065
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161016,
+        "unix_time": 1740161016,
+        "timestamp_utc": "2025-02-21 18:03:36 UTC",
+        "altitude_m": 24626.01,
+        "station": "N0YD-11",
+        "latitude": 38.488,
+        "longitude": -88.79483
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161076,
+        "unix_time": 1740161076,
+        "timestamp_utc": "2025-02-21 18:04:36 UTC",
+        "altitude_m": 24945.14,
+        "station": "N0YD-11",
+        "latitude": 38.4855,
+        "longitude": -88.78267
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161136,
+        "unix_time": 1740161136,
+        "timestamp_utc": "2025-02-21 18:05:36 UTC",
+        "altitude_m": 25262.13,
+        "station": "N0YD-11",
+        "latitude": 38.48283,
+        "longitude": -88.77033
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161196,
+        "unix_time": 1740161196,
+        "timestamp_utc": "2025-02-21 18:06:36 UTC",
+        "altitude_m": 25583.08,
+        "station": "N0YD-11",
+        "latitude": 38.47983,
+        "longitude": -88.75583
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161256,
+        "unix_time": 1740161256,
+        "timestamp_utc": "2025-02-21 18:07:36 UTC",
+        "altitude_m": 25897.03,
+        "station": "N0YD-11",
+        "latitude": 38.47367,
+        "longitude": -88.7395
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161432,
+        "unix_time": 1740161432,
+        "timestamp_utc": "2025-02-21 18:10:32 UTC",
+        "altitude_m": 26224.99,
+        "station": "N0YD-11",
+        "latitude": 38.46667,
+        "longitude": -88.7235
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161448,
+        "unix_time": 1740161448,
+        "timestamp_utc": "2025-02-21 18:10:48 UTC",
+        "altitude_m": 26555.09,
+        "station": "N0YD-11",
+        "latitude": 38.46517,
+        "longitude": -88.70667
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161496,
+        "unix_time": 1740161496,
+        "timestamp_utc": "2025-02-21 18:11:36 UTC",
+        "altitude_m": 27212.24,
+        "station": "N0YD-11",
+        "latitude": 38.46333,
+        "longitude": -88.66733
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161556,
+        "unix_time": 1740161556,
+        "timestamp_utc": "2025-02-21 18:12:36 UTC",
+        "altitude_m": 27550.26,
+        "station": "N0YD-11",
+        "latitude": 38.461,
+        "longitude": -88.64817
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161616,
+        "unix_time": 1740161616,
+        "timestamp_utc": "2025-02-21 18:13:36 UTC",
+        "altitude_m": 27888.29,
+        "station": "N0YD-11",
+        "latitude": 38.462,
+        "longitude": -88.62933
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161676,
+        "unix_time": 1740161676,
+        "timestamp_utc": "2025-02-21 18:14:36 UTC",
+        "altitude_m": 28214.12,
+        "station": "N0YD-11",
+        "latitude": 38.46617,
+        "longitude": -88.60883
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161736,
+        "unix_time": 1740161736,
+        "timestamp_utc": "2025-02-21 18:15:36 UTC",
+        "altitude_m": 28540.25,
+        "station": "N0YD-11",
+        "latitude": 38.46883,
+        "longitude": -88.58917
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161796,
+        "unix_time": 1740161796,
+        "timestamp_utc": "2025-02-21 18:16:36 UTC",
+        "altitude_m": 28869.13,
+        "station": "N0YD-11",
+        "latitude": 38.472,
+        "longitude": -88.56567
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161856,
+        "unix_time": 1740161856,
+        "timestamp_utc": "2025-02-21 18:17:36 UTC",
+        "altitude_m": 29184.3,
+        "station": "N0YD-11",
+        "latitude": 38.47467,
+        "longitude": -88.54067
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161916,
+        "unix_time": 1740161916,
+        "timestamp_utc": "2025-02-21 18:18:36 UTC",
+        "altitude_m": 29508.3,
+        "station": "N0YD-11",
+        "latitude": 38.47483,
+        "longitude": -88.5165
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740161976,
+        "unix_time": 1740161976,
+        "timestamp_utc": "2025-02-21 18:19:36 UTC",
+        "altitude_m": 27732.23,
+        "station": "N0YD-11",
+        "latitude": 38.47633,
+        "longitude": -88.49433
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162036,
+        "unix_time": 1740162036,
+        "timestamp_utc": "2025-02-21 18:20:36 UTC",
+        "altitude_m": 25683.97,
+        "station": "N0YD-11",
+        "latitude": 38.47383,
+        "longitude": -88.47667
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162096,
+        "unix_time": 1740162096,
+        "timestamp_utc": "2025-02-21 18:21:36 UTC",
+        "altitude_m": 23881.99,
+        "station": "N0YD-11",
+        "latitude": 38.47033,
+        "longitude": -88.46367
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162156,
+        "unix_time": 1740162156,
+        "timestamp_utc": "2025-02-21 18:22:36 UTC",
+        "altitude_m": 22254.06,
+        "station": "N0YD-11",
+        "latitude": 38.46567,
+        "longitude": -88.452
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162216,
+        "unix_time": 1740162216,
+        "timestamp_utc": "2025-02-21 18:23:36 UTC",
+        "altitude_m": 20797.72,
+        "station": "N0YD-11",
+        "latitude": 38.46367,
+        "longitude": -88.4405
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162456,
+        "unix_time": 1740162456,
+        "timestamp_utc": "2025-02-21 18:27:36 UTC",
+        "altitude_m": 16317.77,
+        "station": "N0YD-11",
+        "latitude": 38.45483,
+        "longitude": -88.37783
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162516,
+        "unix_time": 1740162516,
+        "timestamp_utc": "2025-02-21 18:28:36 UTC",
+        "altitude_m": 15437.51,
+        "station": "N0YD-11",
+        "latitude": 38.45233,
+        "longitude": -88.35633
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162576,
+        "unix_time": 1740162576,
+        "timestamp_utc": "2025-02-21 18:29:36 UTC",
+        "altitude_m": 14687.7,
+        "station": "N0YD-11",
+        "latitude": 38.45167,
+        "longitude": -88.327
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162636,
+        "unix_time": 1740162636,
+        "timestamp_utc": "2025-02-21 18:30:36 UTC",
+        "altitude_m": 13948.56,
+        "station": "N0YD-11",
+        "latitude": 38.451,
+        "longitude": -88.29917
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162696,
+        "unix_time": 1740162696,
+        "timestamp_utc": "2025-02-21 18:31:36 UTC",
+        "altitude_m": 13252.4,
+        "station": "N0YD-11",
+        "latitude": 38.44883,
+        "longitude": -88.2685
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162756,
+        "unix_time": 1740162756,
+        "timestamp_utc": "2025-02-21 18:32:36 UTC",
+        "altitude_m": 12630.61,
+        "station": "N0YD-11",
+        "latitude": 38.44867,
+        "longitude": -88.23583
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162816,
+        "unix_time": 1740162816,
+        "timestamp_utc": "2025-02-21 18:33:36 UTC",
+        "altitude_m": 12019.48,
+        "station": "N0YD-11",
+        "latitude": 38.44817,
+        "longitude": -88.20233
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162876,
+        "unix_time": 1740162876,
+        "timestamp_utc": "2025-02-21 18:34:36 UTC",
+        "altitude_m": 11447.37,
+        "station": "N0YD-11",
+        "latitude": 38.446,
+        "longitude": -88.17033
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162936,
+        "unix_time": 1740162936,
+        "timestamp_utc": "2025-02-21 18:35:36 UTC",
+        "altitude_m": 10915.5,
+        "station": "N0YD-11",
+        "latitude": 38.44167,
+        "longitude": -88.13617
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740162996,
+        "unix_time": 1740162996,
+        "timestamp_utc": "2025-02-21 18:36:36 UTC",
+        "altitude_m": 10388.5,
+        "station": "N0YD-11",
+        "latitude": 38.43667,
+        "longitude": -88.09817
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163056,
+        "unix_time": 1740163056,
+        "timestamp_utc": "2025-02-21 18:37:36 UTC",
+        "altitude_m": 9894.42,
+        "station": "N0YD-11",
+        "latitude": 38.4335,
+        "longitude": -88.05767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163116,
+        "unix_time": 1740163116,
+        "timestamp_utc": "2025-02-21 18:38:36 UTC",
+        "altitude_m": 9430.21,
+        "station": "N0YD-11",
+        "latitude": 38.43083,
+        "longitude": -88.02017
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163176,
+        "unix_time": 1740163176,
+        "timestamp_utc": "2025-02-21 18:39:36 UTC",
+        "altitude_m": 9003.18,
+        "station": "N0YD-11",
+        "latitude": 38.426,
+        "longitude": -87.98233
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163236,
+        "unix_time": 1740163236,
+        "timestamp_utc": "2025-02-21 18:40:36 UTC",
+        "altitude_m": 8574.33,
+        "station": "N0YD-11",
+        "latitude": 38.42167,
+        "longitude": -87.94167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163296,
+        "unix_time": 1740163296,
+        "timestamp_utc": "2025-02-21 18:41:36 UTC",
+        "altitude_m": 8127.19,
+        "station": "N0YD-11",
+        "latitude": 38.418,
+        "longitude": -87.906
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163356,
+        "unix_time": 1740163356,
+        "timestamp_utc": "2025-02-21 18:42:36 UTC",
+        "altitude_m": 7712.35,
+        "station": "N0YD-11",
+        "latitude": 38.416,
+        "longitude": -87.87467
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163416,
+        "unix_time": 1740163416,
+        "timestamp_utc": "2025-02-21 18:43:36 UTC",
+        "altitude_m": 7292.34,
+        "station": "N0YD-11",
+        "latitude": 38.4145,
+        "longitude": -87.8425
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163476,
+        "unix_time": 1740163476,
+        "timestamp_utc": "2025-02-21 18:44:36 UTC",
+        "altitude_m": 6902.2,
+        "station": "N0YD-11",
+        "latitude": 38.4125,
+        "longitude": -87.811
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163536,
+        "unix_time": 1740163536,
+        "timestamp_utc": "2025-02-21 18:45:36 UTC",
+        "altitude_m": 6512.05,
+        "station": "N0YD-11",
+        "latitude": 38.40917,
+        "longitude": -87.78333
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163596,
+        "unix_time": 1740163596,
+        "timestamp_utc": "2025-02-21 18:46:36 UTC",
+        "altitude_m": 6147.21,
+        "station": "N0YD-11",
+        "latitude": 38.40533,
+        "longitude": -87.76167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163656,
+        "unix_time": 1740163656,
+        "timestamp_utc": "2025-02-21 18:47:36 UTC",
+        "altitude_m": 5789.98,
+        "station": "N0YD-11",
+        "latitude": 38.402,
+        "longitude": -87.744
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163716,
+        "unix_time": 1740163716,
+        "timestamp_utc": "2025-02-21 18:48:36 UTC",
+        "altitude_m": 5451.04,
+        "station": "N0YD-11",
+        "latitude": 38.39783,
+        "longitude": -87.72767
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163776,
+        "unix_time": 1740163776,
+        "timestamp_utc": "2025-02-21 18:49:36 UTC",
+        "altitude_m": 5115.15,
+        "station": "N0YD-11",
+        "latitude": 38.3945,
+        "longitude": -87.7145
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163836,
+        "unix_time": 1740163836,
+        "timestamp_utc": "2025-02-21 18:50:36 UTC",
+        "altitude_m": 4785.06,
+        "station": "N0YD-11",
+        "latitude": 38.39167,
+        "longitude": -87.70317
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163896,
+        "unix_time": 1740163896,
+        "timestamp_utc": "2025-02-21 18:51:36 UTC",
+        "altitude_m": 4447.03,
+        "station": "N0YD-11",
+        "latitude": 38.389,
+        "longitude": -87.69367
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740163956,
+        "unix_time": 1740163956,
+        "timestamp_utc": "2025-02-21 18:52:36 UTC",
+        "altitude_m": 4133.09,
+        "station": "N0YD-11",
+        "latitude": 38.38717,
+        "longitude": -87.68617
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164016,
+        "unix_time": 1740164016,
+        "timestamp_utc": "2025-02-21 18:53:36 UTC",
+        "altitude_m": 3824.02,
+        "station": "N0YD-11",
+        "latitude": 38.387,
+        "longitude": -87.679
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164076,
+        "unix_time": 1740164076,
+        "timestamp_utc": "2025-02-21 18:54:36 UTC",
+        "altitude_m": 3531.11,
+        "station": "N0YD-11",
+        "latitude": 38.388,
+        "longitude": -87.67167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164136,
+        "unix_time": 1740164136,
+        "timestamp_utc": "2025-02-21 18:55:36 UTC",
+        "altitude_m": 3239.11,
+        "station": "N0YD-11",
+        "latitude": 38.38817,
+        "longitude": -87.66633
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164196,
+        "unix_time": 1740164196,
+        "timestamp_utc": "2025-02-21 18:56:36 UTC",
+        "altitude_m": 2949.85,
+        "station": "N0YD-11",
+        "latitude": 38.388,
+        "longitude": -87.66167
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164256,
+        "unix_time": 1740164256,
+        "timestamp_utc": "2025-02-21 18:57:36 UTC",
+        "altitude_m": 2659.99,
+        "station": "N0YD-11",
+        "latitude": 38.38717,
+        "longitude": -87.658
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164316,
+        "unix_time": 1740164316,
+        "timestamp_utc": "2025-02-21 18:58:36 UTC",
+        "altitude_m": 2381.1,
+        "station": "N0YD-11",
+        "latitude": 38.38567,
+        "longitude": -87.65533
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164376,
+        "unix_time": 1740164376,
+        "timestamp_utc": "2025-02-21 18:59:36 UTC",
+        "altitude_m": 2107.08,
+        "station": "N0YD-11",
+        "latitude": 38.386,
+        "longitude": -87.654
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164436,
+        "unix_time": 1740164436,
+        "timestamp_utc": "2025-02-21 19:00:36 UTC",
+        "altitude_m": 1837.94,
+        "station": "N0YD-11",
+        "latitude": 38.3865,
+        "longitude": -87.65333
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164496,
+        "unix_time": 1740164496,
+        "timestamp_utc": "2025-02-21 19:01:36 UTC",
+        "altitude_m": 1591.06,
+        "station": "N0YD-11",
+        "latitude": 38.38683,
+        "longitude": -87.65383
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164556,
+        "unix_time": 1740164556,
+        "timestamp_utc": "2025-02-21 19:02:36 UTC",
+        "altitude_m": 1336.85,
+        "station": "N0YD-11",
+        "latitude": 38.38633,
+        "longitude": -87.65483
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164616,
+        "unix_time": 1740164616,
+        "timestamp_utc": "2025-02-21 19:03:36 UTC",
+        "altitude_m": 1079.91,
+        "station": "N0YD-11",
+        "latitude": 38.38533,
+        "longitude": -87.656
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164676,
+        "unix_time": 1740164676,
+        "timestamp_utc": "2025-02-21 19:04:36 UTC",
+        "altitude_m": 831.8,
+        "station": "N0YD-11",
+        "latitude": 38.38517,
+        "longitude": -87.65583
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164736,
+        "unix_time": 1740164736,
+        "timestamp_utc": "2025-02-21 19:05:36 UTC",
+        "altitude_m": 603.81,
+        "station": "N0YD-11",
+        "latitude": 38.38533,
+        "longitude": -87.65467
+    },
+    {
+        "source": "imported_csv",
+        "source_time_unix": 1740164798,
+        "unix_time": 1740164798,
+        "timestamp_utc": "2025-02-21 19:06:38 UTC",
+        "altitude_m": 349.91,
+        "station": "N0YD-11",
+        "latitude": 38.38517,
+        "longitude": -87.6525
+    }
+]

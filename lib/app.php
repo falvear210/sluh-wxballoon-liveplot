@@ -102,6 +102,7 @@ function ensure_data_files(): void
     if (!file_exists(STATE_FILE)) {
         write_json_file(STATE_FILE, [
             'capture_enabled' => false,
+            'browser_polling_enabled' => true,
             'last_capture_attempt_unix' => null,
             'last_capture_success_unix' => null,
             'last_error' => null,
@@ -642,6 +643,7 @@ function get_state(): array
     if (!is_array($state)) {
         return [
             'capture_enabled' => false,
+            'browser_polling_enabled' => true,
             'last_capture_attempt_unix' => null,
             'last_capture_success_unix' => null,
             'last_error' => 'State reset due to invalid state file',
@@ -651,6 +653,7 @@ function get_state(): array
 
     return array_merge([
         'capture_enabled' => false,
+        'browser_polling_enabled' => true,
         'last_capture_attempt_unix' => null,
         'last_capture_success_unix' => null,
         'last_error' => null,

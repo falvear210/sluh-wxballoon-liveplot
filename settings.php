@@ -40,6 +40,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
                 $station = trim((string)($_POST['aprs_station'] ?? ''));
                 $apiKey = trim((string)($_POST['aprs_api_key'] ?? ''));
                 $captureEnabled = isset($_POST['capture_enabled']);
+                $browserPollingEnabled = isset($_POST['browser_polling_enabled']);
 
                 update_config_overrides([
                     'aprs_station' => $station,
@@ -48,6 +49,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
 
                 update_state([
                     'capture_enabled' => $captureEnabled,
+                    'browser_polling_enabled' => $browserPollingEnabled,
                     'last_error' => null,
                 ]);
 
@@ -172,6 +174,10 @@ $saved = ($_GET['saved'] ?? '') === '1';
         <label>
           <input type="checkbox" name="capture_enabled" value="1" <?= ($state['capture_enabled'] ?? false) ? 'checked' : '' ?>>
           Enable APRS capture
+        </label>
+        <label>
+          <input type="checkbox" name="browser_polling_enabled" value="1" <?= ($state['browser_polling_enabled'] ?? true) ? 'checked' : '' ?>>
+          Allow browser polling API calls (turn off when server cron handles capture)
         </label>
         <div class="row">
           <button type="submit">Save Settings</button>
