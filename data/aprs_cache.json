@@ -1,0 +1,28 @@
+{
+    "fetched_at_unix": 1771867937,
+    "payload": {
+        "command": "get",
+        "result": "ok",
+        "what": "loc",
+        "found": 1,
+        "entries": [
+            {
+                "class": "a",
+                "name": "N0YD-11",
+                "type": "l",
+                "time": "1771867933",
+                "lasttime": "1771867933",
+                "lat": "36.79133",
+                "lng": "-89.22883",
+                "altitude": 16098.6216,
+                "course": 112,
+                "speed": 77.784,
+                "symbol": "/O",
+                "srccall": "N0YD-11",
+                "dstcall": "CQ",
+                "comment": ",StrTrk,149,9,1.46V,-24C,10185Pa,",
+                "path": "WIDE2-1,qAR,KF4RC-1"
+            }
+        ]
+    }
+}

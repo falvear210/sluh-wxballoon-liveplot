@@ -1,0 +1,20 @@
+https://api.aprs.fi/api/get?name=N0YD-11&what=loc&apikey=202811.8s63lxtGiDve4x&format=json
+
+
+My api: 
+
+
+202811.8s63lxtGiDve4x
+
+https://aprs.fi/?c=raw&call=N0YD-11&limit=100&view=normal
+
+
+
+Create a simple php website that displays a plot of altitude vs. time. Also it should display a table with the timestamps and altitude recorded. It should have a toggle to start capturing data from the APRS api. Here's the call: https://api.aprs.fi/api/get?name=N0YD-11&what=loc&apikey=202811.8s63lxtGiDve4x&format=json . Create a simple webpage that can be used to add timestamps and atitudes.
+
+
+
+
+wo site create wxballoon.alvear.cl --php
+
+wo site update wxballoon.alvear.cl --letsencrypt

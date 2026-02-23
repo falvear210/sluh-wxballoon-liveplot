@@ -1,0 +1,1046 @@
+[
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861033,
+        "unix_time": 1771861033,
+        "timestamp_utc": "2026-02-23 15:37:13 UTC",
+        "altitude_m": 158.8008,
+        "station": "N0YD-11",
+        "latitude": 38.627,
+        "longitude": -90.267667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861093,
+        "unix_time": 1771861093,
+        "timestamp_utc": "2026-02-23 15:38:13 UTC",
+        "altitude_m": 281.94,
+        "station": "N0YD-11",
+        "latitude": 38.625333,
+        "longitude": -90.266
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861153,
+        "unix_time": 1771861153,
+        "timestamp_utc": "2026-02-23 15:39:13 UTC",
+        "altitude_m": 490.728,
+        "station": "N0YD-11",
+        "latitude": 38.622333,
+        "longitude": -90.264
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861213,
+        "unix_time": 1771861213,
+        "timestamp_utc": "2026-02-23 15:40:13 UTC",
+        "altitude_m": 769.0104,
+        "station": "N0YD-11",
+        "latitude": 38.6195,
+        "longitude": -90.261667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861273,
+        "unix_time": 1771861273,
+        "timestamp_utc": "2026-02-23 15:41:13 UTC",
+        "altitude_m": 972.9216,
+        "station": "N0YD-11",
+        "latitude": 38.6165,
+        "longitude": -90.260833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861333,
+        "unix_time": 1771861333,
+        "timestamp_utc": "2026-02-23 15:42:13 UTC",
+        "altitude_m": 1135.9896,
+        "station": "N0YD-11",
+        "latitude": 38.612667,
+        "longitude": -90.262333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861393,
+        "unix_time": 1771861393,
+        "timestamp_utc": "2026-02-23 15:43:13 UTC",
+        "altitude_m": 1267.0536,
+        "station": "N0YD-11",
+        "latitude": 38.608333,
+        "longitude": -90.264833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861453,
+        "unix_time": 1771861453,
+        "timestamp_utc": "2026-02-23 15:44:13 UTC",
+        "altitude_m": 1353.9216,
+        "station": "N0YD-11",
+        "latitude": 38.603167,
+        "longitude": -90.267333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861513,
+        "unix_time": 1771861513,
+        "timestamp_utc": "2026-02-23 15:45:13 UTC",
+        "altitude_m": 1461.8208,
+        "station": "N0YD-11",
+        "latitude": 38.596667,
+        "longitude": -90.269833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861573,
+        "unix_time": 1771861573,
+        "timestamp_utc": "2026-02-23 15:46:13 UTC",
+        "altitude_m": 1598.0664,
+        "station": "N0YD-11",
+        "latitude": 38.589667,
+        "longitude": -90.272
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861633,
+        "unix_time": 1771861633,
+        "timestamp_utc": "2026-02-23 15:47:13 UTC",
+        "altitude_m": 1694.9928,
+        "station": "N0YD-11",
+        "latitude": 38.582333,
+        "longitude": -90.274333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861693,
+        "unix_time": 1771861693,
+        "timestamp_utc": "2026-02-23 15:48:13 UTC",
+        "altitude_m": 1767.84,
+        "station": "N0YD-11",
+        "latitude": 38.574667,
+        "longitude": -90.276333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861753,
+        "unix_time": 1771861753,
+        "timestamp_utc": "2026-02-23 15:49:13 UTC",
+        "altitude_m": 1912.0104,
+        "station": "N0YD-11",
+        "latitude": 38.566,
+        "longitude": -90.2755
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861813,
+        "unix_time": 1771861813,
+        "timestamp_utc": "2026-02-23 15:50:13 UTC",
+        "altitude_m": 2033.016,
+        "station": "N0YD-11",
+        "latitude": 38.556333,
+        "longitude": -90.274333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861873,
+        "unix_time": 1771861873,
+        "timestamp_utc": "2026-02-23 15:51:13 UTC",
+        "altitude_m": 2136.9528,
+        "station": "N0YD-11",
+        "latitude": 38.546833,
+        "longitude": -90.273
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861933,
+        "unix_time": 1771861933,
+        "timestamp_utc": "2026-02-23 15:52:13 UTC",
+        "altitude_m": 2246.9856,
+        "station": "N0YD-11",
+        "latitude": 38.536833,
+        "longitude": -90.270167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771861993,
+        "unix_time": 1771861993,
+        "timestamp_utc": "2026-02-23 15:53:13 UTC",
+        "altitude_m": 2342.9976,
+        "station": "N0YD-11",
+        "latitude": 38.526167,
+        "longitude": -90.267667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862053,
+        "unix_time": 1771862053,
+        "timestamp_utc": "2026-02-23 15:54:13 UTC",
+        "altitude_m": 2424.9888,
+        "station": "N0YD-11",
+        "latitude": 38.5145,
+        "longitude": -90.266
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862113,
+        "unix_time": 1771862113,
+        "timestamp_utc": "2026-02-23 15:55:13 UTC",
+        "altitude_m": 2527.0968,
+        "station": "N0YD-11",
+        "latitude": 38.502667,
+        "longitude": -90.264833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862173,
+        "unix_time": 1771862173,
+        "timestamp_utc": "2026-02-23 15:56:13 UTC",
+        "altitude_m": 2635.9104,
+        "station": "N0YD-11",
+        "latitude": 38.490167,
+        "longitude": -90.2635
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862233,
+        "unix_time": 1771862233,
+        "timestamp_utc": "2026-02-23 15:57:13 UTC",
+        "altitude_m": 2748.0768,
+        "station": "N0YD-11",
+        "latitude": 38.477333,
+        "longitude": -90.262333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862293,
+        "unix_time": 1771862293,
+        "timestamp_utc": "2026-02-23 15:58:13 UTC",
+        "altitude_m": 2863.9008,
+        "station": "N0YD-11",
+        "latitude": 38.464167,
+        "longitude": -90.261333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862353,
+        "unix_time": 1771862353,
+        "timestamp_utc": "2026-02-23 15:59:13 UTC",
+        "altitude_m": 2986.1256,
+        "station": "N0YD-11",
+        "latitude": 38.450333,
+        "longitude": -90.259833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862413,
+        "unix_time": 1771862413,
+        "timestamp_utc": "2026-02-23 16:00:13 UTC",
+        "altitude_m": 3112.008,
+        "station": "N0YD-11",
+        "latitude": 38.436667,
+        "longitude": -90.258833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862473,
+        "unix_time": 1771862473,
+        "timestamp_utc": "2026-02-23 16:01:13 UTC",
+        "altitude_m": 3243.072,
+        "station": "N0YD-11",
+        "latitude": 38.422667,
+        "longitude": -90.256667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862533,
+        "unix_time": 1771862533,
+        "timestamp_utc": "2026-02-23 16:02:13 UTC",
+        "altitude_m": 3369.8688,
+        "station": "N0YD-11",
+        "latitude": 38.408667,
+        "longitude": -90.254
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862593,
+        "unix_time": 1771862593,
+        "timestamp_utc": "2026-02-23 16:03:13 UTC",
+        "altitude_m": 3493.9224,
+        "station": "N0YD-11",
+        "latitude": 38.394833,
+        "longitude": -90.251167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862653,
+        "unix_time": 1771862653,
+        "timestamp_utc": "2026-02-23 16:04:13 UTC",
+        "altitude_m": 3610.0512,
+        "station": "N0YD-11",
+        "latitude": 38.381,
+        "longitude": -90.249167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862713,
+        "unix_time": 1771862713,
+        "timestamp_utc": "2026-02-23 16:05:13 UTC",
+        "altitude_m": 3716.1216,
+        "station": "N0YD-11",
+        "latitude": 38.366833,
+        "longitude": -90.247167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862773,
+        "unix_time": 1771862773,
+        "timestamp_utc": "2026-02-23 16:06:13 UTC",
+        "altitude_m": 3816.096,
+        "station": "N0YD-11",
+        "latitude": 38.352833,
+        "longitude": -90.245333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862833,
+        "unix_time": 1771862833,
+        "timestamp_utc": "2026-02-23 16:07:13 UTC",
+        "altitude_m": 3916.9848,
+        "station": "N0YD-11",
+        "latitude": 38.338833,
+        "longitude": -90.243167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862893,
+        "unix_time": 1771862893,
+        "timestamp_utc": "2026-02-23 16:08:13 UTC",
+        "altitude_m": 4031.8944,
+        "station": "N0YD-11",
+        "latitude": 38.3245,
+        "longitude": -90.241
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771862953,
+        "unix_time": 1771862953,
+        "timestamp_utc": "2026-02-23 16:09:13 UTC",
+        "altitude_m": 4150.1568,
+        "station": "N0YD-11",
+        "latitude": 38.309833,
+        "longitude": -90.238333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863013,
+        "unix_time": 1771863013,
+        "timestamp_utc": "2026-02-23 16:10:13 UTC",
+        "altitude_m": 4275.1248,
+        "station": "N0YD-11",
+        "latitude": 38.295167,
+        "longitude": -90.236167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863073,
+        "unix_time": 1771863073,
+        "timestamp_utc": "2026-02-23 16:11:13 UTC",
+        "altitude_m": 4418.9904,
+        "station": "N0YD-11",
+        "latitude": 38.279333,
+        "longitude": -90.233
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863133,
+        "unix_time": 1771863133,
+        "timestamp_utc": "2026-02-23 16:12:13 UTC",
+        "altitude_m": 4543.9584,
+        "station": "N0YD-11",
+        "latitude": 38.262667,
+        "longitude": -90.228167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863193,
+        "unix_time": 1771863193,
+        "timestamp_utc": "2026-02-23 16:13:13 UTC",
+        "altitude_m": 4660.0872,
+        "station": "N0YD-11",
+        "latitude": 38.246167,
+        "longitude": -90.2225
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863253,
+        "unix_time": 1771863253,
+        "timestamp_utc": "2026-02-23 16:14:13 UTC",
+        "altitude_m": 4774.0824,
+        "station": "N0YD-11",
+        "latitude": 38.230167,
+        "longitude": -90.2165
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863313,
+        "unix_time": 1771863313,
+        "timestamp_utc": "2026-02-23 16:15:13 UTC",
+        "altitude_m": 4877.1048,
+        "station": "N0YD-11",
+        "latitude": 38.214,
+        "longitude": -90.2115
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863373,
+        "unix_time": 1771863373,
+        "timestamp_utc": "2026-02-23 16:16:13 UTC",
+        "altitude_m": 4991.1,
+        "station": "N0YD-11",
+        "latitude": 38.1975,
+        "longitude": -90.205167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863432,
+        "unix_time": 1771863432,
+        "timestamp_utc": "2026-02-23 16:17:12 UTC",
+        "altitude_m": 5102.9616,
+        "station": "N0YD-11",
+        "latitude": 38.181,
+        "longitude": -90.198833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863493,
+        "unix_time": 1771863493,
+        "timestamp_utc": "2026-02-23 16:18:13 UTC",
+        "altitude_m": 5233.1112,
+        "station": "N0YD-11",
+        "latitude": 38.164,
+        "longitude": -90.1935
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863553,
+        "unix_time": 1771863553,
+        "timestamp_utc": "2026-02-23 16:19:13 UTC",
+        "altitude_m": 5339.1816,
+        "station": "N0YD-11",
+        "latitude": 38.146667,
+        "longitude": -90.189167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863613,
+        "unix_time": 1771863613,
+        "timestamp_utc": "2026-02-23 16:20:13 UTC",
+        "altitude_m": 5455.0056,
+        "station": "N0YD-11",
+        "latitude": 38.129,
+        "longitude": -90.184333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863673,
+        "unix_time": 1771863673,
+        "timestamp_utc": "2026-02-23 16:21:13 UTC",
+        "altitude_m": 5581.1928,
+        "station": "N0YD-11",
+        "latitude": 38.110667,
+        "longitude": -90.1805
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863733,
+        "unix_time": 1771863733,
+        "timestamp_utc": "2026-02-23 16:22:13 UTC",
+        "altitude_m": 5693.0544,
+        "station": "N0YD-11",
+        "latitude": 38.092,
+        "longitude": -90.177167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863793,
+        "unix_time": 1771863793,
+        "timestamp_utc": "2026-02-23 16:23:13 UTC",
+        "altitude_m": 5804.0016,
+        "station": "N0YD-11",
+        "latitude": 38.073167,
+        "longitude": -90.1725
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863853,
+        "unix_time": 1771863853,
+        "timestamp_utc": "2026-02-23 16:24:13 UTC",
+        "altitude_m": 5917.0824,
+        "station": "N0YD-11",
+        "latitude": 38.054,
+        "longitude": -90.167667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863913,
+        "unix_time": 1771863913,
+        "timestamp_utc": "2026-02-23 16:25:13 UTC",
+        "altitude_m": 6039.0024,
+        "station": "N0YD-11",
+        "latitude": 38.035,
+        "longitude": -90.162
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771863973,
+        "unix_time": 1771863973,
+        "timestamp_utc": "2026-02-23 16:26:13 UTC",
+        "altitude_m": 6176.1624,
+        "station": "N0YD-11",
+        "latitude": 38.016,
+        "longitude": -90.1565
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864033,
+        "unix_time": 1771864033,
+        "timestamp_utc": "2026-02-23 16:27:13 UTC",
+        "altitude_m": 6308.1408,
+        "station": "N0YD-11",
+        "latitude": 37.997,
+        "longitude": -90.151167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864093,
+        "unix_time": 1771864093,
+        "timestamp_utc": "2026-02-23 16:28:13 UTC",
+        "altitude_m": 6439.2048,
+        "station": "N0YD-11",
+        "latitude": 37.977833,
+        "longitude": -90.145667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864153,
+        "unix_time": 1771864153,
+        "timestamp_utc": "2026-02-23 16:29:13 UTC",
+        "altitude_m": 6570.2688,
+        "station": "N0YD-11",
+        "latitude": 37.958333,
+        "longitude": -90.140167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864213,
+        "unix_time": 1771864213,
+        "timestamp_utc": "2026-02-23 16:30:13 UTC",
+        "altitude_m": 6704.076,
+        "station": "N0YD-11",
+        "latitude": 37.938833,
+        "longitude": -90.134667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864273,
+        "unix_time": 1771864273,
+        "timestamp_utc": "2026-02-23 16:31:13 UTC",
+        "altitude_m": 6836.0544,
+        "station": "N0YD-11",
+        "latitude": 37.919333,
+        "longitude": -90.128833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864333,
+        "unix_time": 1771864333,
+        "timestamp_utc": "2026-02-23 16:32:13 UTC",
+        "altitude_m": 6956.1456,
+        "station": "N0YD-11",
+        "latitude": 37.899667,
+        "longitude": -90.122833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864393,
+        "unix_time": 1771864393,
+        "timestamp_utc": "2026-02-23 16:33:13 UTC",
+        "altitude_m": 7077.1512,
+        "station": "N0YD-11",
+        "latitude": 37.88,
+        "longitude": -90.117
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864453,
+        "unix_time": 1771864453,
+        "timestamp_utc": "2026-02-23 16:34:13 UTC",
+        "altitude_m": 7231.0752,
+        "station": "N0YD-11",
+        "latitude": 37.8605,
+        "longitude": -90.1105
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864513,
+        "unix_time": 1771864513,
+        "timestamp_utc": "2026-02-23 16:35:13 UTC",
+        "altitude_m": 7389.2664,
+        "station": "N0YD-11",
+        "latitude": 37.840333,
+        "longitude": -90.102833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864573,
+        "unix_time": 1771864573,
+        "timestamp_utc": "2026-02-23 16:36:13 UTC",
+        "altitude_m": 7551.1152,
+        "station": "N0YD-11",
+        "latitude": 37.8205,
+        "longitude": -90.094
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864633,
+        "unix_time": 1771864633,
+        "timestamp_utc": "2026-02-23 16:37:13 UTC",
+        "altitude_m": 7674.2544,
+        "station": "N0YD-11",
+        "latitude": 37.800833,
+        "longitude": -90.084167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864693,
+        "unix_time": 1771864693,
+        "timestamp_utc": "2026-02-23 16:38:13 UTC",
+        "altitude_m": 7814.1576,
+        "station": "N0YD-11",
+        "latitude": 37.780833,
+        "longitude": -90.074833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864753,
+        "unix_time": 1771864753,
+        "timestamp_utc": "2026-02-23 16:39:13 UTC",
+        "altitude_m": 7970.2152,
+        "station": "N0YD-11",
+        "latitude": 37.760333,
+        "longitude": -90.0655
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864813,
+        "unix_time": 1771864813,
+        "timestamp_utc": "2026-02-23 16:40:13 UTC",
+        "altitude_m": 8109.204,
+        "station": "N0YD-11",
+        "latitude": 37.740167,
+        "longitude": -90.0555
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864873,
+        "unix_time": 1771864873,
+        "timestamp_utc": "2026-02-23 16:41:13 UTC",
+        "altitude_m": 8296.3512,
+        "station": "N0YD-11",
+        "latitude": 37.72,
+        "longitude": -90.045
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864933,
+        "unix_time": 1771864933,
+        "timestamp_utc": "2026-02-23 16:42:13 UTC",
+        "altitude_m": 8508.1872,
+        "station": "N0YD-11",
+        "latitude": 37.700167,
+        "longitude": -90.031333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771864993,
+        "unix_time": 1771864993,
+        "timestamp_utc": "2026-02-23 16:43:13 UTC",
+        "altitude_m": 8656.32,
+        "station": "N0YD-11",
+        "latitude": 37.679833,
+        "longitude": -90.016833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865053,
+        "unix_time": 1771865053,
+        "timestamp_utc": "2026-02-23 16:44:13 UTC",
+        "altitude_m": 8799.2712,
+        "station": "N0YD-11",
+        "latitude": 37.658833,
+        "longitude": -90.002
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865113,
+        "unix_time": 1771865113,
+        "timestamp_utc": "2026-02-23 16:45:13 UTC",
+        "altitude_m": 8946.1848,
+        "station": "N0YD-11",
+        "latitude": 37.637,
+        "longitude": -89.988167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865173,
+        "unix_time": 1771865173,
+        "timestamp_utc": "2026-02-23 16:46:13 UTC",
+        "altitude_m": 9093.4032,
+        "station": "N0YD-11",
+        "latitude": 37.614,
+        "longitude": -89.974167
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865233,
+        "unix_time": 1771865233,
+        "timestamp_utc": "2026-02-23 16:47:13 UTC",
+        "altitude_m": 9237.2688,
+        "station": "N0YD-11",
+        "latitude": 37.590333,
+        "longitude": -89.958833
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865293,
+        "unix_time": 1771865293,
+        "timestamp_utc": "2026-02-23 16:48:13 UTC",
+        "altitude_m": 9377.172,
+        "station": "N0YD-11",
+        "latitude": 37.5655,
+        "longitude": -89.9435
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865353,
+        "unix_time": 1771865353,
+        "timestamp_utc": "2026-02-23 16:49:13 UTC",
+        "altitude_m": 9517.38,
+        "station": "N0YD-11",
+        "latitude": 37.539833,
+        "longitude": -89.928667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865413,
+        "unix_time": 1771865413,
+        "timestamp_utc": "2026-02-23 16:50:13 UTC",
+        "altitude_m": 9662.4648,
+        "station": "N0YD-11",
+        "latitude": 37.5125,
+        "longitude": -89.913333
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865473,
+        "unix_time": 1771865473,
+        "timestamp_utc": "2026-02-23 16:51:13 UTC",
+        "altitude_m": 9808.464,
+        "station": "N0YD-11",
+        "latitude": 37.483667,
+        "longitude": -89.897667
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865533,
+        "unix_time": 1771865533,
+        "timestamp_utc": "2026-02-23 16:52:13 UTC",
+        "altitude_m": 9949.2816,
+        "station": "N0YD-11",
+        "latitude": 37.455667,
+        "longitude": -89.882167
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771865593,
+        "unix_time": 1771865593,
+        "timestamp_utc": "2026-02-23 16:53:13 UTC",
+        "altitude_m": 10086.4416,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865593,
+        "unix_time": 1771865593,
+        "timestamp_utc": "2026-02-23 16:53:13 UTC",
+        "altitude_m": 10086.4416,
+        "station": "N0YD-11",
+        "latitude": 37.427667,
+        "longitude": -89.8675
+    },
+    {
+        "source": "rawpacket",
+        "source_time_unix": 1771865653,
+        "unix_time": 1771865653,
+        "timestamp_utc": "2026-02-23 16:54:13 UTC",
+        "altitude_m": 10229.3928,
+        "station": "N0YD-11",
+        "latitude": 37.399667,
+        "longitude": -89.851833
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771865773,
+        "unix_time": 1771865773,
+        "timestamp_utc": "2026-02-23 16:56:13 UTC",
+        "altitude_m": 10481.4624,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866013,
+        "unix_time": 1771866013,
+        "timestamp_utc": "2026-02-23 17:00:13 UTC",
+        "altitude_m": 11055.4008,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866073,
+        "unix_time": 1771866073,
+        "timestamp_utc": "2026-02-23 17:01:13 UTC",
+        "altitude_m": 11218.4688,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866193,
+        "unix_time": 1771866193,
+        "timestamp_utc": "2026-02-23 17:03:13 UTC",
+        "altitude_m": 11553.444,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866253,
+        "unix_time": 1771866253,
+        "timestamp_utc": "2026-02-23 17:04:13 UTC",
+        "altitude_m": 11694.5664,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866493,
+        "unix_time": 1771866493,
+        "timestamp_utc": "2026-02-23 17:08:13 UTC",
+        "altitude_m": 12246.5592,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866553,
+        "unix_time": 1771866553,
+        "timestamp_utc": "2026-02-23 17:09:13 UTC",
+        "altitude_m": 12395.3016,
+        "station": "N0YD-11"
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866613,
+        "unix_time": 1771866613,
+        "timestamp_utc": "2026-02-23 17:10:13 UTC",
+        "altitude_m": 12562.332,
+        "station": "N0YD-11",
+        "latitude": 37.03433,
+        "longitude": -89.576
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866673,
+        "unix_time": 1771866673,
+        "timestamp_utc": "2026-02-23 17:11:13 UTC",
+        "altitude_m": 12691.5672,
+        "station": "N0YD-11",
+        "latitude": 37.02033,
+        "longitude": -89.55867
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866733,
+        "unix_time": 1771866733,
+        "timestamp_utc": "2026-02-23 17:12:13 UTC",
+        "altitude_m": 12845.4912,
+        "station": "N0YD-11",
+        "latitude": 37.00467,
+        "longitude": -89.54017
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866793,
+        "unix_time": 1771866793,
+        "timestamp_utc": "2026-02-23 17:13:13 UTC",
+        "altitude_m": 13005.5112,
+        "station": "N0YD-11",
+        "latitude": 36.98917,
+        "longitude": -89.52017
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771866853,
+        "unix_time": 1771866853,
+        "timestamp_utc": "2026-02-23 17:14:13 UTC",
+        "altitude_m": 13180.4664,
+        "station": "N0YD-11",
+        "latitude": 36.97517,
+        "longitude": -89.50117
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867033,
+        "unix_time": 1771867033,
+        "timestamp_utc": "2026-02-23 17:17:13 UTC",
+        "altitude_m": 13596.5184,
+        "station": "N0YD-11",
+        "latitude": 36.937,
+        "longitude": -89.44217
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867093,
+        "unix_time": 1771867093,
+        "timestamp_utc": "2026-02-23 17:18:13 UTC",
+        "altitude_m": 13732.4592,
+        "station": "N0YD-11",
+        "latitude": 36.922,
+        "longitude": -89.42467
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867153,
+        "unix_time": 1771867153,
+        "timestamp_utc": "2026-02-23 17:19:13 UTC",
+        "altitude_m": 13873.5816,
+        "station": "N0YD-11",
+        "latitude": 36.9065,
+        "longitude": -89.40933
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867213,
+        "unix_time": 1771867213,
+        "timestamp_utc": "2026-02-23 17:20:13 UTC",
+        "altitude_m": 14034.516,
+        "station": "N0YD-11",
+        "latitude": 36.89233,
+        "longitude": -89.395
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867273,
+        "unix_time": 1771867273,
+        "timestamp_utc": "2026-02-23 17:21:13 UTC",
+        "altitude_m": 14197.584,
+        "station": "N0YD-11",
+        "latitude": 36.87917,
+        "longitude": -89.381
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867393,
+        "unix_time": 1771867393,
+        "timestamp_utc": "2026-02-23 17:23:13 UTC",
+        "altitude_m": 14530.4256,
+        "station": "N0YD-11",
+        "latitude": 36.85417,
+        "longitude": -89.3525
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867453,
+        "unix_time": 1771867453,
+        "timestamp_utc": "2026-02-23 17:24:13 UTC",
+        "altitude_m": 14710.5624,
+        "station": "N0YD-11",
+        "latitude": 36.84417,
+        "longitude": -89.33933
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867513,
+        "unix_time": 1771867513,
+        "timestamp_utc": "2026-02-23 17:25:13 UTC",
+        "altitude_m": 14892.528,
+        "station": "N0YD-11",
+        "latitude": 36.83633,
+        "longitude": -89.32567
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867573,
+        "unix_time": 1771867573,
+        "timestamp_utc": "2026-02-23 17:26:13 UTC",
+        "altitude_m": 15059.5584,
+        "station": "N0YD-11",
+        "latitude": 36.83067,
+        "longitude": -89.30983
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867633,
+        "unix_time": 1771867633,
+        "timestamp_utc": "2026-02-23 17:27:13 UTC",
+        "altitude_m": 15222.6264,
+        "station": "N0YD-11",
+        "latitude": 36.82467,
+        "longitude": -89.29267
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867693,
+        "unix_time": 1771867693,
+        "timestamp_utc": "2026-02-23 17:28:13 UTC",
+        "altitude_m": 15398.496,
+        "station": "N0YD-11",
+        "latitude": 36.81667,
+        "longitude": -89.27633
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867753,
+        "unix_time": 1771867753,
+        "timestamp_utc": "2026-02-23 17:29:13 UTC",
+        "altitude_m": 15598.7496,
+        "station": "N0YD-11",
+        "latitude": 36.8085,
+        "longitude": -89.26383
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867813,
+        "unix_time": 1771867813,
+        "timestamp_utc": "2026-02-23 17:30:13 UTC",
+        "altitude_m": 15784.6776,
+        "station": "N0YD-11",
+        "latitude": 36.801,
+        "longitude": -89.2525
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867873,
+        "unix_time": 1771867873,
+        "timestamp_utc": "2026-02-23 17:31:13 UTC",
+        "altitude_m": 15948.66,
+        "station": "N0YD-11",
+        "latitude": 36.79533,
+        "longitude": -89.2415
+    },
+    {
+        "source": "aprs",
+        "source_time_unix": 1771867933,
+        "unix_time": 1771867933,
+        "timestamp_utc": "2026-02-23 17:32:13 UTC",
+        "altitude_m": 16098.6216,
+        "station": "N0YD-11",
+        "latitude": 36.79133,
+        "longitude": -89.22883
+    }
+]
