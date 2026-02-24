@@ -1,7 +1,6 @@
 [
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861033,
         "unix_time": 1771861033,
         "timestamp_utc": "2026-02-23 15:37:13 UTC",
@@ -11,41 +10,7 @@
         "longitude": -90.267667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861033,
-        "unix_time": 1771861033,
-        "timestamp_utc": "2026-02-23 15:37:13 UTC",
-        "altitude_m": 158.8008,
-        "station": "N0YD-11",
-        "latitude": 38.627,
-        "longitude": -90.267667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861033,
-        "unix_time": 1771861033,
-        "timestamp_utc": "2026-02-23 15:37:13 UTC",
-        "altitude_m": 158.8008,
-        "station": "N0YD-11",
-        "latitude": 38.627,
-        "longitude": -90.267667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861033,
-        "unix_time": 1771861033,
-        "timestamp_utc": "2026-02-23 15:37:13 UTC",
-        "altitude_m": 158.8008,
-        "station": "N0YD-11",
-        "latitude": 38.627,
-        "longitude": -90.267667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861093,
         "unix_time": 1771861093,
         "timestamp_utc": "2026-02-23 15:38:13 UTC",
@@ -55,19 +20,7 @@
         "longitude": -90.266
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861093,
-        "unix_time": 1771861093,
-        "timestamp_utc": "2026-02-23 15:38:13 UTC",
-        "altitude_m": 281.94,
-        "station": "N0YD-11",
-        "latitude": 38.625333,
-        "longitude": -90.266
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861153,
         "unix_time": 1771861153,
         "timestamp_utc": "2026-02-23 15:39:13 UTC",
@@ -77,19 +30,7 @@
         "longitude": -90.264
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861153,
-        "unix_time": 1771861153,
-        "timestamp_utc": "2026-02-23 15:39:13 UTC",
-        "altitude_m": 490.728,
-        "station": "N0YD-11",
-        "latitude": 38.622333,
-        "longitude": -90.264
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861213,
         "unix_time": 1771861213,
         "timestamp_utc": "2026-02-23 15:40:13 UTC",
@@ -99,19 +40,7 @@
         "longitude": -90.261667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861213,
-        "unix_time": 1771861213,
-        "timestamp_utc": "2026-02-23 15:40:13 UTC",
-        "altitude_m": 769.0104,
-        "station": "N0YD-11",
-        "latitude": 38.6195,
-        "longitude": -90.261667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861273,
         "unix_time": 1771861273,
         "timestamp_utc": "2026-02-23 15:41:13 UTC",
@@ -121,19 +50,7 @@
         "longitude": -90.260833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861273,
-        "unix_time": 1771861273,
-        "timestamp_utc": "2026-02-23 15:41:13 UTC",
-        "altitude_m": 972.9216,
-        "station": "N0YD-11",
-        "latitude": 38.6165,
-        "longitude": -90.260833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861333,
         "unix_time": 1771861333,
         "timestamp_utc": "2026-02-23 15:42:13 UTC",
@@ -143,19 +60,7 @@
         "longitude": -90.262333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861333,
-        "unix_time": 1771861333,
-        "timestamp_utc": "2026-02-23 15:42:13 UTC",
-        "altitude_m": 1135.9896,
-        "station": "N0YD-11",
-        "latitude": 38.612667,
-        "longitude": -90.262333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861393,
         "unix_time": 1771861393,
         "timestamp_utc": "2026-02-23 15:43:13 UTC",
@@ -165,19 +70,7 @@
         "longitude": -90.264833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861393,
-        "unix_time": 1771861393,
-        "timestamp_utc": "2026-02-23 15:43:13 UTC",
-        "altitude_m": 1267.0536,
-        "station": "N0YD-11",
-        "latitude": 38.608333,
-        "longitude": -90.264833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861453,
         "unix_time": 1771861453,
         "timestamp_utc": "2026-02-23 15:44:13 UTC",
@@ -187,19 +80,7 @@
         "longitude": -90.267333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861453,
-        "unix_time": 1771861453,
-        "timestamp_utc": "2026-02-23 15:44:13 UTC",
-        "altitude_m": 1353.9216,
-        "station": "N0YD-11",
-        "latitude": 38.603167,
-        "longitude": -90.267333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861513,
         "unix_time": 1771861513,
         "timestamp_utc": "2026-02-23 15:45:13 UTC",
@@ -209,19 +90,7 @@
         "longitude": -90.269833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861513,
-        "unix_time": 1771861513,
-        "timestamp_utc": "2026-02-23 15:45:13 UTC",
-        "altitude_m": 1461.8208,
-        "station": "N0YD-11",
-        "latitude": 38.596667,
-        "longitude": -90.269833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861573,
         "unix_time": 1771861573,
         "timestamp_utc": "2026-02-23 15:46:13 UTC",
@@ -231,19 +100,7 @@
         "longitude": -90.272
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861573,
-        "unix_time": 1771861573,
-        "timestamp_utc": "2026-02-23 15:46:13 UTC",
-        "altitude_m": 1598.0664,
-        "station": "N0YD-11",
-        "latitude": 38.589667,
-        "longitude": -90.272
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861633,
         "unix_time": 1771861633,
         "timestamp_utc": "2026-02-23 15:47:13 UTC",
@@ -253,19 +110,7 @@
         "longitude": -90.274333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861633,
-        "unix_time": 1771861633,
-        "timestamp_utc": "2026-02-23 15:47:13 UTC",
-        "altitude_m": 1694.9928,
-        "station": "N0YD-11",
-        "latitude": 38.582333,
-        "longitude": -90.274333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861693,
         "unix_time": 1771861693,
         "timestamp_utc": "2026-02-23 15:48:13 UTC",
@@ -275,19 +120,7 @@
         "longitude": -90.276333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861693,
-        "unix_time": 1771861693,
-        "timestamp_utc": "2026-02-23 15:48:13 UTC",
-        "altitude_m": 1767.84,
-        "station": "N0YD-11",
-        "latitude": 38.574667,
-        "longitude": -90.276333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861753,
         "unix_time": 1771861753,
         "timestamp_utc": "2026-02-23 15:49:13 UTC",
@@ -297,19 +130,7 @@
         "longitude": -90.2755
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861753,
-        "unix_time": 1771861753,
-        "timestamp_utc": "2026-02-23 15:49:13 UTC",
-        "altitude_m": 1912.0104,
-        "station": "N0YD-11",
-        "latitude": 38.566,
-        "longitude": -90.2755
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861813,
         "unix_time": 1771861813,
         "timestamp_utc": "2026-02-23 15:50:13 UTC",
@@ -319,19 +140,7 @@
         "longitude": -90.274333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861813,
-        "unix_time": 1771861813,
-        "timestamp_utc": "2026-02-23 15:50:13 UTC",
-        "altitude_m": 2033.016,
-        "station": "N0YD-11",
-        "latitude": 38.556333,
-        "longitude": -90.274333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861873,
         "unix_time": 1771861873,
         "timestamp_utc": "2026-02-23 15:51:13 UTC",
@@ -341,19 +150,7 @@
         "longitude": -90.273
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861873,
-        "unix_time": 1771861873,
-        "timestamp_utc": "2026-02-23 15:51:13 UTC",
-        "altitude_m": 2136.9528,
-        "station": "N0YD-11",
-        "latitude": 38.546833,
-        "longitude": -90.273
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861933,
         "unix_time": 1771861933,
         "timestamp_utc": "2026-02-23 15:52:13 UTC",
@@ -363,19 +160,7 @@
         "longitude": -90.270167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861933,
-        "unix_time": 1771861933,
-        "timestamp_utc": "2026-02-23 15:52:13 UTC",
-        "altitude_m": 2246.9856,
-        "station": "N0YD-11",
-        "latitude": 38.536833,
-        "longitude": -90.270167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771861993,
         "unix_time": 1771861993,
         "timestamp_utc": "2026-02-23 15:53:13 UTC",
@@ -385,19 +170,7 @@
         "longitude": -90.267667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771861993,
-        "unix_time": 1771861993,
-        "timestamp_utc": "2026-02-23 15:53:13 UTC",
-        "altitude_m": 2342.9976,
-        "station": "N0YD-11",
-        "latitude": 38.526167,
-        "longitude": -90.267667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862053,
         "unix_time": 1771862053,
         "timestamp_utc": "2026-02-23 15:54:13 UTC",
@@ -407,19 +180,7 @@
         "longitude": -90.266
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862053,
-        "unix_time": 1771862053,
-        "timestamp_utc": "2026-02-23 15:54:13 UTC",
-        "altitude_m": 2424.9888,
-        "station": "N0YD-11",
-        "latitude": 38.5145,
-        "longitude": -90.266
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862113,
         "unix_time": 1771862113,
         "timestamp_utc": "2026-02-23 15:55:13 UTC",
@@ -429,19 +190,7 @@
         "longitude": -90.264833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862113,
-        "unix_time": 1771862113,
-        "timestamp_utc": "2026-02-23 15:55:13 UTC",
-        "altitude_m": 2527.0968,
-        "station": "N0YD-11",
-        "latitude": 38.502667,
-        "longitude": -90.264833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862173,
         "unix_time": 1771862173,
         "timestamp_utc": "2026-02-23 15:56:13 UTC",
@@ -451,19 +200,7 @@
         "longitude": -90.2635
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862173,
-        "unix_time": 1771862173,
-        "timestamp_utc": "2026-02-23 15:56:13 UTC",
-        "altitude_m": 2635.9104,
-        "station": "N0YD-11",
-        "latitude": 38.490167,
-        "longitude": -90.2635
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862233,
         "unix_time": 1771862233,
         "timestamp_utc": "2026-02-23 15:57:13 UTC",
@@ -473,19 +210,7 @@
         "longitude": -90.262333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862233,
-        "unix_time": 1771862233,
-        "timestamp_utc": "2026-02-23 15:57:13 UTC",
-        "altitude_m": 2748.0768,
-        "station": "N0YD-11",
-        "latitude": 38.477333,
-        "longitude": -90.262333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862293,
         "unix_time": 1771862293,
         "timestamp_utc": "2026-02-23 15:58:13 UTC",
@@ -495,19 +220,7 @@
         "longitude": -90.261333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862293,
-        "unix_time": 1771862293,
-        "timestamp_utc": "2026-02-23 15:58:13 UTC",
-        "altitude_m": 2863.9008,
-        "station": "N0YD-11",
-        "latitude": 38.464167,
-        "longitude": -90.261333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862353,
         "unix_time": 1771862353,
         "timestamp_utc": "2026-02-23 15:59:13 UTC",
@@ -517,19 +230,7 @@
         "longitude": -90.259833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862353,
-        "unix_time": 1771862353,
-        "timestamp_utc": "2026-02-23 15:59:13 UTC",
-        "altitude_m": 2986.1256,
-        "station": "N0YD-11",
-        "latitude": 38.450333,
-        "longitude": -90.259833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862413,
         "unix_time": 1771862413,
         "timestamp_utc": "2026-02-23 16:00:13 UTC",
@@ -539,19 +240,7 @@
         "longitude": -90.258833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862413,
-        "unix_time": 1771862413,
-        "timestamp_utc": "2026-02-23 16:00:13 UTC",
-        "altitude_m": 3112.008,
-        "station": "N0YD-11",
-        "latitude": 38.436667,
-        "longitude": -90.258833
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862473,
         "unix_time": 1771862473,
         "timestamp_utc": "2026-02-23 16:01:13 UTC",
@@ -561,19 +250,7 @@
         "longitude": -90.256667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862473,
-        "unix_time": 1771862473,
-        "timestamp_utc": "2026-02-23 16:01:13 UTC",
-        "altitude_m": 3243.072,
-        "station": "N0YD-11",
-        "latitude": 38.422667,
-        "longitude": -90.256667
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862533,
         "unix_time": 1771862533,
         "timestamp_utc": "2026-02-23 16:02:13 UTC",
@@ -583,19 +260,7 @@
         "longitude": -90.254
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862533,
-        "unix_time": 1771862533,
-        "timestamp_utc": "2026-02-23 16:02:13 UTC",
-        "altitude_m": 3369.8688,
-        "station": "N0YD-11",
-        "latitude": 38.408667,
-        "longitude": -90.254
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862593,
         "unix_time": 1771862593,
         "timestamp_utc": "2026-02-23 16:03:13 UTC",
@@ -605,19 +270,7 @@
         "longitude": -90.251167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862593,
-        "unix_time": 1771862593,
-        "timestamp_utc": "2026-02-23 16:03:13 UTC",
-        "altitude_m": 3493.9224,
-        "station": "N0YD-11",
-        "latitude": 38.394833,
-        "longitude": -90.251167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862653,
         "unix_time": 1771862653,
         "timestamp_utc": "2026-02-23 16:04:13 UTC",
@@ -627,19 +280,7 @@
         "longitude": -90.249167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862653,
-        "unix_time": 1771862653,
-        "timestamp_utc": "2026-02-23 16:04:13 UTC",
-        "altitude_m": 3610.0512,
-        "station": "N0YD-11",
-        "latitude": 38.381,
-        "longitude": -90.249167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862713,
         "unix_time": 1771862713,
         "timestamp_utc": "2026-02-23 16:05:13 UTC",
@@ -649,19 +290,7 @@
         "longitude": -90.247167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862713,
-        "unix_time": 1771862713,
-        "timestamp_utc": "2026-02-23 16:05:13 UTC",
-        "altitude_m": 3716.1216,
-        "station": "N0YD-11",
-        "latitude": 38.366833,
-        "longitude": -90.247167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862773,
         "unix_time": 1771862773,
         "timestamp_utc": "2026-02-23 16:06:13 UTC",
@@ -671,19 +300,7 @@
         "longitude": -90.245333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862773,
-        "unix_time": 1771862773,
-        "timestamp_utc": "2026-02-23 16:06:13 UTC",
-        "altitude_m": 3816.096,
-        "station": "N0YD-11",
-        "latitude": 38.352833,
-        "longitude": -90.245333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862833,
         "unix_time": 1771862833,
         "timestamp_utc": "2026-02-23 16:07:13 UTC",
@@ -693,19 +310,7 @@
         "longitude": -90.243167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862833,
-        "unix_time": 1771862833,
-        "timestamp_utc": "2026-02-23 16:07:13 UTC",
-        "altitude_m": 3916.9848,
-        "station": "N0YD-11",
-        "latitude": 38.338833,
-        "longitude": -90.243167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862893,
         "unix_time": 1771862893,
         "timestamp_utc": "2026-02-23 16:08:13 UTC",
@@ -715,19 +320,7 @@
         "longitude": -90.241
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862893,
-        "unix_time": 1771862893,
-        "timestamp_utc": "2026-02-23 16:08:13 UTC",
-        "altitude_m": 4031.8944,
-        "station": "N0YD-11",
-        "latitude": 38.3245,
-        "longitude": -90.241
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771862953,
         "unix_time": 1771862953,
         "timestamp_utc": "2026-02-23 16:09:13 UTC",
@@ -737,19 +330,7 @@
         "longitude": -90.238333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771862953,
-        "unix_time": 1771862953,
-        "timestamp_utc": "2026-02-23 16:09:13 UTC",
-        "altitude_m": 4150.1568,
-        "station": "N0YD-11",
-        "latitude": 38.309833,
-        "longitude": -90.238333
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863013,
         "unix_time": 1771863013,
         "timestamp_utc": "2026-02-23 16:10:13 UTC",
@@ -759,19 +340,7 @@
         "longitude": -90.236167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771863013,
-        "unix_time": 1771863013,
-        "timestamp_utc": "2026-02-23 16:10:13 UTC",
-        "altitude_m": 4275.1248,
-        "station": "N0YD-11",
-        "latitude": 38.295167,
-        "longitude": -90.236167
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863073,
         "unix_time": 1771863073,
         "timestamp_utc": "2026-02-23 16:11:13 UTC",
@@ -781,19 +350,7 @@
         "longitude": -90.233
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
-        "source_time_unix": 1771863073,
-        "unix_time": 1771863073,
-        "timestamp_utc": "2026-02-23 16:11:13 UTC",
-        "altitude_m": 4418.9904,
-        "station": "N0YD-11",
-        "latitude": 38.279333,
-        "longitude": -90.233
-    },
-    {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863133,
         "unix_time": 1771863133,
         "timestamp_utc": "2026-02-23 16:12:13 UTC",
@@ -803,8 +360,7 @@
         "longitude": -90.228167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863193,
         "unix_time": 1771863193,
         "timestamp_utc": "2026-02-23 16:13:13 UTC",
@@ -814,8 +370,7 @@
         "longitude": -90.2225
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863253,
         "unix_time": 1771863253,
         "timestamp_utc": "2026-02-23 16:14:13 UTC",
@@ -825,8 +380,7 @@
         "longitude": -90.2165
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863313,
         "unix_time": 1771863313,
         "timestamp_utc": "2026-02-23 16:15:13 UTC",
@@ -836,8 +390,7 @@
         "longitude": -90.2115
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863373,
         "unix_time": 1771863373,
         "timestamp_utc": "2026-02-23 16:16:13 UTC",
@@ -847,8 +400,7 @@
         "longitude": -90.205167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863432,
         "unix_time": 1771863432,
         "timestamp_utc": "2026-02-23 16:17:12 UTC",
@@ -858,8 +410,7 @@
         "longitude": -90.198833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863493,
         "unix_time": 1771863493,
         "timestamp_utc": "2026-02-23 16:18:13 UTC",
@@ -869,8 +420,7 @@
         "longitude": -90.1935
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863553,
         "unix_time": 1771863553,
         "timestamp_utc": "2026-02-23 16:19:13 UTC",
@@ -880,8 +430,7 @@
         "longitude": -90.189167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863613,
         "unix_time": 1771863613,
         "timestamp_utc": "2026-02-23 16:20:13 UTC",
@@ -891,8 +440,7 @@
         "longitude": -90.184333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863673,
         "unix_time": 1771863673,
         "timestamp_utc": "2026-02-23 16:21:13 UTC",
@@ -902,8 +450,7 @@
         "longitude": -90.1805
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863733,
         "unix_time": 1771863733,
         "timestamp_utc": "2026-02-23 16:22:13 UTC",
@@ -913,8 +460,7 @@
         "longitude": -90.177167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863793,
         "unix_time": 1771863793,
         "timestamp_utc": "2026-02-23 16:23:13 UTC",
@@ -924,8 +470,7 @@
         "longitude": -90.1725
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863853,
         "unix_time": 1771863853,
         "timestamp_utc": "2026-02-23 16:24:13 UTC",
@@ -935,8 +480,7 @@
         "longitude": -90.167667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863913,
         "unix_time": 1771863913,
         "timestamp_utc": "2026-02-23 16:25:13 UTC",
@@ -946,8 +490,7 @@
         "longitude": -90.162
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771863973,
         "unix_time": 1771863973,
         "timestamp_utc": "2026-02-23 16:26:13 UTC",
@@ -957,8 +500,7 @@
         "longitude": -90.1565
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864033,
         "unix_time": 1771864033,
         "timestamp_utc": "2026-02-23 16:27:13 UTC",
@@ -968,8 +510,7 @@
         "longitude": -90.151167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864093,
         "unix_time": 1771864093,
         "timestamp_utc": "2026-02-23 16:28:13 UTC",
@@ -979,8 +520,7 @@
         "longitude": -90.145667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864153,
         "unix_time": 1771864153,
         "timestamp_utc": "2026-02-23 16:29:13 UTC",
@@ -990,8 +530,7 @@
         "longitude": -90.140167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864213,
         "unix_time": 1771864213,
         "timestamp_utc": "2026-02-23 16:30:13 UTC",
@@ -1001,8 +540,7 @@
         "longitude": -90.134667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864273,
         "unix_time": 1771864273,
         "timestamp_utc": "2026-02-23 16:31:13 UTC",
@@ -1012,8 +550,7 @@
         "longitude": -90.128833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864333,
         "unix_time": 1771864333,
         "timestamp_utc": "2026-02-23 16:32:13 UTC",
@@ -1023,8 +560,7 @@
         "longitude": -90.122833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864393,
         "unix_time": 1771864393,
         "timestamp_utc": "2026-02-23 16:33:13 UTC",
@@ -1034,8 +570,7 @@
         "longitude": -90.117
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864453,
         "unix_time": 1771864453,
         "timestamp_utc": "2026-02-23 16:34:13 UTC",
@@ -1045,8 +580,7 @@
         "longitude": -90.1105
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864513,
         "unix_time": 1771864513,
         "timestamp_utc": "2026-02-23 16:35:13 UTC",
@@ -1056,8 +590,7 @@
         "longitude": -90.102833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864573,
         "unix_time": 1771864573,
         "timestamp_utc": "2026-02-23 16:36:13 UTC",
@@ -1067,8 +600,7 @@
         "longitude": -90.094
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864633,
         "unix_time": 1771864633,
         "timestamp_utc": "2026-02-23 16:37:13 UTC",
@@ -1078,8 +610,7 @@
         "longitude": -90.084167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864693,
         "unix_time": 1771864693,
         "timestamp_utc": "2026-02-23 16:38:13 UTC",
@@ -1089,8 +620,7 @@
         "longitude": -90.074833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864753,
         "unix_time": 1771864753,
         "timestamp_utc": "2026-02-23 16:39:13 UTC",
@@ -1100,8 +630,7 @@
         "longitude": -90.0655
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864813,
         "unix_time": 1771864813,
         "timestamp_utc": "2026-02-23 16:40:13 UTC",
@@ -1111,8 +640,7 @@
         "longitude": -90.0555
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864873,
         "unix_time": 1771864873,
         "timestamp_utc": "2026-02-23 16:41:13 UTC",
@@ -1122,8 +650,7 @@
         "longitude": -90.045
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864933,
         "unix_time": 1771864933,
         "timestamp_utc": "2026-02-23 16:42:13 UTC",
@@ -1133,8 +660,7 @@
         "longitude": -90.031333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771864993,
         "unix_time": 1771864993,
         "timestamp_utc": "2026-02-23 16:43:13 UTC",
@@ -1144,8 +670,7 @@
         "longitude": -90.016833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865053,
         "unix_time": 1771865053,
         "timestamp_utc": "2026-02-23 16:44:13 UTC",
@@ -1155,8 +680,7 @@
         "longitude": -90.002
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865113,
         "unix_time": 1771865113,
         "timestamp_utc": "2026-02-23 16:45:13 UTC",
@@ -1166,8 +690,7 @@
         "longitude": -89.988167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865173,
         "unix_time": 1771865173,
         "timestamp_utc": "2026-02-23 16:46:13 UTC",
@@ -1177,8 +700,7 @@
         "longitude": -89.974167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865233,
         "unix_time": 1771865233,
         "timestamp_utc": "2026-02-23 16:47:13 UTC",
@@ -1188,8 +710,7 @@
         "longitude": -89.958833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865293,
         "unix_time": 1771865293,
         "timestamp_utc": "2026-02-23 16:48:13 UTC",
@@ -1199,8 +720,7 @@
         "longitude": -89.9435
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865353,
         "unix_time": 1771865353,
         "timestamp_utc": "2026-02-23 16:49:13 UTC",
@@ -1210,8 +730,7 @@
         "longitude": -89.928667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865413,
         "unix_time": 1771865413,
         "timestamp_utc": "2026-02-23 16:50:13 UTC",
@@ -1221,8 +740,7 @@
         "longitude": -89.913333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865473,
         "unix_time": 1771865473,
         "timestamp_utc": "2026-02-23 16:51:13 UTC",
@@ -1232,8 +750,7 @@
         "longitude": -89.897667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865533,
         "unix_time": 1771865533,
         "timestamp_utc": "2026-02-23 16:52:13 UTC",
@@ -1243,8 +760,7 @@
         "longitude": -89.882167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865593,
         "unix_time": 1771865593,
         "timestamp_utc": "2026-02-23 16:53:13 UTC",
@@ -1254,8 +770,7 @@
         "longitude": -89.8675
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865653,
         "unix_time": 1771865653,
         "timestamp_utc": "2026-02-23 16:54:13 UTC",
@@ -1265,8 +780,7 @@
         "longitude": -89.851833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865713,
         "unix_time": 1771865713,
         "timestamp_utc": "2026-02-23 16:55:13 UTC",
@@ -1276,8 +790,7 @@
         "longitude": -89.834333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865773,
         "unix_time": 1771865773,
         "timestamp_utc": "2026-02-23 16:56:13 UTC",
@@ -1287,8 +800,7 @@
         "longitude": -89.8175
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865833,
         "unix_time": 1771865833,
         "timestamp_utc": "2026-02-23 16:57:13 UTC",
@@ -1298,8 +810,7 @@
         "longitude": -89.801833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865893,
         "unix_time": 1771865893,
         "timestamp_utc": "2026-02-23 16:58:13 UTC",
@@ -1309,8 +820,7 @@
         "longitude": -89.786333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771865953,
         "unix_time": 1771865953,
         "timestamp_utc": "2026-02-23 16:59:13 UTC",
@@ -1320,8 +830,7 @@
         "longitude": -89.77
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866013,
         "unix_time": 1771866013,
         "timestamp_utc": "2026-02-23 17:00:13 UTC",
@@ -1331,8 +840,7 @@
         "longitude": -89.753667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866073,
         "unix_time": 1771866073,
         "timestamp_utc": "2026-02-23 17:01:13 UTC",
@@ -1342,8 +850,7 @@
         "longitude": -89.738333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866133,
         "unix_time": 1771866133,
         "timestamp_utc": "2026-02-23 17:02:13 UTC",
@@ -1353,8 +860,7 @@
         "longitude": -89.722667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866193,
         "unix_time": 1771866193,
         "timestamp_utc": "2026-02-23 17:03:13 UTC",
@@ -1364,8 +870,7 @@
         "longitude": -89.706
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866253,
         "unix_time": 1771866253,
         "timestamp_utc": "2026-02-23 17:04:13 UTC",
@@ -1375,8 +880,7 @@
         "longitude": -89.687667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866313,
         "unix_time": 1771866313,
         "timestamp_utc": "2026-02-23 17:05:13 UTC",
@@ -1386,8 +890,7 @@
         "longitude": -89.668
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866373,
         "unix_time": 1771866373,
         "timestamp_utc": "2026-02-23 17:06:13 UTC",
@@ -1397,8 +900,7 @@
         "longitude": -89.648
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866433,
         "unix_time": 1771866433,
         "timestamp_utc": "2026-02-23 17:07:13 UTC",
@@ -1408,8 +910,7 @@
         "longitude": -89.6305
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866493,
         "unix_time": 1771866493,
         "timestamp_utc": "2026-02-23 17:08:13 UTC",
@@ -1419,8 +920,7 @@
         "longitude": -89.612667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866553,
         "unix_time": 1771866553,
         "timestamp_utc": "2026-02-23 17:09:13 UTC",
@@ -1430,8 +930,7 @@
         "longitude": -89.593167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866613,
         "unix_time": 1771866613,
         "timestamp_utc": "2026-02-23 17:10:13 UTC",
@@ -1441,8 +940,7 @@
         "longitude": -89.576
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866673,
         "unix_time": 1771866673,
         "timestamp_utc": "2026-02-23 17:11:13 UTC",
@@ -1452,8 +950,7 @@
         "longitude": -89.558667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866733,
         "unix_time": 1771866733,
         "timestamp_utc": "2026-02-23 17:12:13 UTC",
@@ -1463,8 +960,7 @@
         "longitude": -89.540167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866793,
         "unix_time": 1771866793,
         "timestamp_utc": "2026-02-23 17:13:13 UTC",
@@ -1474,8 +970,7 @@
         "longitude": -89.520167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866853,
         "unix_time": 1771866853,
         "timestamp_utc": "2026-02-23 17:14:13 UTC",
@@ -1485,8 +980,7 @@
         "longitude": -89.501167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866913,
         "unix_time": 1771866913,
         "timestamp_utc": "2026-02-23 17:15:13 UTC",
@@ -1496,8 +990,7 @@
         "longitude": -89.481667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771866973,
         "unix_time": 1771866973,
         "timestamp_utc": "2026-02-23 17:16:13 UTC",
@@ -1507,8 +1000,7 @@
         "longitude": -89.461167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867033,
         "unix_time": 1771867033,
         "timestamp_utc": "2026-02-23 17:17:13 UTC",
@@ -1518,8 +1010,7 @@
         "longitude": -89.442167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867093,
         "unix_time": 1771867093,
         "timestamp_utc": "2026-02-23 17:18:13 UTC",
@@ -1529,8 +1020,7 @@
         "longitude": -89.424667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867153,
         "unix_time": 1771867153,
         "timestamp_utc": "2026-02-23 17:19:13 UTC",
@@ -1540,8 +1030,7 @@
         "longitude": -89.409333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867213,
         "unix_time": 1771867213,
         "timestamp_utc": "2026-02-23 17:20:13 UTC",
@@ -1551,8 +1040,7 @@
         "longitude": -89.395
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867273,
         "unix_time": 1771867273,
         "timestamp_utc": "2026-02-23 17:21:13 UTC",
@@ -1562,8 +1050,7 @@
         "longitude": -89.381
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867333,
         "unix_time": 1771867333,
         "timestamp_utc": "2026-02-23 17:22:13 UTC",
@@ -1573,8 +1060,7 @@
         "longitude": -89.367167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867393,
         "unix_time": 1771867393,
         "timestamp_utc": "2026-02-23 17:23:13 UTC",
@@ -1584,8 +1070,7 @@
         "longitude": -89.3525
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867453,
         "unix_time": 1771867453,
         "timestamp_utc": "2026-02-23 17:24:13 UTC",
@@ -1595,8 +1080,7 @@
         "longitude": -89.339333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867513,
         "unix_time": 1771867513,
         "timestamp_utc": "2026-02-23 17:25:13 UTC",
@@ -1606,8 +1090,7 @@
         "longitude": -89.325667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867573,
         "unix_time": 1771867573,
         "timestamp_utc": "2026-02-23 17:26:13 UTC",
@@ -1617,8 +1100,7 @@
         "longitude": -89.309833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867633,
         "unix_time": 1771867633,
         "timestamp_utc": "2026-02-23 17:27:13 UTC",
@@ -1628,8 +1110,7 @@
         "longitude": -89.292667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867693,
         "unix_time": 1771867693,
         "timestamp_utc": "2026-02-23 17:28:13 UTC",
@@ -1639,8 +1120,7 @@
         "longitude": -89.276333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867711,
         "unix_time": 1771867711,
         "timestamp_utc": "2026-02-23 17:28:31 UTC",
@@ -1650,8 +1130,7 @@
         "longitude": -89.292667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867753,
         "unix_time": 1771867753,
         "timestamp_utc": "2026-02-23 17:29:13 UTC",
@@ -1661,8 +1140,7 @@
         "longitude": -89.263833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867813,
         "unix_time": 1771867813,
         "timestamp_utc": "2026-02-23 17:30:13 UTC",
@@ -1672,8 +1150,7 @@
         "longitude": -89.2525
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867873,
         "unix_time": 1771867873,
         "timestamp_utc": "2026-02-23 17:31:13 UTC",
@@ -1683,8 +1160,7 @@
         "longitude": -89.2415
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867933,
         "unix_time": 1771867933,
         "timestamp_utc": "2026-02-23 17:32:13 UTC",
@@ -1694,8 +1170,7 @@
         "longitude": -89.228833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771867993,
         "unix_time": 1771867993,
         "timestamp_utc": "2026-02-23 17:33:13 UTC",
@@ -1705,8 +1180,7 @@
         "longitude": -89.214667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868053,
         "unix_time": 1771868053,
         "timestamp_utc": "2026-02-23 17:34:13 UTC",
@@ -1716,8 +1190,7 @@
         "longitude": -89.2015
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868113,
         "unix_time": 1771868113,
         "timestamp_utc": "2026-02-23 17:35:13 UTC",
@@ -1727,8 +1200,7 @@
         "longitude": -89.191667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868173,
         "unix_time": 1771868173,
         "timestamp_utc": "2026-02-23 17:36:13 UTC",
@@ -1738,8 +1210,7 @@
         "longitude": -89.183
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868233,
         "unix_time": 1771868233,
         "timestamp_utc": "2026-02-23 17:37:13 UTC",
@@ -1749,8 +1220,7 @@
         "longitude": -89.173333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868293,
         "unix_time": 1771868293,
         "timestamp_utc": "2026-02-23 17:38:13 UTC",
@@ -1760,8 +1230,7 @@
         "longitude": -89.162
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868353,
         "unix_time": 1771868353,
         "timestamp_utc": "2026-02-23 17:39:13 UTC",
@@ -1771,8 +1240,7 @@
         "longitude": -89.1505
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868413,
         "unix_time": 1771868413,
         "timestamp_utc": "2026-02-23 17:40:13 UTC",
@@ -1782,8 +1250,7 @@
         "longitude": -89.140333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868473,
         "unix_time": 1771868473,
         "timestamp_utc": "2026-02-23 17:41:13 UTC",
@@ -1793,8 +1260,7 @@
         "longitude": -89.129167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868533,
         "unix_time": 1771868533,
         "timestamp_utc": "2026-02-23 17:42:13 UTC",
@@ -1804,8 +1270,7 @@
         "longitude": -89.117833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868593,
         "unix_time": 1771868593,
         "timestamp_utc": "2026-02-23 17:43:13 UTC",
@@ -1815,8 +1280,7 @@
         "longitude": -89.107167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868653,
         "unix_time": 1771868653,
         "timestamp_utc": "2026-02-23 17:44:13 UTC",
@@ -1826,8 +1290,7 @@
         "longitude": -89.095833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868713,
         "unix_time": 1771868713,
         "timestamp_utc": "2026-02-23 17:45:13 UTC",
@@ -1837,8 +1300,7 @@
         "longitude": -89.087
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868756,
         "unix_time": 1771868756,
         "timestamp_utc": "2026-02-23 17:45:56 UTC",
@@ -1848,8 +1310,7 @@
         "longitude": -89.087
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868773,
         "unix_time": 1771868773,
         "timestamp_utc": "2026-02-23 17:46:13 UTC",
@@ -1859,8 +1320,7 @@
         "longitude": -89.078667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868833,
         "unix_time": 1771868833,
         "timestamp_utc": "2026-02-23 17:47:13 UTC",
@@ -1870,8 +1330,7 @@
         "longitude": -89.069333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868893,
         "unix_time": 1771868893,
         "timestamp_utc": "2026-02-23 17:48:13 UTC",
@@ -1881,8 +1340,7 @@
         "longitude": -89.0605
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771868953,
         "unix_time": 1771868953,
         "timestamp_utc": "2026-02-23 17:49:13 UTC",
@@ -1892,8 +1350,7 @@
         "longitude": -89.053333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869013,
         "unix_time": 1771869013,
         "timestamp_utc": "2026-02-23 17:50:13 UTC",
@@ -1903,8 +1360,7 @@
         "longitude": -89.0465
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869073,
         "unix_time": 1771869073,
         "timestamp_utc": "2026-02-23 17:51:13 UTC",
@@ -1914,8 +1370,7 @@
         "longitude": -89.0395
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869133,
         "unix_time": 1771869133,
         "timestamp_utc": "2026-02-23 17:52:13 UTC",
@@ -1925,8 +1380,7 @@
         "longitude": -89.034
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869193,
         "unix_time": 1771869193,
         "timestamp_utc": "2026-02-23 17:53:13 UTC",
@@ -1936,8 +1390,7 @@
         "longitude": -89.029
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869253,
         "unix_time": 1771869253,
         "timestamp_utc": "2026-02-23 17:54:13 UTC",
@@ -1947,8 +1400,7 @@
         "longitude": -89.025333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869313,
         "unix_time": 1771869313,
         "timestamp_utc": "2026-02-23 17:55:13 UTC",
@@ -1958,8 +1410,7 @@
         "longitude": -89.020833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869373,
         "unix_time": 1771869373,
         "timestamp_utc": "2026-02-23 17:56:13 UTC",
@@ -1969,8 +1420,7 @@
         "longitude": -89.0165
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869433,
         "unix_time": 1771869433,
         "timestamp_utc": "2026-02-23 17:57:13 UTC",
@@ -1980,8 +1430,7 @@
         "longitude": -89.014333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869493,
         "unix_time": 1771869493,
         "timestamp_utc": "2026-02-23 17:58:13 UTC",
@@ -1991,8 +1440,7 @@
         "longitude": -89.014333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869523,
         "unix_time": 1771869523,
         "timestamp_utc": "2026-02-23 17:58:43 UTC",
@@ -2002,8 +1450,7 @@
         "longitude": -89.014333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869553,
         "unix_time": 1771869553,
         "timestamp_utc": "2026-02-23 17:59:13 UTC",
@@ -2013,8 +1460,7 @@
         "longitude": -89.0155
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869613,
         "unix_time": 1771869613,
         "timestamp_utc": "2026-02-23 18:00:13 UTC",
@@ -2024,8 +1470,7 @@
         "longitude": -89.016833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869661,
         "unix_time": 1771869661,
         "timestamp_utc": "2026-02-23 18:01:01 UTC",
@@ -2035,8 +1480,7 @@
         "longitude": -89.016833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869673,
         "unix_time": 1771869673,
         "timestamp_utc": "2026-02-23 18:01:13 UTC",
@@ -2046,8 +1490,7 @@
         "longitude": -89.019667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869733,
         "unix_time": 1771869733,
         "timestamp_utc": "2026-02-23 18:02:13 UTC",
@@ -2057,8 +1500,7 @@
         "longitude": -89.020333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869793,
         "unix_time": 1771869793,
         "timestamp_utc": "2026-02-23 18:03:13 UTC",
@@ -2068,8 +1510,7 @@
         "longitude": -89.0185
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869853,
         "unix_time": 1771869853,
         "timestamp_utc": "2026-02-23 18:04:13 UTC",
@@ -2079,8 +1520,7 @@
         "longitude": -89.016833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869913,
         "unix_time": 1771869913,
         "timestamp_utc": "2026-02-23 18:05:13 UTC",
@@ -2090,8 +1530,7 @@
         "longitude": -89.016
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771869973,
         "unix_time": 1771869973,
         "timestamp_utc": "2026-02-23 18:06:13 UTC",
@@ -2101,8 +1540,7 @@
         "longitude": -89.015833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870033,
         "unix_time": 1771870033,
         "timestamp_utc": "2026-02-23 18:07:13 UTC",
@@ -2112,8 +1550,7 @@
         "longitude": -89.016
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870093,
         "unix_time": 1771870093,
         "timestamp_utc": "2026-02-23 18:08:13 UTC",
@@ -2123,8 +1560,7 @@
         "longitude": -89.016167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870153,
         "unix_time": 1771870153,
         "timestamp_utc": "2026-02-23 18:09:13 UTC",
@@ -2134,8 +1570,7 @@
         "longitude": -89.013667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870213,
         "unix_time": 1771870213,
         "timestamp_utc": "2026-02-23 18:10:13 UTC",
@@ -2145,8 +1580,7 @@
         "longitude": -89.012333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870273,
         "unix_time": 1771870273,
         "timestamp_utc": "2026-02-23 18:11:13 UTC",
@@ -2156,8 +1590,7 @@
         "longitude": -89.011833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870333,
         "unix_time": 1771870333,
         "timestamp_utc": "2026-02-23 18:12:13 UTC",
@@ -2167,8 +1600,7 @@
         "longitude": -89.013667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870393,
         "unix_time": 1771870393,
         "timestamp_utc": "2026-02-23 18:13:13 UTC",
@@ -2178,8 +1610,7 @@
         "longitude": -89.0145
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870453,
         "unix_time": 1771870453,
         "timestamp_utc": "2026-02-23 18:14:13 UTC",
@@ -2189,8 +1620,7 @@
         "longitude": -89.015833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870513,
         "unix_time": 1771870513,
         "timestamp_utc": "2026-02-23 18:15:13 UTC",
@@ -2200,8 +1630,7 @@
         "longitude": -89.017333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870573,
         "unix_time": 1771870573,
         "timestamp_utc": "2026-02-23 18:16:13 UTC",
@@ -2211,8 +1640,7 @@
         "longitude": -89.018833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870633,
         "unix_time": 1771870633,
         "timestamp_utc": "2026-02-23 18:17:13 UTC",
@@ -2222,8 +1650,7 @@
         "longitude": -89.022333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870693,
         "unix_time": 1771870693,
         "timestamp_utc": "2026-02-23 18:18:13 UTC",
@@ -2233,8 +1660,7 @@
         "longitude": -89.026333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870753,
         "unix_time": 1771870753,
         "timestamp_utc": "2026-02-23 18:19:13 UTC",
@@ -2244,8 +1670,7 @@
         "longitude": -89.03
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870813,
         "unix_time": 1771870813,
         "timestamp_utc": "2026-02-23 18:20:13 UTC",
@@ -2255,8 +1680,7 @@
         "longitude": -89.0345
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870873,
         "unix_time": 1771870873,
         "timestamp_utc": "2026-02-23 18:21:13 UTC",
@@ -2266,8 +1690,7 @@
         "longitude": -89.037333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870933,
         "unix_time": 1771870933,
         "timestamp_utc": "2026-02-23 18:22:13 UTC",
@@ -2277,8 +1700,7 @@
         "longitude": -89.039167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771870993,
         "unix_time": 1771870993,
         "timestamp_utc": "2026-02-23 18:23:13 UTC",
@@ -2288,8 +1710,7 @@
         "longitude": -89.040833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871053,
         "unix_time": 1771871053,
         "timestamp_utc": "2026-02-23 18:24:13 UTC",
@@ -2299,8 +1720,7 @@
         "longitude": -89.041667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871113,
         "unix_time": 1771871113,
         "timestamp_utc": "2026-02-23 18:25:13 UTC",
@@ -2310,8 +1730,7 @@
         "longitude": -89.045
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871173,
         "unix_time": 1771871173,
         "timestamp_utc": "2026-02-23 18:26:13 UTC",
@@ -2321,8 +1740,7 @@
         "longitude": -89.048167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871233,
         "unix_time": 1771871233,
         "timestamp_utc": "2026-02-23 18:27:13 UTC",
@@ -2332,8 +1750,7 @@
         "longitude": -89.050833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871293,
         "unix_time": 1771871293,
         "timestamp_utc": "2026-02-23 18:28:13 UTC",
@@ -2343,8 +1760,7 @@
         "longitude": -89.054
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871353,
         "unix_time": 1771871353,
         "timestamp_utc": "2026-02-23 18:29:13 UTC",
@@ -2354,8 +1770,7 @@
         "longitude": -89.057667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871413,
         "unix_time": 1771871413,
         "timestamp_utc": "2026-02-23 18:30:13 UTC",
@@ -2365,8 +1780,7 @@
         "longitude": -89.0625
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871473,
         "unix_time": 1771871473,
         "timestamp_utc": "2026-02-23 18:31:13 UTC",
@@ -2376,8 +1790,7 @@
         "longitude": -89.066667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871533,
         "unix_time": 1771871533,
         "timestamp_utc": "2026-02-23 18:32:13 UTC",
@@ -2387,8 +1800,7 @@
         "longitude": -89.07
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871593,
         "unix_time": 1771871593,
         "timestamp_utc": "2026-02-23 18:33:13 UTC",
@@ -2398,8 +1810,7 @@
         "longitude": -89.075333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871653,
         "unix_time": 1771871653,
         "timestamp_utc": "2026-02-23 18:34:13 UTC",
@@ -2409,8 +1820,7 @@
         "longitude": -89.081167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871713,
         "unix_time": 1771871713,
         "timestamp_utc": "2026-02-23 18:35:13 UTC",
@@ -2420,8 +1830,7 @@
         "longitude": -89.0875
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871773,
         "unix_time": 1771871773,
         "timestamp_utc": "2026-02-23 18:36:13 UTC",
@@ -2431,8 +1840,7 @@
         "longitude": -89.093333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871833,
         "unix_time": 1771871833,
         "timestamp_utc": "2026-02-23 18:37:13 UTC",
@@ -2442,8 +1850,7 @@
         "longitude": -89.098
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871892,
         "unix_time": 1771871892,
         "timestamp_utc": "2026-02-23 18:38:12 UTC",
@@ -2453,8 +1860,7 @@
         "longitude": -89.102667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771871952,
         "unix_time": 1771871952,
         "timestamp_utc": "2026-02-23 18:39:12 UTC",
@@ -2464,8 +1870,7 @@
         "longitude": -89.1075
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872012,
         "unix_time": 1771872012,
         "timestamp_utc": "2026-02-23 18:40:12 UTC",
@@ -2475,8 +1880,7 @@
         "longitude": -89.1125
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872072,
         "unix_time": 1771872072,
         "timestamp_utc": "2026-02-23 18:41:12 UTC",
@@ -2486,8 +1890,7 @@
         "longitude": -89.116833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872132,
         "unix_time": 1771872132,
         "timestamp_utc": "2026-02-23 18:42:12 UTC",
@@ -2497,8 +1900,7 @@
         "longitude": -89.119333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872192,
         "unix_time": 1771872192,
         "timestamp_utc": "2026-02-23 18:43:12 UTC",
@@ -2508,8 +1910,7 @@
         "longitude": -89.122
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872252,
         "unix_time": 1771872252,
         "timestamp_utc": "2026-02-23 18:44:12 UTC",
@@ -2519,8 +1920,7 @@
         "longitude": -89.1255
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872312,
         "unix_time": 1771872312,
         "timestamp_utc": "2026-02-23 18:45:12 UTC",
@@ -2530,8 +1930,7 @@
         "longitude": -89.1295
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872372,
         "unix_time": 1771872372,
         "timestamp_utc": "2026-02-23 18:46:12 UTC",
@@ -2541,8 +1940,7 @@
         "longitude": -89.133167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872432,
         "unix_time": 1771872432,
         "timestamp_utc": "2026-02-23 18:47:12 UTC",
@@ -2552,8 +1950,7 @@
         "longitude": -89.137833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872492,
         "unix_time": 1771872492,
         "timestamp_utc": "2026-02-23 18:48:12 UTC",
@@ -2563,8 +1960,7 @@
         "longitude": -89.1425
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872551,
         "unix_time": 1771872551,
         "timestamp_utc": "2026-02-23 18:49:11 UTC",
@@ -2574,8 +1970,7 @@
         "longitude": -89.147667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872594,
         "unix_time": 1771872594,
         "timestamp_utc": "2026-02-23 18:49:54 UTC",
@@ -2585,8 +1980,7 @@
         "longitude": -89.147667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872612,
         "unix_time": 1771872612,
         "timestamp_utc": "2026-02-23 18:50:12 UTC",
@@ -2596,8 +1990,7 @@
         "longitude": -89.152667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872672,
         "unix_time": 1771872672,
         "timestamp_utc": "2026-02-23 18:51:12 UTC",
@@ -2607,8 +2000,7 @@
         "longitude": -89.157833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872732,
         "unix_time": 1771872732,
         "timestamp_utc": "2026-02-23 18:52:12 UTC",
@@ -2618,8 +2010,7 @@
         "longitude": -89.162667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872792,
         "unix_time": 1771872792,
         "timestamp_utc": "2026-02-23 18:53:12 UTC",
@@ -2629,8 +2020,7 @@
         "longitude": -89.167333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872852,
         "unix_time": 1771872852,
         "timestamp_utc": "2026-02-23 18:54:12 UTC",
@@ -2640,8 +2030,7 @@
         "longitude": -89.172833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872912,
         "unix_time": 1771872912,
         "timestamp_utc": "2026-02-23 18:55:12 UTC",
@@ -2651,8 +2040,7 @@
         "longitude": -89.178333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771872972,
         "unix_time": 1771872972,
         "timestamp_utc": "2026-02-23 18:56:12 UTC",
@@ -2662,8 +2050,7 @@
         "longitude": -89.182667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873031,
         "unix_time": 1771873031,
         "timestamp_utc": "2026-02-23 18:57:11 UTC",
@@ -2673,8 +2060,7 @@
         "longitude": -89.186833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873092,
         "unix_time": 1771873092,
         "timestamp_utc": "2026-02-23 18:58:12 UTC",
@@ -2684,8 +2070,7 @@
         "longitude": -89.190667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873152,
         "unix_time": 1771873152,
         "timestamp_utc": "2026-02-23 18:59:12 UTC",
@@ -2695,8 +2080,7 @@
         "longitude": -89.193833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873212,
         "unix_time": 1771873212,
         "timestamp_utc": "2026-02-23 19:00:12 UTC",
@@ -2706,8 +2090,7 @@
         "longitude": -89.197833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873272,
         "unix_time": 1771873272,
         "timestamp_utc": "2026-02-23 19:01:12 UTC",
@@ -2717,8 +2100,7 @@
         "longitude": -89.201833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873332,
         "unix_time": 1771873332,
         "timestamp_utc": "2026-02-23 19:02:12 UTC",
@@ -2728,8 +2110,7 @@
         "longitude": -89.205833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873392,
         "unix_time": 1771873392,
         "timestamp_utc": "2026-02-23 19:03:12 UTC",
@@ -2739,8 +2120,7 @@
         "longitude": -89.2105
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873452,
         "unix_time": 1771873452,
         "timestamp_utc": "2026-02-23 19:04:12 UTC",
@@ -2750,8 +2130,7 @@
         "longitude": -89.221167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873512,
         "unix_time": 1771873512,
         "timestamp_utc": "2026-02-23 19:05:12 UTC",
@@ -2761,8 +2140,7 @@
         "longitude": -89.227667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873572,
         "unix_time": 1771873572,
         "timestamp_utc": "2026-02-23 19:06:12 UTC",
@@ -2772,8 +2150,7 @@
         "longitude": -89.229833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873632,
         "unix_time": 1771873632,
         "timestamp_utc": "2026-02-23 19:07:12 UTC",
@@ -2783,8 +2160,7 @@
         "longitude": -89.2285
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873692,
         "unix_time": 1771873692,
         "timestamp_utc": "2026-02-23 19:08:12 UTC",
@@ -2794,8 +2170,7 @@
         "longitude": -89.228
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873752,
         "unix_time": 1771873752,
         "timestamp_utc": "2026-02-23 19:09:12 UTC",
@@ -2805,8 +2180,7 @@
         "longitude": -89.226833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873812,
         "unix_time": 1771873812,
         "timestamp_utc": "2026-02-23 19:10:12 UTC",
@@ -2816,8 +2190,7 @@
         "longitude": -89.219333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771873999,
         "unix_time": 1771873999,
         "timestamp_utc": "2026-02-23 19:13:19 UTC",
@@ -2827,8 +2200,7 @@
         "longitude": -89.181667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874129,
         "unix_time": 1771874129,
         "timestamp_utc": "2026-02-23 19:15:29 UTC",
@@ -2838,8 +2210,7 @@
         "longitude": -89.152667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874255,
         "unix_time": 1771874255,
         "timestamp_utc": "2026-02-23 19:17:35 UTC",
@@ -2849,8 +2220,7 @@
         "longitude": -89.114
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874381,
         "unix_time": 1771874381,
         "timestamp_utc": "2026-02-23 19:19:41 UTC",
@@ -2860,8 +2230,7 @@
         "longitude": -89.077167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874506,
         "unix_time": 1771874506,
         "timestamp_utc": "2026-02-23 19:21:46 UTC",
@@ -2871,8 +2240,7 @@
         "longitude": -89.0405
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874633,
         "unix_time": 1771874633,
         "timestamp_utc": "2026-02-23 19:23:53 UTC",
@@ -2882,8 +2250,7 @@
         "longitude": -89.009167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874758,
         "unix_time": 1771874758,
         "timestamp_utc": "2026-02-23 19:25:58 UTC",
@@ -2893,8 +2260,7 @@
         "longitude": -88.974
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874814,
         "unix_time": 1771874814,
         "timestamp_utc": "2026-02-23 19:26:54 UTC",
@@ -2904,8 +2270,7 @@
         "longitude": -88.962833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771874874,
         "unix_time": 1771874874,
         "timestamp_utc": "2026-02-23 19:27:54 UTC",
@@ -2915,8 +2280,7 @@
         "longitude": -88.950667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875005,
         "unix_time": 1771875005,
         "timestamp_utc": "2026-02-23 19:30:05 UTC",
@@ -2926,8 +2290,7 @@
         "longitude": -88.931
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875060,
         "unix_time": 1771875060,
         "timestamp_utc": "2026-02-23 19:31:00 UTC",
@@ -2937,8 +2300,7 @@
         "longitude": -88.923167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875120,
         "unix_time": 1771875120,
         "timestamp_utc": "2026-02-23 19:32:00 UTC",
@@ -2948,8 +2310,7 @@
         "longitude": -88.915667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875180,
         "unix_time": 1771875180,
         "timestamp_utc": "2026-02-23 19:33:00 UTC",
@@ -2959,8 +2320,7 @@
         "longitude": -88.9085
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875240,
         "unix_time": 1771875240,
         "timestamp_utc": "2026-02-23 19:34:00 UTC",
@@ -2970,8 +2330,7 @@
         "longitude": -88.902
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875300,
         "unix_time": 1771875300,
         "timestamp_utc": "2026-02-23 19:35:00 UTC",
@@ -2981,8 +2340,7 @@
         "longitude": -88.897167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875360,
         "unix_time": 1771875360,
         "timestamp_utc": "2026-02-23 19:36:00 UTC",
@@ -2992,8 +2350,7 @@
         "longitude": -88.891833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875420,
         "unix_time": 1771875420,
         "timestamp_utc": "2026-02-23 19:37:00 UTC",
@@ -3003,8 +2360,7 @@
         "longitude": -88.886667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875423,
         "unix_time": 1771875423,
         "timestamp_utc": "2026-02-23 19:37:03 UTC",
@@ -3014,8 +2370,7 @@
         "longitude": -88.886667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875480,
         "unix_time": 1771875480,
         "timestamp_utc": "2026-02-23 19:38:00 UTC",
@@ -3025,8 +2380,7 @@
         "longitude": -88.878667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875540,
         "unix_time": 1771875540,
         "timestamp_utc": "2026-02-23 19:39:00 UTC",
@@ -3036,8 +2390,7 @@
         "longitude": -88.873167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875600,
         "unix_time": 1771875600,
         "timestamp_utc": "2026-02-23 19:40:00 UTC",
@@ -3047,8 +2400,7 @@
         "longitude": -88.868333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875660,
         "unix_time": 1771875660,
         "timestamp_utc": "2026-02-23 19:41:00 UTC",
@@ -3058,8 +2410,7 @@
         "longitude": -88.863833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875720,
         "unix_time": 1771875720,
         "timestamp_utc": "2026-02-23 19:42:00 UTC",
@@ -3069,8 +2420,7 @@
         "longitude": -88.859667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875780,
         "unix_time": 1771875780,
         "timestamp_utc": "2026-02-23 19:43:00 UTC",
@@ -3080,8 +2430,7 @@
         "longitude": -88.8555
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875840,
         "unix_time": 1771875840,
         "timestamp_utc": "2026-02-23 19:44:00 UTC",
@@ -3091,8 +2440,7 @@
         "longitude": -88.852333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875900,
         "unix_time": 1771875900,
         "timestamp_utc": "2026-02-23 19:45:00 UTC",
@@ -3102,8 +2450,7 @@
         "longitude": -88.850333
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771875960,
         "unix_time": 1771875960,
         "timestamp_utc": "2026-02-23 19:46:00 UTC",
@@ -3113,8 +2460,7 @@
         "longitude": -88.848667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876020,
         "unix_time": 1771876020,
         "timestamp_utc": "2026-02-23 19:47:00 UTC",
@@ -3124,8 +2470,7 @@
         "longitude": -88.847
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876080,
         "unix_time": 1771876080,
         "timestamp_utc": "2026-02-23 19:48:00 UTC",
@@ -3135,8 +2480,7 @@
         "longitude": -88.844833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876140,
         "unix_time": 1771876140,
         "timestamp_utc": "2026-02-23 19:49:00 UTC",
@@ -3146,8 +2490,7 @@
         "longitude": -88.844167
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876200,
         "unix_time": 1771876200,
         "timestamp_utc": "2026-02-23 19:50:00 UTC",
@@ -3157,8 +2500,7 @@
         "longitude": -88.844833
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876320,
         "unix_time": 1771876320,
         "timestamp_utc": "2026-02-23 19:52:00 UTC",
@@ -3168,8 +2510,7 @@
         "longitude": -88.842667
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876380,
         "unix_time": 1771876380,
         "timestamp_utc": "2026-02-23 19:53:00 UTC",
@@ -3179,8 +2520,7 @@
         "longitude": -88.8405
     },
     {
-        "source": "simulated",
-        "is_real_aprs": false,
+        "source": "aprs",
         "source_time_unix": 1771876500,
         "unix_time": 1771876500,
         "timestamp_utc": "2026-02-23 19:55:00 UTC",

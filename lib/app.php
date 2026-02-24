@@ -9,8 +9,11 @@ const CONFIG_FILE = DATA_DIR . '/config.json';
 const LAUNCHES_DIR = DATA_DIR . '/launches';
 const APRS_API_BASE = 'https://api.aprs.fi/api/get';
 const APRS_MIN_FETCH_SECONDS = 60;
+const SIMULATION_DEFAULT_FILE = 'aprs_simulation.json';
+const SIMULATION_DEFAULT_POLL_SECONDS = 5;
 const APP_DEFAULT_USER_AGENT = 'wxballoon-liveplot/1.0 (+http://localhost/wxballoon-liveplot)';
 
+/** Load key/value pairs from a .env file into process environment variables. */
 function load_dotenv_file(string $path): void
 {
     if (!is_file($path) || !is_readable($path)) {
@@ -51,6 +54,7 @@ function load_dotenv_file(string $path): void
     }
 }
 
+/** Return application config merged from env defaults and persisted overrides. */
 function app_config(): array
 {
     static $config = null;
@@ -89,6 +93,7 @@ function app_config(): array
     return $config;
 }
 
+/** Ensure required data directories and JSON files exist with safe defaults. */
 function ensure_data_files(): void
 {
     if (!is_dir(DATA_DIR)) {
@@ -103,6 +108,10 @@ function ensure_data_files(): void
         write_json_file(STATE_FILE, [
             'capture_enabled' => false,
             'browser_polling_enabled' => true,
+            'simulation_mode' => false,
+            'simulation_file' => SIMULATION_DEFAULT_FILE,
+            'simulation_poll_seconds' => SIMULATION_DEFAULT_POLL_SECONDS,
+            'simulation_next_index' => 0,
             'last_capture_attempt_unix' => null,
             'last_capture_success_unix' => null,
             'last_error' => null,
@@ -126,6 +135,7 @@ function ensure_data_files(): void
     }
 }
 
+/** Read JSON from disk and return a fallback value if unavailable or invalid. */
 function read_json_file(string $path, mixed $default): mixed
 {
     if (!file_exists($path)) {
@@ -141,6 +151,7 @@ function read_json_file(string $path, mixed $default): mixed
     return (json_last_error() === JSON_ERROR_NONE) ? $data : $default;
 }
 
+/** Atomically persist JSON to disk using a temporary file and rename swap. */
 function write_json_file(string $path, mixed $data): void
 {
     $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
@@ -158,6 +169,7 @@ function write_json_file(string $path, mixed $data): void
     }
 }
 
+/** Load saved configuration overrides from the config store. */
 function get_config_overrides(): array
 {
     ensure_data_files();
@@ -169,6 +181,7 @@ function get_config_overrides(): array
     return $config;
 }
 
+/** Merge and persist configuration overrides, then return the full result. */
 function update_config_overrides(array $patch): array
 {
     $config = array_merge(get_config_overrides(), $patch);
@@ -176,6 +189,7 @@ function update_config_overrides(array $patch): array
     return $config;
 }
 
+/** Return current-launch records sorted by unix timestamp ascending. */
 function get_records(): array
 {
     ensure_data_files();
@@ -188,6 +202,7 @@ function get_records(): array
     return $records;
 }
 
+/** Normalize and validate a launch ID for safe filename/path usage. */
 function normalize_launch_id(string $launchId): ?string
 {
     $id = strtolower(trim($launchId));
@@ -198,6 +213,7 @@ function normalize_launch_id(string $launchId): ?string
     return $id;
 }
 
+/** Load records for a specific historical launch ID. */
 function get_launch_records(string $launchId): ?array
 {
     ensure_data_files();
@@ -220,6 +236,7 @@ function get_launch_records(string $launchId): ?array
     return $records;
 }
 
+/** List available historical launches and lightweight metadata for each. */
 function list_launches(): array
 {
     ensure_data_files();
@@ -253,6 +270,7 @@ function list_launches(): array
     return $launches;
 }
 
+/** Convert APRS DDMM.MM/DDDMM.MM coordinate text to signed decimal degrees. */
 function aprs_coord_to_decimal(string $value, string $hemisphere): ?float
 {
     if (!preg_match('/^(\d{2,3})(\d{2}\.\d{2})$/', $value, $m)) {
@@ -270,6 +288,7 @@ function aprs_coord_to_decimal(string $value, string $hemisphere): ?float
     return round($decimal, 6);
 }
 
+/** Parse APRS latitude/longitude values from a raw packet text line. */
 function parse_aprs_lat_lon_from_raw_line(string $line): array
 {
     if (!preg_match('/!([0-9]{4}\.[0-9]{2})([NS])\/([0-9]{5}\.[0-9]{2})([EW])/', $line, $m)) {
@@ -281,6 +300,7 @@ function parse_aprs_lat_lon_from_raw_line(string $line): array
     return [$lat, $lon];
 }
 
+/** Parse packet timestamp from a raw APRS line and convert to Unix time. */
 function parse_aprs_timestamp_from_raw_line(string $line): ?int
 {
     if (!preg_match('/^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\s+([A-Z]{2,4}):\s+/', $line, $m)) {
@@ -304,6 +324,7 @@ function parse_aprs_timestamp_from_raw_line(string $line): ?int
     return $dt->getTimestamp();
 }
 
+/** Extract a station callsign from a raw APRS line, or use fallback station. */
 function parse_aprs_station_from_raw_line(string $line, string $fallbackStation): string
 {
     if (preg_match('/:\s*([A-Za-z0-9-]+)>/', $line, $m)) {
@@ -313,6 +334,7 @@ function parse_aprs_station_from_raw_line(string $line, string $fallbackStation)
     return $fallbackStation;
 }
 
+/** Parse multiline APRS paste text into normalized record objects with stats. */
 function parse_aprs_raw_text(string $inputText, string $fallbackStation): array
 {
     $text = trim($inputText);
@@ -392,6 +414,7 @@ function parse_aprs_raw_text(string $inputText, string $fallbackStation): array
     ];
 }
 
+/** Parse a CSV timestamp string in the provided timezone into Unix time. */
 function parse_csv_timestamp_value(string $value, string $timezone): ?int
 {
     $raw = trim($value);
@@ -407,6 +430,7 @@ function parse_csv_timestamp_value(string $value, string $timezone): ?int
     return $dt->getTimestamp();
 }
 
+/** Read a CSV file and return rows as lowercased associative arrays. */
 function read_csv_assoc_rows(string $path): array
 {
     $fh = fopen($path, 'rb');
@@ -438,6 +462,7 @@ function read_csv_assoc_rows(string $path): array
     return $rows;
 }
 
+/** Transform associative CSV rows into normalized launch record structures. */
 function parse_csv_launch_rows(array $rows, string $fallbackStation, string $timezone = 'UTC'): array
 {
     $records = [];
@@ -499,12 +524,14 @@ function parse_csv_launch_rows(array $rows, string $fallbackStation, string $tim
     ];
 }
 
+/** Import and parse a CSV launch file into normalized records. */
 function import_csv_launch_file(string $filePath, string $fallbackStation, string $timezone = 'UTC'): array
 {
     $rows = read_csv_assoc_rows($filePath);
     return parse_csv_launch_rows($rows, $fallbackStation, $timezone);
 }
 
+/** Convert a display launch name into a filesystem-safe slug. */
 function slugify_launch_name(string $name): string
 {
     $slug = strtolower(trim($name));
@@ -517,6 +544,7 @@ function slugify_launch_name(string $name): string
     return $slug;
 }
 
+/** Ensure the launch slug is unique by appending an incrementing suffix. */
 function unique_launch_id(string $baseSlug): string
 {
     $candidate = $baseSlug;
@@ -529,6 +557,7 @@ function unique_launch_id(string $baseSlug): string
     return $candidate;
 }
 
+/** Persist a new historical launch file and return its ID and path. */
 function create_launch_from_records(string $launchName, array $records): array
 {
     ensure_data_files();
@@ -544,6 +573,7 @@ function create_launch_from_records(string $launchName, array $records): array
     ];
 }
 
+/** Start the admin session if it is not already active. */
 function start_admin_session(): void
 {
     if (session_status() === PHP_SESSION_ACTIVE) {
@@ -554,17 +584,20 @@ function start_admin_session(): void
     session_start();
 }
 
+/** Return true when an admin password is configured. */
 function is_admin_password_configured(): bool
 {
     $config = app_config();
     return trim((string)($config['app_admin_password'] ?? '')) !== '';
 }
 
+/** Return true when an authenticated admin session is active. */
 function is_admin_authenticated(): bool
 {
     return is_admin_password_configured() && (bool)($_SESSION['is_admin'] ?? false);
 }
 
+/** Validate login password and mark the session as authenticated admin. */
 function attempt_admin_login(string $passwordInput): bool
 {
     $config = app_config();
@@ -581,6 +614,7 @@ function attempt_admin_login(string $passwordInput): bool
     return true;
 }
 
+/** Destroy admin session authentication state. */
 function admin_logout(): void
 {
     $_SESSION = [];
@@ -589,6 +623,7 @@ function admin_logout(): void
     }
 }
 
+/** Append one record to current launch data and keep records time-sorted. */
 function add_record(array $record): void
 {
     ensure_data_files();
@@ -602,7 +637,32 @@ function add_record(array $record): void
     write_json_file(RECORDS_FILE, $records);
 }
 
-function delete_records_by_source_time(string $source, int $sourceTimeUnix): int
+/** Return true when a record should be treated as protected real APRS data. */
+function is_real_aprs_record(array $record): bool
+{
+    if (array_key_exists('is_real_aprs', $record)) {
+        return (bool)$record['is_real_aprs'];
+    }
+
+    $source = trim((string)($record['source'] ?? ''));
+    return in_array($source, ['aprs', 'imported_aprs_raw'], true);
+}
+
+/** Find one record by source and source timestamp key. */
+function get_record_by_source_time(string $source, int $sourceTimeUnix): ?array
+{
+    $records = get_records();
+    foreach ($records as $record) {
+        if (($record['source'] ?? '') === $source && (int)($record['source_time_unix'] ?? -1) === $sourceTimeUnix) {
+            return $record;
+        }
+    }
+
+    return null;
+}
+
+/** Delete matching records unless protected APRS records are disallowed. */
+function delete_records_by_source_time(string $source, int $sourceTimeUnix, bool $allowProtectedDelete = false): int
 {
     ensure_data_files();
     $records = read_json_file(RECORDS_FILE, []);
@@ -611,8 +671,17 @@ function delete_records_by_source_time(string $source, int $sourceTimeUnix): int
     }
 
     $before = count($records);
-    $records = array_values(array_filter($records, static function (array $record) use ($source, $sourceTimeUnix): bool {
-        return !(($record['source'] ?? '') === $source && (int)($record['source_time_unix'] ?? -1) === $sourceTimeUnix);
+    $records = array_values(array_filter($records, static function (array $record) use ($source, $sourceTimeUnix, $allowProtectedDelete): bool {
+        $isMatch = (($record['source'] ?? '') === $source && (int)($record['source_time_unix'] ?? -1) === $sourceTimeUnix);
+        if (!$isMatch) {
+            return true;
+        }
+
+        if (!$allowProtectedDelete && is_real_aprs_record($record)) {
+            return true;
+        }
+
+        return false;
     }));
 
     $deleted = $before - count($records);
@@ -624,6 +693,7 @@ function delete_records_by_source_time(string $source, int $sourceTimeUnix): int
     return $deleted;
 }
 
+/** Check whether a record already exists by source and source timestamp key. */
 function record_exists_by_source_time(string $source, int $sourceTimeUnix): bool
 {
     $records = get_records();
@@ -636,6 +706,33 @@ function record_exists_by_source_time(string $source, int $sourceTimeUnix): bool
     return false;
 }
 
+/** Clear current-launch records, optionally preserving protected real APRS rows. */
+function clear_current_records(bool $preserveRealAprs = true): array
+{
+    ensure_data_files();
+    $records = read_json_file(RECORDS_FILE, []);
+    if (!is_array($records)) {
+        write_json_file(RECORDS_FILE, []);
+        return ['deleted' => 0, 'kept' => 0];
+    }
+
+    if (!$preserveRealAprs) {
+        $deleted = count($records);
+        write_json_file(RECORDS_FILE, []);
+        return ['deleted' => $deleted, 'kept' => 0];
+    }
+
+    $kept = array_values(array_filter($records, static fn(array $record): bool => is_real_aprs_record($record)));
+    usort($kept, static fn(array $a, array $b): int => ($a['unix_time'] ?? 0) <=> ($b['unix_time'] ?? 0));
+    write_json_file(RECORDS_FILE, $kept);
+
+    return [
+        'deleted' => count($records) - count($kept),
+        'kept' => count($kept),
+    ];
+}
+
+/** Return app runtime state merged with required default values. */
 function get_state(): array
 {
     ensure_data_files();
@@ -644,6 +741,10 @@ function get_state(): array
         return [
             'capture_enabled' => false,
             'browser_polling_enabled' => true,
+            'simulation_mode' => false,
+            'simulation_file' => SIMULATION_DEFAULT_FILE,
+            'simulation_poll_seconds' => SIMULATION_DEFAULT_POLL_SECONDS,
+            'simulation_next_index' => 0,
             'last_capture_attempt_unix' => null,
             'last_capture_success_unix' => null,
             'last_error' => 'State reset due to invalid state file',
@@ -654,6 +755,10 @@ function get_state(): array
     return array_merge([
         'capture_enabled' => false,
         'browser_polling_enabled' => true,
+        'simulation_mode' => false,
+        'simulation_file' => SIMULATION_DEFAULT_FILE,
+        'simulation_poll_seconds' => SIMULATION_DEFAULT_POLL_SECONDS,
+        'simulation_next_index' => 0,
         'last_capture_attempt_unix' => null,
         'last_capture_success_unix' => null,
         'last_error' => null,
@@ -661,6 +766,159 @@ function get_state(): array
     ], $state);
 }
 
+/** Sanitize and validate a simulation JSON filename within the data directory. */
+function simulation_file_name(string $value): string
+{
+    $trimmed = trim($value);
+    if ($trimmed === '') {
+        return SIMULATION_DEFAULT_FILE;
+    }
+
+    $safe = basename($trimmed);
+    if (!preg_match('/^[a-zA-Z0-9._-]+$/', $safe)) {
+        return SIMULATION_DEFAULT_FILE;
+    }
+
+    return $safe;
+}
+
+/** Load simulation entries from a JSON array or { entries: [...] } envelope. */
+function load_simulation_entries(string $fileName): array
+{
+    $path = DATA_DIR . '/' . simulation_file_name($fileName);
+    $decoded = read_json_file($path, null);
+
+    if (is_array($decoded) && array_is_list($decoded)) {
+        return $decoded;
+    }
+
+    if (is_array($decoded) && isset($decoded['entries']) && is_array($decoded['entries'])) {
+        return $decoded['entries'];
+    }
+
+    throw new RuntimeException('Simulation file is missing, invalid, or has no entries.');
+}
+
+/** Parse simulation latitude from known key variants. */
+function parse_simulated_latitude(array $entry): ?float
+{
+    $raw = $entry['lat'] ?? $entry['latitude'] ?? null;
+    return is_numeric($raw) ? (float)$raw : null;
+}
+
+/** Parse simulation longitude from known key variants. */
+function parse_simulated_longitude(array $entry): ?float
+{
+    $raw = $entry['lng'] ?? $entry['lon'] ?? $entry['longitude'] ?? null;
+    return is_numeric($raw) ? (float)$raw : null;
+}
+
+/** Parse simulation altitude from known key variants. */
+function parse_simulated_altitude(array $entry): ?float
+{
+    $raw = $entry['altitude_m'] ?? $entry['altitude'] ?? null;
+    return is_numeric($raw) ? (float)$raw : null;
+}
+
+/** Parse simulation source timestamp from known key variants. */
+function parse_simulated_time_unix(array $entry): ?int
+{
+    $raw = $entry['source_time_unix'] ?? $entry['unix_time'] ?? $entry['lasttime'] ?? $entry['time'] ?? null;
+    if (!is_numeric($raw)) {
+        return null;
+    }
+
+    $value = (int)$raw;
+    return $value > 0 ? $value : null;
+}
+
+/** Resolve simulation source label, defaulting to simulated_aprs. */
+function parse_simulated_source(array $entry): string
+{
+    $raw = trim((string)($entry['source'] ?? 'simulated_aprs'));
+    return $raw !== '' ? $raw : 'simulated_aprs';
+}
+
+/** Resolve simulation station from entry or configured station fallback. */
+function parse_simulated_station(array $entry, array $config): string
+{
+    $station = trim((string)($entry['station'] ?? $config['aprs_station'] ?? 'SIM'));
+    return $station !== '' ? $station : 'SIM';
+}
+
+/** Capture one datapoint from simulation feed and advance simulation cursor. */
+function capture_from_simulation(array $state, array $config): array
+{
+    $fileName = simulation_file_name((string)($state['simulation_file'] ?? SIMULATION_DEFAULT_FILE));
+    $entries = load_simulation_entries($fileName);
+    $count = count($entries);
+    if ($count === 0) {
+        throw new RuntimeException('Simulation file has no rows.');
+    }
+
+    $index = (int)($state['simulation_next_index'] ?? 0);
+    if ($index < 0 || $index >= $count) {
+        $index = 0;
+    }
+
+    $rawEntry = $entries[$index];
+    if (!is_array($rawEntry)) {
+        throw new RuntimeException('Simulation entry at index ' . $index . ' is invalid.');
+    }
+
+    $altitude = parse_simulated_altitude($rawEntry);
+    if ($altitude === null) {
+        throw new RuntimeException('Simulation entry at index ' . $index . ' is missing altitude.');
+    }
+
+    $providedTimeUnix = parse_simulated_time_unix($rawEntry);
+    $lastAprsUnix = (int)($state['last_aprs_time_unix'] ?? 0);
+    $timeUnix = $providedTimeUnix ?? max(time(), $lastAprsUnix + 1);
+    $source = parse_simulated_source($rawEntry);
+    $station = parse_simulated_station($rawEntry, $config);
+    $timestampUtc = trim((string)($rawEntry['timestamp_utc'] ?? ''));
+    if ($timestampUtc === '') {
+        $timestampUtc = gmdate('Y-m-d H:i:s', $timeUnix) . ' UTC';
+    }
+    $latitude = parse_simulated_latitude($rawEntry);
+    $longitude = parse_simulated_longitude($rawEntry);
+
+    add_record([
+        'source' => $source,
+        'is_real_aprs' => false,
+        'source_time_unix' => $timeUnix,
+        'unix_time' => $timeUnix,
+        'timestamp_utc' => $timestampUtc,
+        'altitude_m' => $altitude,
+        'station' => $station,
+        'latitude' => $latitude,
+        'longitude' => $longitude,
+    ]);
+
+    $nextIndex = ($index + 1) % $count;
+    $okState = update_state([
+        'simulation_file' => $fileName,
+        'simulation_next_index' => $nextIndex,
+        'last_capture_success_unix' => time(),
+        'last_aprs_time_unix' => $timeUnix,
+        'last_error' => null,
+    ]);
+
+    return [
+        'ok' => true,
+        'message' => 'Simulation capture complete.',
+        'state' => $okState,
+        'entry' => [
+            'source_time_unix' => $timeUnix,
+            'altitude_m' => $altitude,
+            'latitude' => $latitude,
+            'longitude' => $longitude,
+        ],
+        'fetch_source' => 'simulation',
+    ];
+}
+
+/** Merge and persist app runtime state, then return the merged state. */
 function update_state(array $patch): array
 {
     $state = array_merge(get_state(), $patch);
@@ -668,6 +926,7 @@ function update_state(array $patch): array
     return $state;
 }
 
+/** Parse manual UI timestamp (Central Time) into Unix time. */
 function parse_manual_timestamp_to_unix(string $value): ?int
 {
     $trimmed = trim($value);
@@ -683,6 +942,7 @@ function parse_manual_timestamp_to_unix(string $value): ?int
     return $dt->getTimestamp();
 }
 
+/** Fetch latest APRS location payload using short cache to reduce API load. */
 function fetch_aprs_location(bool $force = false): array
 {
     ensure_data_files();
@@ -742,13 +1002,18 @@ function fetch_aprs_location(bool $force = false): array
     return ['source' => 'network', 'payload' => $payload];
 }
 
+/** Perform one capture cycle from APRS (or simulation when enabled). */
 function capture_from_aprs(bool $force = false): array
 {
     $config = app_config();
 
-    update_state([
+    $state = update_state([
         'last_capture_attempt_unix' => time(),
     ]);
+
+    if ((bool)($state['simulation_mode'] ?? false)) {
+        return capture_from_simulation($state, $config);
+    }
 
     $result = fetch_aprs_location($force);
     $payload = $result['payload'];
@@ -812,6 +1077,7 @@ function capture_from_aprs(bool $force = false): array
     if (!record_exists_by_source_time('aprs', $timeUnix)) {
         add_record([
             'source' => 'aprs',
+            'is_real_aprs' => true,
             'source_time_unix' => $timeUnix,
             'unix_time' => $timeUnix,
             'timestamp_utc' => gmdate('Y-m-d H:i:s', $timeUnix) . ' UTC',

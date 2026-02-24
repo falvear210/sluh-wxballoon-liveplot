@@ -13,10 +13,11 @@ php -S 127.0.0.1:8080
 ```
 
 3. Open `http://127.0.0.1:8080/index.php`.
-4. Open `http://127.0.0.1:8080/editor.php` for manual data entry and deleting datapoints (admin-only).
-5. Open `http://127.0.0.1:8080/settings.php` for APRS station/key and capture settings (admin-only).
-6. Open `http://127.0.0.1:8080/admin_import.php` for admin-only APRS paste import.
-7. Open `http://127.0.0.1:8080/admin_csv_import.php` for admin-only CSV upload import.
+4. Open `http://127.0.0.1:8080/dashboard.php` for the compact no-scroll dashboard layout.
+5. Open `http://127.0.0.1:8080/editor.php` for manual data entry and deleting datapoints (admin-only).
+6. Open `http://127.0.0.1:8080/settings.php` for APRS station/key and capture settings (admin-only).
+7. Open `http://127.0.0.1:8080/admin_import.php` for admin-only APRS paste import.
+8. Open `http://127.0.0.1:8080/admin_csv_import.php` for admin-only CSV upload import.
 
 ## Import APRS Paste As A Launch
 
@@ -56,6 +57,8 @@ Options:
 
 - APRS config is loaded from `.env` (`APRS_STATION`, `APRS_API_KEY`, `APP_ADMIN_PASSWORD`).
 - Captured data is stored in `data/records.json`.
+- APRS simulation mode can be enabled in `settings.php`. When enabled, captures read from `data/aprs_simulation.json` (or another file name you set in Settings) and push one datapoint every 5 seconds.
+- Simulation rows support the same APRS-style record schema used in `records.json` (`source`, `source_time_unix`, `unix_time`, `timestamp_utc`, `altitude_m`, `station`, `latitude`, `longitude`).
 - Imported launch data is stored in `data/launches/*.json`.
 - Timestamp display defaults to Central Time and can be toggled to UTC or browser local time.
 - The main page uses Plotly for altitude and Leaflet + OpenStreetMap for the flight-path map (CDN/network access required).

@@ -1,7 +1,12 @@
 {
     "capture_enabled": false,
-    "last_capture_attempt_unix": 1771867937,
-    "last_capture_success_unix": 1771867938,
+    "browser_polling_enabled": false,
+    "simulation_mode": false,
+    "simulation_file": "aprs_simulation.json",
+    "simulation_poll_seconds": 2,
+    "simulation_next_index": 0,
+    "last_capture_attempt_unix": 1771955987,
+    "last_capture_success_unix": 1771955987,
     "last_error": null,
-    "last_aprs_time_unix": 1771867933
+    "last_aprs_time_unix": 1771863073
 }

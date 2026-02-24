@@ -6,6 +6,9 @@ ensure_data_files();
 start_admin_session();
 
 $saved = false;
+$cleaned = false;
+$cleanedDeleted = null;
+$cleanedKept = null;
 $error = null;
 $isConfigured = is_admin_password_configured();
 $isAdmin = is_admin_authenticated();
@@ -37,23 +40,78 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
             $error = 'Not authorized.';
         } else {
             try {
+                $previousState = get_state();
                 $station = trim((string)($_POST['aprs_station'] ?? ''));
                 $apiKey = trim((string)($_POST['aprs_api_key'] ?? ''));
                 $captureEnabled = isset($_POST['capture_enabled']);
                 $browserPollingEnabled = isset($_POST['browser_polling_enabled']);
+                $simulationMode = isset($_POST['simulation_mode']);
+                $simulationFile = simulation_file_name((string)($_POST['simulation_file'] ?? SIMULATION_DEFAULT_FILE));
+                $simulationPollSeconds = filter_var($_POST['simulation_poll_seconds'] ?? null, FILTER_VALIDATE_INT);
+                if ($simulationPollSeconds === false || $simulationPollSeconds < 1) {
+                    $simulationPollSeconds = SIMULATION_DEFAULT_POLL_SECONDS;
+                }
+                if ($simulationPollSeconds > 300) {
+                    $simulationPollSeconds = 300;
+                }
+                $switchedToSimulation = !((bool)($previousState['simulation_mode'] ?? false)) && $simulationMode;
 
                 update_config_overrides([
                     'aprs_station' => $station,
                     'aprs_api_key' => $apiKey,
                 ]);
 
+                if ($switchedToSimulation) {
+                    clear_current_records(true);
+                }
+
                 update_state([
                     'capture_enabled' => $captureEnabled,
                     'browser_polling_enabled' => $browserPollingEnabled,
+                    'simulation_mode' => $simulationMode,
+                    'simulation_file' => $simulationFile,
+                    'simulation_poll_seconds' => $simulationPollSeconds,
+                    'simulation_next_index' => 0,
+                    'last_capture_attempt_unix' => $switchedToSimulation ? null : ($previousState['last_capture_attempt_unix'] ?? null),
+                    'last_capture_success_unix' => $switchedToSimulation ? null : ($previousState['last_capture_success_unix'] ?? null),
+                    'last_aprs_time_unix' => $switchedToSimulation ? null : ($previousState['last_aprs_time_unix'] ?? null),
                     'last_error' => null,
                 ]);
 
                 header('Location: settings.php?saved=1');
+                exit;
+            } catch (Throwable $e) {
+                $error = $e->getMessage();
+            }
+        }
+    }
+
+    if ($action === 'start_clean') {
+        if (!$isAdmin) {
+            $error = 'Not authorized.';
+        } else {
+            try {
+                $preserveRealAprs = isset($_POST['preserve_real_aprs']);
+                $confirmDeleteRealAprs = trim((string)($_POST['confirm_delete_real_aprs'] ?? ''));
+                if (!$preserveRealAprs && $confirmDeleteRealAprs !== 'DELETE REAL APRS') {
+                    throw new RuntimeException('To delete protected APRS data, type DELETE REAL APRS exactly.');
+                }
+
+                $result = clear_current_records($preserveRealAprs);
+                update_state([
+                    'simulation_next_index' => 0,
+                    'last_capture_attempt_unix' => null,
+                    'last_capture_success_unix' => null,
+                    'last_aprs_time_unix' => null,
+                    'last_error' => null,
+                ]);
+
+                $query = http_build_query([
+                    'cleaned' => '1',
+                    'deleted' => (string)($result['deleted'] ?? 0),
+                    'kept' => (string)($result['kept'] ?? 0),
+                ]);
+                header('Location: settings.php?' . $query);
                 exit;
             } catch (Throwable $e) {
                 $error = $e->getMessage();
@@ -68,6 +126,9 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
 $config = app_config();
 $state = get_state();
 $saved = ($_GET['saved'] ?? '') === '1';
+$cleaned = ($_GET['cleaned'] ?? '') === '1';
+$cleanedDeleted = filter_var($_GET['deleted'] ?? null, FILTER_VALIDATE_INT);
+$cleanedKept = filter_var($_GET['kept'] ?? null, FILTER_VALIDATE_INT);
 ?>
 <!doctype html>
 <html lang="en">
@@ -146,6 +207,9 @@ $saved = ($_GET['saved'] ?? '') === '1';
     <?php if ($saved): ?>
       <p class="msg ok">Settings saved.</p>
     <?php endif; ?>
+    <?php if ($cleaned): ?>
+      <p class="msg ok">Current launch reset complete. Removed <?= (int)$cleanedDeleted ?> records, kept <?= (int)$cleanedKept ?> protected APRS records.</p>
+    <?php endif; ?>
     <?php if ($error !== null): ?>
       <p class="msg err"><?= htmlspecialchars($error, ENT_QUOTES) ?></p>
     <?php endif; ?>
@@ -179,6 +243,18 @@ $saved = ($_GET['saved'] ?? '') === '1';
           <input type="checkbox" name="browser_polling_enabled" value="1" <?= ($state['browser_polling_enabled'] ?? true) ? 'checked' : '' ?>>
           Allow browser polling API calls (turn off when server cron handles capture)
         </label>
+        <label>
+          <input type="checkbox" name="simulation_mode" value="1" <?= ($state['simulation_mode'] ?? false) ? 'checked' : '' ?>>
+          Enable APRS simulation mode (uses local JSON data, 5-second push cadence)
+        </label>
+        <label>
+          Simulation JSON file (inside <code>data/</code>)
+          <input type="text" name="simulation_file" value="<?= htmlspecialchars((string)($state['simulation_file'] ?? SIMULATION_DEFAULT_FILE), ENT_QUOTES) ?>" placeholder="aprs_simulation.json">
+        </label>
+        <label>
+          Simulation polling interval (seconds)
+          <input type="number" name="simulation_poll_seconds" min="1" max="300" step="1" value="<?= (int)($state['simulation_poll_seconds'] ?? SIMULATION_DEFAULT_POLL_SECONDS) ?>">
+        </label>
         <div class="row">
           <button type="submit">Save Settings</button>
           <a class="linkbtn secondary" href="index.php">Back to Live Plot</a>
@@ -187,7 +263,33 @@ $saved = ($_GET['saved'] ?? '') === '1';
           <a class="linkbtn secondary" href="admin_csv_import.php">Admin CSV Import</a>
         </div>
       </form>
-      <p class="muted" style="margin-top:12px;">The station and API key are saved in <code>data/config.json</code>.</p>
+      <p class="muted" style="margin-top:12px;">APRS station/API key are saved in <code>data/config.json</code>. Capture/simulation toggles are saved in <code>data/state.json</code>.</p>
+      <hr style="margin:14px 0; border:none; border-top:1px solid var(--border);">
+      <form method="post" action="settings.php" onsubmit="return confirmStartClean(this);" style="margin:0;">
+        <input type="hidden" name="action" value="start_clean">
+        <p class="msg" style="margin-bottom:8px;"><strong>Start Clean (Current Launch)</strong></p>
+        <label>
+          <input type="checkbox" id="preserve_real_aprs" name="preserve_real_aprs" value="1" checked>
+          Keep protected real APRS records (recommended)
+        </label>
+        <label>
+          Confirmation (required only when deleting protected APRS): type <code>DELETE REAL APRS</code>
+          <input type="text" name="confirm_delete_real_aprs" id="confirm_delete_real_aprs" placeholder="DELETE REAL APRS">
+        </label>
+        <div class="row">
+          <button type="submit" style="background: var(--danger); border-color: var(--danger);">Start Clean on Current Launch</button>
+        </div>
+      </form>
+      <script>
+        // Confirm destructive "start clean" behavior before submitting.
+        function confirmStartClean(form) {
+          var preserve = form.querySelector('#preserve_real_aprs').checked;
+          if (preserve) {
+            return confirm('Start clean for current launch? Protected real APRS records will be kept.');
+          }
+          return confirm('Start clean for current launch and permanently delete protected real APRS records?');
+        }
+      </script>
     <?php endif; ?>
   </div>
 </div>

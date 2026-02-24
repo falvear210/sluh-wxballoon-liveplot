@@ -6,6 +6,7 @@ start_admin_session();
 
 header('Content-Type: application/json');
 
+/** Emit a JSON response and terminate request execution. */
 function respond(array $payload, int $status = 200): void
 {
     http_response_code($status);
@@ -16,10 +17,11 @@ function respond(array $payload, int $status = 200): void
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 $action = $_GET['action'] ?? $_POST['action'] ?? '';
 
+/** Enforce admin auth for editor actions that mutate or delete records. */
 function require_admin_for_editor_action(string $action): void
 {
-    $protected = ['add_manual', 'delete_record'];
-    if (in_array($action, $protected, true) && !is_admin_authenticated()) {
+    $adminOnlyActions = ['add_manual', 'delete_record'];
+    if (in_array($action, $adminOnlyActions, true) && !is_admin_authenticated()) {
         respond([
             'ok' => false,
             'error' => 'Unauthorized.',
@@ -119,12 +121,24 @@ try {
     if ($method === 'POST' && $action === 'delete_record') {
         $source = trim((string)($_POST['source'] ?? ''));
         $sourceTimeUnix = filter_var($_POST['source_time_unix'] ?? null, FILTER_VALIDATE_INT);
+        $allowProtectedDelete = filter_var($_POST['allow_protected_delete'] ?? null, FILTER_VALIDATE_BOOLEAN) === true;
 
         if ($source === '' || $sourceTimeUnix === false) {
             respond(['ok' => false, 'error' => 'Missing source or source_time_unix.'], 400);
         }
 
-        $deleted = delete_records_by_source_time($source, (int)$sourceTimeUnix);
+        $target = get_record_by_source_time($source, (int)$sourceTimeUnix);
+        if ($target === null) {
+            respond(['ok' => false, 'error' => 'No matching record found.'], 404);
+        }
+        if (is_real_aprs_record($target) && !$allowProtectedDelete) {
+            respond([
+                'ok' => false,
+                'error' => 'Protected APRS datapoints cannot be deleted without explicit override.',
+            ], 403);
+        }
+
+        $deleted = delete_records_by_source_time($source, (int)$sourceTimeUnix, $allowProtectedDelete);
         if ($deleted === 0) {
             respond(['ok' => false, 'error' => 'No matching record found.'], 404);
         }

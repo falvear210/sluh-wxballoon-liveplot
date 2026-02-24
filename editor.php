@@ -159,34 +159,41 @@ $records = get_records();
 
   let records = Array.isArray(initialRecords) ? initialRecords : [];
 
+  // Show feedback for add/delete operations in the editor panel.
   function setStatus(msg, ok) {
     manualStatus.textContent = msg;
     manualStatus.className = 'status ' + (ok ? 'ok' : 'err');
     manualStatus.style.display = 'block';
   }
 
+  // Read the currently selected display timezone.
   function getSelectedTz() {
     return tzSelect.value || 'America/Chicago';
   }
 
+  // Read the selected altitude unit.
   function getSelectedUnit() {
     return unitSelect.value === 'ft' ? 'ft' : 'm';
   }
 
+  // Return the short unit label used in headers/cells.
   function altitudeUnitLabel() {
     return getSelectedUnit() === 'ft' ? 'ft' : 'm';
   }
 
+  // Convert altitude from meters into the selected display unit.
   function altitudeInSelectedUnit(metersValue) {
     const meters = Number(metersValue);
     if (!Number.isFinite(meters)) return 0;
     return getSelectedUnit() === 'ft' ? (meters * 3.28084) : meters;
   }
 
+  // Format altitude text with one decimal and unit suffix.
   function formatAltitude(metersValue) {
     return `${altitudeInSelectedUnit(metersValue).toFixed(1)} ${altitudeUnitLabel()}`;
   }
 
+  // Format a unix timestamp in the selected timezone.
   function formatUnix(unixTime) {
     const date = new Date(Number(unixTime) * 1000);
     const tz = getSelectedTz();
@@ -199,6 +206,7 @@ $records = get_records();
     }).format(date);
   }
 
+  // Call a JSON API action and return parsed payload or throw on failure.
   async function postAction(action, data) {
     const body = new URLSearchParams({ action, ...data });
     const res = await fetch('api.php?action=' + encodeURIComponent(action), {
@@ -222,6 +230,7 @@ $records = get_records();
     return payload;
   }
 
+  // Refresh records from API status endpoint and redraw the table.
   async function refreshRecords() {
     const res = await fetch('api.php?action=status');
     const raw = await res.text();
@@ -237,6 +246,7 @@ $records = get_records();
     }
   }
 
+  // Render editor table rows and disable delete controls for protected APRS data.
   function renderTable() {
     altitudeColHeader.textContent = `Altitude (${altitudeUnitLabel()})`;
     const sorted = [...records].sort((a, b) => (b.unix_time || 0) - (a.unix_time || 0));
@@ -245,17 +255,23 @@ $records = get_records();
       return;
     }
 
-    dataRows.innerHTML = sorted.map((r) => `
+    dataRows.innerHTML = sorted.map((r) => {
+      const isProtected = !!r.is_real_aprs || ['aprs', 'imported_aprs_raw'].includes(String(r.source || ''));
+      const actionCell = isProtected
+        ? '<button class="delete" type="button" disabled title="Protected real APRS record">Protected</button>'
+        : `<button class="delete" data-source="${encodeURIComponent(r.source || '')}" data-source-time="${Number(r.source_time_unix || 0)}">Delete</button>`;
+      return `
       <tr>
         <td>${formatUnix(r.unix_time)}</td>
         <td>${formatAltitude(r.altitude_m)}</td>
         <td>${r.source || ''}</td>
         <td>${r.station || ''}</td>
         <td>
-          <button class="delete" data-source="${encodeURIComponent(r.source || '')}" data-source-time="${Number(r.source_time_unix || 0)}">Delete</button>
+          ${actionCell}
         </td>
       </tr>
-    `).join('');
+    `;
+    }).join('');
   }
 
   manualForm.addEventListener('submit', async (ev) => {
@@ -283,7 +299,7 @@ $records = get_records();
     const sourceTimeUnix = btn.dataset.sourceTime || '';
     if (!source || !sourceTimeUnix) return;
 
-    if (!confirm('Delete this datapoint?')) return;
+    if (!confirm('Delete this datapoint? Protected real APRS datapoints cannot be deleted from this screen.')) return;
 
     btn.disabled = true;
     try {
@@ -310,6 +326,7 @@ $records = get_records();
     renderTable();
   });
 
+  // Restore persisted timezone preference on page load.
   (function initTz() {
     const saved = localStorage.getItem(TZ_STORAGE_KEY);
     if (saved && ['America/Chicago', 'UTC', 'local'].includes(saved)) {
@@ -319,6 +336,7 @@ $records = get_records();
     }
   })();
 
+  // Restore persisted altitude-unit preference on page load.
   (function initUnit() {
     const saved = localStorage.getItem(UNIT_STORAGE_KEY);
     if (saved && ['m', 'ft'].includes(saved)) {
