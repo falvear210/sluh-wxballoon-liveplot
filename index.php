@@ -29,135 +29,25 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather Balloon Live Plot</title>
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --panel: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --primary: #0f766e;
-      --danger: #b91c1c;
-      --border: #e5e7eb;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Menlo, Consolas, monospace;
-      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 40%);
-      color: var(--text);
-    }
-    .container { max-width: 1080px; margin: 0 auto; padding: 20px; }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px;
-      margin-bottom: 16px;
-    }
-    h1 { margin: 0 0 8px; font-size: 22px; }
-    h2 { margin: 0 0 10px; font-size: 16px; }
-    .muted { color: var(--muted); font-size: 13px; }
-    .small { font-size: 12px; color: var(--muted); }
-    .simBadge {
-      display: none;
-      font-size: 12px;
-      font-weight: 700;
-      color: #7f1d1d;
-      background: #fee2e2;
-      border: 1px solid #fecaca;
-      border-radius: 999px;
-      padding: 3px 8px;
-    }
-    .simBadge.on { display: inline-block; }
-    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    .row.spread { justify-content: space-between; }
-    select {
-      padding: 7px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-family: inherit;
-      background: white;
-    }
-    button, .linkbtn {
-      border: 1px solid var(--primary);
-      background: var(--primary);
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-family: inherit;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 13px;
-    }
-    button.secondary, .linkbtn.secondary { background: #fff; color: var(--primary); }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
-    .chart {
-      width: 100%;
-      min-height: 340px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff;
-    }
-    .statusGrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-    }
-    .statCard {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 10px;
-      background: #fafafa;
-    }
-    .statLabel {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .statValue {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-    .statSubtle {
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-    .stageDescription {
-      font-size: 12px;
-      line-height: 1.45;
-      color: var(--text);
-      margin-top: 8px;
-    }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th, td {
-      border-bottom: 1px solid var(--border);
-      text-align: left;
-      padding: 8px;
-    }
-    #locationMap {
-      height: 420px;
-      min-height: 420px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/dashboard-theme.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
-<div class="container">
-  <div class="panel">
-    <div class="row spread">
-      <h1>SLUH Weather Balloon Altitude Tracker</h1>
-      <a class="linkbtn secondary" href="dashboard.php">Compact Dashboard</a>
+<body class="wb-page">
+<div class="wb-container">
+  <div class="wb-panel">
+    <div class="wb-topbar">
+      <h1 class="h4 mb-0">SLUH Weather Balloon Altitude Tracker</h1>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-sm btn-outline-primary" href="dashboard.php">Compact Dashboard</a>
+      </div>
     </div>
-    <p class="muted">Tracks altitude vs. time from APRS station <strong><?= htmlspecialchars($config['aprs_station'] !== '' ? $config['aprs_station'] : '(not configured)', ENT_QUOTES) ?></strong>.</p>
-    <div class="row">
+    <p class="wb-muted small mb-3">Tracks altitude vs. time from APRS station <strong><?= htmlspecialchars($config['aprs_station'] !== '' ? $config['aprs_station'] : '(not configured)', ENT_QUOTES) ?></strong>.</p>
+    <div class="wb-controls">
       <label>Launch
-        <select id="launchSelect">
+        <select id="launchSelect" class="form-select form-select-sm">
           <option value="current" <?= $selectedLaunch === 'current' ? 'selected' : '' ?>>Current (live)</option>
           <?php foreach ($launches as $launch): ?>
             <option value="<?= htmlspecialchars((string)$launch['id'], ENT_QUOTES) ?>" <?= $selectedLaunch === (string)$launch['id'] ? 'selected' : '' ?>>
@@ -167,71 +57,84 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
         </select>
       </label>
       <label>Display timezone
-        <select id="tzSelect">
+        <select id="tzSelect" class="form-select form-select-sm">
           <option value="America/Chicago">Central Time</option>
           <option value="UTC">UTC</option>
           <option value="local">Browser Local</option>
         </select>
       </label>
       <label>Altitude unit
-        <select id="unitSelect">
+        <select id="unitSelect" class="form-select form-select-sm">
           <option value="m">Meters</option>
           <option value="ft">Feet</option>
         </select>
       </label>
-      <span id="captureState" class="small"></span>
-      <span id="simulationBadge" class="simBadge">SIMULATION MODE ACTIVE</span>
+      <span id="captureState" class="wb-small"></span>
+      <span id="simulationBadge" class="wb-sim-badge">SIMULATION MODE ACTIVE</span>
     </div>
-    <p class="small">APRS data source credit: <a href="https://aprs.fi" target="_blank" rel="noreferrer">aprs.fi</a>. This app fetches only when capture is enabled and uses short-term caching to reduce API load.</p>
+    <p class="wb-small mt-2 mb-0">APRS data source credit: <a href="https://aprs.fi" target="_blank" rel="noreferrer">aprs.fi</a>. This app fetches only when capture is enabled and uses short-term caching to reduce API load.</p>
   </div>
 
-  <div id="currentLaunchPanel" class="panel">
-    <h2>Current Flight Status</h2>
-    <div class="statusGrid">
-      <div class="statCard">
-        <div class="statLabel">Flight time (from first datapoint)</div>
-        <div id="flightTimeValue" class="statValue">--:--:--</div>
-        <div id="flightRateLastValue" class="statSubtle">Rate (last 2): --</div>
-        <div id="flightRateAvgValue" class="statSubtle">Rate (avg last 5): --</div>
+  <div id="currentLaunchPanel" class="wb-panel">
+    <h2 class="h6">Current Flight Status</h2>
+    <div class="wb-status-grid">
+      <div class="wb-stat-card">
+        <div class="wb-stat-label">Flight time (from first datapoint)</div>
+        <div id="flightTimeValue" class="wb-stat-value">--:--:--</div>
+        <div id="deviceVoltageValue" class="wb-stat-subtle">Device voltage: --</div>
+        <div id="flightRateLastValue" class="wb-stat-subtle">Rate (last 2): --</div>
+        <div id="flightRateAvgValue" class="wb-stat-subtle">Rate (avg last 5): --</div>
       </div>
-      <div class="statCard">
-        <div class="statLabel">Detected burst</div>
-        <div id="burstStatusValue" class="statValue">No</div>
-        <div id="burstStatusDetail" class="statSubtle"></div>
+      <div class="wb-stat-card">
+        <div class="wb-stat-label">Detected burst</div>
+        <div id="burstStatusValue" class="wb-stat-value">No</div>
+        <div id="burstStatusDetail" class="wb-stat-subtle"></div>
       </div>
-      <div class="statCard">
-        <div class="statLabel">Altitude-based stage</div>
-        <div id="flightStageValue" class="statValue">--</div>
-        <div id="flightStageRange" class="statSubtle"></div>
-        <p id="flightStageDescription" class="stageDescription"></p>
+      <div class="wb-stat-card">
+        <div class="wb-stat-label">Altitude-based stage</div>
+        <div id="flightStageValue" class="wb-stat-value">--</div>
+        <div id="flightStageRange" class="wb-stat-subtle"></div>
+        <p id="flightStageDescription" class="wb-stage-description"></p>
       </div>
-    </div>
-  </div>
-
-  <div class="panel">
-    <h2>Altitude vs Time</h2>
-    <div id="altitudePlot" class="chart"></div>
-    <div class="row" style="margin-top:8px;">
-      <button id="clearSelectionBtn" class="secondary" type="button">Clear selection</button>
-      <span id="ascentStats" class="small">Select 2+ points on the altitude plot to calculate ascent rate.</span>
     </div>
   </div>
 
-  <div class="panel">
-    <h2>Flight Path Map</h2>
-    <div id="locationMap" class="chart"></div>
-    <p id="mapStatus" class="small"></p>
+  <div class="wb-panel">
+    <h2 class="h6">Flight Telemetry vs Time</h2>
+    <div class="wb-dual-plot-grid">
+      <div class="wb-plot-column">
+        <div class="wb-plot-title">Altitude</div>
+        <div id="altitudePlot" class="wb-chart"></div>
+      </div>
+      <div class="wb-plot-column">
+        <div class="wb-plot-title">Temperature and Pressure</div>
+        <div id="environmentPlot" class="wb-chart"></div>
+      </div>
+    </div>
+    <div class="d-flex gap-2 flex-wrap align-items-center mt-2">
+      <button id="clearSelectionBtn" class="btn btn-sm btn-outline-secondary" type="button">Clear selection</button>
+      <span id="ascentStats" class="wb-small">Select 2+ points on the altitude plot to calculate ascent rate.</span>
+    </div>
   </div>
 
-  <div class="panel">
-    <h2>Recorded Data</h2>
-    <table>
+  <div class="wb-panel">
+    <h2 class="h6">Flight Path Map</h2>
+    <div id="locationMap" class="wb-chart"></div>
+    <p id="mapStatus" class="wb-small mb-0 mt-2"></p>
+  </div>
+
+  <div class="wb-panel">
+    <h2 class="h6">Recorded Data</h2>
+    <table class="wb-table">
       <thead>
       <tr>
         <th>Timestamp</th>
         <th id="altitudeColHeader">Altitude (m)</th>
         <th id="rateColHeader">Rate from previous (m/s)</th>
         <th id="rateAvgColHeader">Avg last 5 (m/s)</th>
+        <th id="temperatureColHeader">Temperature (C)</th>
+        <th id="pressureColHeader">Pressure (Pa)</th>
+        <th>Voltage (V)</th>
         <th>Source</th>
       </tr>
       </thead>
@@ -251,6 +154,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
   const simulationBadge = document.getElementById('simulationBadge');
   const currentLaunchPanel = document.getElementById('currentLaunchPanel');
   const flightTimeValue = document.getElementById('flightTimeValue');
+  const deviceVoltageValue = document.getElementById('deviceVoltageValue');
   const flightRateLastValue = document.getElementById('flightRateLastValue');
   const flightRateAvgValue = document.getElementById('flightRateAvgValue');
   const burstStatusValue = document.getElementById('burstStatusValue');
@@ -264,14 +168,19 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
   const altitudeColHeader = document.getElementById('altitudeColHeader');
   const rateColHeader = document.getElementById('rateColHeader');
   const rateAvgColHeader = document.getElementById('rateAvgColHeader');
+  const temperatureColHeader = document.getElementById('temperatureColHeader');
+  const pressureColHeader = document.getElementById('pressureColHeader');
   const ascentStats = document.getElementById('ascentStats');
   const clearSelectionBtn = document.getElementById('clearSelectionBtn');
+  const environmentPlot = document.getElementById('environmentPlot');
 
   let records = Array.isArray(initialRecords) ? initialRecords : [];
   let state = initialState || {};
   let captureTimer = null;
   let flightMap = null;
   let flightLayer = null;
+  let mapTiles = null;
+  let mapTileTheme = null;
   let plotSortedRecords = [];
   let plotSelectionWired = false;
   const TZ_STORAGE_KEY = 'wxballoon_tz';
@@ -323,6 +232,64 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
   };
   const LIVE_CAPTURE_INTERVAL_MS = 60000;
 
+  function isDarkMode() {
+    return window.WxTheme && window.WxTheme.isDark && window.WxTheme.isDark();
+  }
+
+  function getPlotPalette() {
+    if (isDarkMode()) {
+      return {
+        text: '#e2e8f0',
+        grid: '#334155',
+        line: '#22d3ee',
+        markerSelected: '#fb7185',
+        plotBg: '#0f172a',
+        paperBg: '#0f172a'
+      };
+    }
+    return {
+      text: '#0f172a',
+      grid: '#cbd5e1',
+      line: '#0ea5a3',
+      markerSelected: '#b91c1c',
+      plotBg: '#ffffff',
+      paperBg: '#ffffff'
+    };
+  }
+
+  function getTileConfig() {
+    if (isDarkMode()) {
+      return {
+        theme: 'dark',
+        url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+        options: {
+          maxZoom: 20,
+          subdomains: 'abcd',
+          attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }
+      };
+    }
+    return {
+      theme: 'light',
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      options: {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }
+    };
+  }
+
+  function ensureMapTiles() {
+    if (!flightMap) return;
+    const config = getTileConfig();
+    if (mapTiles && mapTileTheme === config.theme) return;
+    if (mapTiles) {
+      flightMap.removeLayer(mapTiles);
+    }
+    mapTiles = L.tileLayer(config.url, config.options).addTo(flightMap);
+    mapTileTheme = config.theme;
+  }
+
   // Read the currently selected display timezone.
   function getSelectedTz() {
     return tzSelect.value || 'America/Chicago';
@@ -353,6 +320,16 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     return getSelectedUnit() === 'ft' ? 'ft' : 'm';
   }
 
+  // Return short unit label for temperature.
+  function temperatureUnitLabel() {
+    return getSelectedUnit() === 'ft' ? 'F' : 'C';
+  }
+
+  // Return short unit label for pressure.
+  function pressureUnitLabel() {
+    return getSelectedUnit() === 'ft' ? 'millibars' : 'Pa';
+  }
+
   // Convert altitude from meters into the selected display unit.
   function altitudeInSelectedUnit(metersValue) {
     const meters = Number(metersValue);
@@ -360,9 +337,29 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     return getSelectedUnit() === 'ft' ? (meters * 3.28084) : meters;
   }
 
+  // Convert temperature from C into the selected display unit.
+  function temperatureInSelectedUnit(celsiusValue) {
+    const celsius = Number(celsiusValue);
+    if (!Number.isFinite(celsius)) return null;
+    return getSelectedUnit() === 'ft' ? ((celsius * 9) / 5) + 32 : celsius;
+  }
+
+  // Convert pressure from Pa into the selected display unit.
+  function pressureInSelectedUnit(pascalsValue) {
+    const pascals = Number(pascalsValue);
+    if (!Number.isFinite(pascals)) return null;
+    return getSelectedUnit() === 'ft' ? (pascals / 100) : pascals;
+  }
+
   // Format altitude with one decimal place and unit suffix.
   function formatAltitude(metersValue) {
     return `${altitudeInSelectedUnit(metersValue).toFixed(1)} ${altitudeUnitLabel()}`;
+  }
+
+  // Format voltage value from record telemetry.
+  function formatVoltage(voltageValue) {
+    const voltage = Number(voltageValue);
+    return Number.isFinite(voltage) ? `${voltage.toFixed(2)} V` : '--';
   }
 
   // Update selection/ascent status text.
@@ -467,11 +464,12 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     plotSortedRecords = sorted;
 
     if (!sorted.length) {
-      container.innerHTML = '<div class="small" style="padding:12px;">No records yet.</div>';
+      container.innerHTML = '<div class="wb-small wb-chart-empty">No records yet.</div>';
       resetAscentStats();
       return;
     }
 
+    const palette = getPlotPalette();
     const x = sorted.map((r) => formatTimeOnly(r.unix_time));
     const y = sorted.map((r) => altitudeInSelectedUnit(r.altitude_m));
 
@@ -480,25 +478,81 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
       y,
       type: 'scatter',
       mode: 'lines+markers',
-      line: { color: '#0ea5a3', width: 3 },
+      line: { color: palette.line, width: 3 },
       marker: { size: 6 },
-      selected: { marker: { color: '#b91c1c', size: 8 } },
+      selected: { marker: { color: palette.markerSelected, size: 8 } },
       unselected: { marker: { opacity: 0.45 } },
       hovertemplate: `%{x}<br>Altitude: %{y:.1f} ${altitudeUnitLabel()}<extra></extra>`
     };
 
     const layout = {
       margin: { l: 56, r: 18, t: 18, b: 60 },
-      xaxis: { title: `Time (${getTzLabel()})`, type: 'category' },
-      yaxis: { title: `Altitude (${altitudeUnitLabel()})` },
+      font: { color: palette.text },
+      xaxis: { type: 'category', gridcolor: palette.grid, zerolinecolor: palette.grid },
+      yaxis: { title: `Altitude (${altitudeUnitLabel()})`, gridcolor: palette.grid, zerolinecolor: palette.grid },
       dragmode: 'select',
-      plot_bgcolor: '#ffffff',
-      paper_bgcolor: '#ffffff'
+      plot_bgcolor: palette.plotBg,
+      paper_bgcolor: palette.paperBg
     };
 
     Plotly.react(container, [trace], layout, { responsive: true, displaylogo: false });
     wirePlotSelectionHandlers();
     resetAscentStats();
+  }
+
+  // Render temperature/pressure telemetry plot.
+  function drawEnvironmentalPlot() {
+    const container = environmentPlot;
+    const sorted = [...records]
+      .filter((r) => Number.isFinite(Number(r.unix_time)))
+      .filter((r) => Number.isFinite(Number(r.temperature_c)) || Number.isFinite(Number(r.pressure_pa)))
+      .sort((a, b) => (a.unix_time || 0) - (b.unix_time || 0));
+
+    if (!sorted.length) {
+      container.innerHTML = '<div class="wb-small wb-chart-empty">No temperature/pressure records yet.</div>';
+      return;
+    }
+
+    const palette = getPlotPalette();
+    const x = sorted.map((r) => formatTimeOnly(r.unix_time));
+    const temperature = sorted.map((r) => temperatureInSelectedUnit(r.temperature_c));
+    const pressure = sorted.map((r) => pressureInSelectedUnit(r.pressure_pa));
+
+    const traces = [
+      {
+        x,
+        y: temperature,
+        type: 'scatter',
+        mode: 'lines+markers',
+        name: `Temp (${temperatureUnitLabel()})`,
+        line: { color: '#f97316', width: 2 },
+        marker: { size: 5 },
+        yaxis: 'y'
+      },
+      {
+        x,
+        y: pressure,
+        type: 'scatter',
+        mode: 'lines+markers',
+        name: `Pressure (${pressureUnitLabel()})`,
+        line: { color: '#6366f1', width: 2 },
+        marker: { size: 5 },
+        yaxis: 'y2'
+      }
+    ];
+
+    const layout = {
+      margin: { l: 56, r: 62, t: 18, b: 60 },
+      font: { color: palette.text },
+      legend: { orientation: 'h', y: 1.12, yanchor: 'bottom' },
+      xaxis: { type: 'category', gridcolor: palette.grid, zerolinecolor: palette.grid },
+      yaxis: { title: `Temp (${temperatureUnitLabel()})`, gridcolor: palette.grid, zerolinecolor: palette.grid },
+      yaxis2: { title: `Pressure (${pressureUnitLabel()})`, overlaying: 'y', side: 'right', showgrid: false },
+      plot_bgcolor: palette.plotBg,
+      paper_bgcolor: palette.paperBg
+    };
+
+    Plotly.react(container, traces, layout, { responsive: true, displaylogo: false });
   }
 
   // Render/update map path from records that include coordinates.
@@ -510,13 +564,11 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
 
     if (!flightMap) {
       flightMap = L.map(container, { preferCanvas: true });
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; OpenStreetMap contributors'
-      }).addTo(flightMap);
+      ensureMapTiles();
       flightLayer = L.layerGroup().addTo(flightMap);
       flightMap.setView([38.62, -90.27], 8);
     }
+    ensureMapTiles();
 
     flightLayer.clearLayers();
 
@@ -529,19 +581,19 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     const first = withCoords[0];
     const latest = withCoords[withCoords.length - 1];
 
-    L.polyline(points, { color: '#0f766e', weight: 3, opacity: 0.9 }).addTo(flightLayer);
+    L.polyline(points, { color: isDarkMode() ? '#2dd4bf' : '#0f766e', weight: 3, opacity: 0.9 }).addTo(flightLayer);
 
     L.circleMarker([Number(first.latitude), Number(first.longitude)], {
       radius: 5,
-      color: '#1d4ed8',
-      fillColor: '#2563eb',
+      color: isDarkMode() ? '#60a5fa' : '#1d4ed8',
+      fillColor: isDarkMode() ? '#3b82f6' : '#2563eb',
       fillOpacity: 0.9
     }).bindPopup(`Start<br>${formatUnix(first.unix_time)}`).addTo(flightLayer);
 
     L.circleMarker([Number(latest.latitude), Number(latest.longitude)], {
       radius: 6,
-      color: '#b91c1c',
-      fillColor: '#ef4444',
+      color: isDarkMode() ? '#fda4af' : '#b91c1c',
+      fillColor: isDarkMode() ? '#fb7185' : '#ef4444',
       fillOpacity: 0.95
     }).bindPopup(`Latest<br>${formatUnix(latest.unix_time)}<br>${formatAltitude(latest.altitude_m)}`).addTo(flightLayer);
 
@@ -564,7 +616,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
       .sort((a, b) => Number(a.unix_time) - Number(b.unix_time));
 
     if (!asc.length) {
-      dataRows.innerHTML = '<tr><td colspan="5">No records yet.</td></tr>';
+      dataRows.innerHTML = '<tr><td colspan="8">No records yet.</td></tr>';
       return;
     }
 
@@ -609,6 +661,9 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
         <td>${formatAltitude(row.record.altitude_m)}</td>
         <td>${Number.isFinite(row.ratePrev) ? `${row.ratePrev.toFixed(3)} ${altitudeUnitLabel()}/s` : '--'}</td>
         <td>${Number.isFinite(row.avg5) ? `${row.avg5.toFixed(3)} ${altitudeUnitLabel()}/s` : '--'}</td>
+        <td>${Number.isFinite(temperatureInSelectedUnit(row.record.temperature_c)) ? temperatureInSelectedUnit(row.record.temperature_c).toFixed(1) : '--'}</td>
+        <td>${Number.isFinite(pressureInSelectedUnit(row.record.pressure_pa)) ? pressureInSelectedUnit(row.record.pressure_pa).toFixed(getSelectedUnit() === 'ft' ? 1 : 0) : '--'}</td>
+        <td>${Number.isFinite(Number(row.record.voltage_v)) ? Number(row.record.voltage_v).toFixed(2) : '--'}</td>
         <td>${row.record.source || ''}</td>
       </tr>
     `).join('');
@@ -713,6 +768,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
         burstDetected: false,
         burstUnix: null,
         latestAltitudeFt: null,
+        latestVoltageV: null,
         lastRate: null,
         avgRate5: null
       };
@@ -757,6 +813,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
       burstDetected: burstUnix !== null,
       burstUnix,
       latestAltitudeFt: metersToFeet(sorted[sorted.length - 1].altitude_m),
+      latestVoltageV: Number.isFinite(Number(sorted[sorted.length - 1].voltage_v)) ? Number(sorted[sorted.length - 1].voltage_v) : null,
       lastRate: rates.lastRate,
       avgRate5: rates.avg5
     };
@@ -774,6 +831,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
 
     if (!metrics.hasData) {
       flightTimeValue.textContent = '--:--:--';
+      deviceVoltageValue.textContent = 'Device voltage: --';
       flightRateLastValue.textContent = 'Rate (last 2): --';
       flightRateAvgValue.textContent = 'Rate (avg last 5): --';
       burstStatusValue.textContent = 'No data';
@@ -785,6 +843,7 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     }
 
     flightTimeValue.textContent = formatDuration(metrics.flightSeconds);
+    deviceVoltageValue.textContent = `Device voltage: ${formatVoltage(metrics.latestVoltageV)}`;
     flightRateLastValue.textContent = `Rate (last 2): ${formatVerticalRate(metrics.lastRate)}`;
     flightRateAvgValue.textContent = `Rate (avg last 5): ${formatVerticalRate(metrics.avgRate5)}`;
     if (metrics.burstDetected) {
@@ -885,10 +944,13 @@ if ($requestedLaunch !== '' && $requestedLaunch !== 'current') {
     altitudeColHeader.textContent = `Altitude (${altitudeUnitLabel()})`;
     rateColHeader.textContent = `Rate from previous (${altitudeUnitLabel()}/s)`;
     rateAvgColHeader.textContent = `Avg last 5 (${altitudeUnitLabel()}/s)`;
+    temperatureColHeader.textContent = `Temperature (${temperatureUnitLabel()})`;
+    pressureColHeader.textContent = `Pressure (${pressureUnitLabel()})`;
     renderCaptureState();
     renderCurrentLaunchStatus();
     renderTable();
     drawAltitudePlot();
+    drawEnvironmentalPlot();
     drawLocationMap();
     if (flightMap) {
       setTimeout(() => flightMap.invalidateSize(), 0);

@@ -1,0 +1,315 @@
+:root {
+  --wb-font: "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
+  --wb-shell-bg: #f0f4ff;
+  --wb-shell-bg-2: #f7f9fc;
+  --wb-panel-bg: rgba(255, 255, 255, 0.92);
+  --wb-panel-border: rgba(148, 163, 184, 0.28);
+  --wb-text: #0f172a;
+  --wb-muted: #64748b;
+  --wb-brand: #0d9488;
+  --wb-brand-strong: #0f766e;
+  --wb-chart-bg: #ffffff;
+  --wb-card-bg: #f8fafc;
+  --wb-surface-soft: rgba(255, 255, 255, 0.7);
+}
+
+[data-bs-theme="dark"] {
+  --wb-shell-bg: #020617;
+  --wb-shell-bg-2: #111827;
+  --wb-panel-bg: rgba(15, 23, 42, 0.88);
+  --wb-panel-border: rgba(100, 116, 139, 0.45);
+  --wb-text: #e2e8f0;
+  --wb-muted: #94a3b8;
+  --wb-brand: #2dd4bf;
+  --wb-brand-strong: #14b8a6;
+  --wb-chart-bg: #0f172a;
+  --wb-card-bg: #1e293b;
+  --wb-surface-soft: rgba(15, 23, 42, 0.72);
+}
+
+body {
+  font-family: var(--wb-font);
+  color: var(--wb-text);
+}
+
+.wb-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.wb-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.wb-panel {
+  background: var(--wb-panel-bg);
+  border: 1px solid var(--wb-panel-border);
+  border-radius: 0.85rem;
+  padding: 0.95rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.wb-muted,
+.wb-small {
+  color: var(--wb-muted);
+}
+
+.wb-small {
+  font-size: 0.77rem;
+}
+
+.wb-topbar {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.wb-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.wb-controls label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+}
+
+.wb-controls .form-select,
+.wb-controls .btn {
+  min-width: 10rem;
+}
+
+.wb-theme-toggle {
+  min-width: 8.75rem;
+}
+
+.wb-sim-badge {
+  display: none;
+  width: max-content;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 999px;
+  padding: 0.22rem 0.58rem;
+}
+
+.wb-sim-badge.on {
+  display: inline-block;
+}
+
+[data-bs-theme="dark"] .wb-sim-badge {
+  color: #fecaca;
+  background: rgba(127, 29, 29, 0.35);
+  border-color: rgba(239, 68, 68, 0.55);
+}
+
+.wb-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.625rem;
+}
+
+.wb-stat-card {
+  border: 1px solid var(--wb-panel-border);
+  border-radius: 0.65rem;
+  padding: 0.68rem;
+  background: var(--wb-card-bg);
+}
+
+.wb-stat-label {
+  font-size: 0.72rem;
+  color: var(--wb-muted);
+  margin-bottom: 0.25rem;
+}
+
+.wb-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.wb-stat-subtle {
+  font-size: 0.75rem;
+  color: var(--wb-muted);
+  margin-top: 0.25rem;
+}
+
+.wb-stage-description {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--wb-text);
+  margin-top: 0.5rem;
+}
+
+.wb-chart {
+  width: 100%;
+  max-width: 100%;
+  min-height: 340px;
+  border: 1px solid var(--wb-panel-border);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background: var(--wb-chart-bg);
+}
+
+#locationMap.wb-chart {
+  height: 420px;
+  min-height: 420px;
+}
+
+.wb-page-compact #locationMap.wb-chart {
+  height: 100%;
+  min-height: 0;
+}
+
+.wb-chart-empty {
+  padding: 0.75rem;
+}
+
+.wb-dual-plot-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 2fr 1fr;
+  min-height: 0;
+}
+
+.wb-plot-column {
+  min-width: 0;
+  min-height: 0;
+}
+
+.wb-plot-title {
+  font-size: 0.8rem;
+  color: var(--wb-muted);
+  margin-bottom: 0.4rem;
+}
+
+.wb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.wb-table th,
+.wb-table td {
+  border-bottom: 1px solid var(--wb-panel-border);
+  text-align: left;
+  padding: 0.45rem;
+}
+
+.wb-shell {
+  height: 100vh;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.wb-left-col {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.75rem;
+}
+
+.wb-right-col {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.wb-compact-panel {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+.wb-controls-grid {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wb-controls-grid label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+}
+
+.wb-span-2 {
+  grid-column: 1 / -1;
+}
+
+.wb-button-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+
+.wb-chart-wrap {
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.wb-chart-wrap .wb-dual-plot-grid {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wb-chart-wrap .wb-plot-column {
+  display: grid;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.wb-chart-compact {
+  height: 100%;
+  min-height: 260px;
+}
+
+.wb-page-compact #locationMap.wb-chart,
+.wb-page-compact .wb-chart-compact {
+  min-height: 260px;
+}
+
+.wb-overflow-auto {
+  overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  .wb-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .wb-controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wb-span-2 {
+    grid-column: auto;
+  }
+
+  .wb-right-col {
+    grid-template-rows: minmax(280px, 42vh) minmax(280px, 42vh);
+  }
+
+  .wb-dual-plot-grid {
+    grid-template-columns: 1fr;
+  }
+}

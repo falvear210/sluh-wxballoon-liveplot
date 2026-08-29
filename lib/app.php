@@ -334,6 +334,52 @@ function parse_aprs_station_from_raw_line(string $line, string $fallbackStation)
     return $fallbackStation;
 }
 
+/** Extract APRS comment segment from a raw packet line (text after /A=xxxxxx). */
+function parse_aprs_comment_from_raw_line(string $line): string
+{
+    if (preg_match('/\/A=\d{6}(.*)$/', $line, $mComment)) {
+        return ltrim(trim((string)$mComment[1]), ',');
+    }
+
+    return '';
+}
+
+/** Parse voltage/temperature/pressure metrics from APRS comment text. */
+function parse_aprs_comment_metrics(?string $comment): array
+{
+    $text = trim((string)$comment);
+    if ($text === '') {
+        return [
+            'comment' => '',
+            'voltage_v' => null,
+            'temperature_c' => null,
+            'pressure_pa' => null,
+        ];
+    }
+
+    $voltage = null;
+    if (preg_match('/(-?\d+(?:\.\d+)?)\s*V\b/i', $text, $mVoltage)) {
+        $voltage = (float)$mVoltage[1];
+    }
+
+    $temperature = null;
+    if (preg_match('/(-?\d+(?:\.\d+)?)\s*C\b/i', $text, $mTemp)) {
+        $temperature = (float)$mTemp[1];
+    }
+
+    $pressure = null;
+    if (preg_match('/(-?\d+(?:\.\d+)?)\s*Pa\b/i', $text, $mPressure)) {
+        $pressure = (float)$mPressure[1];
+    }
+
+    return [
+        'comment' => $text,
+        'voltage_v' => $voltage,
+        'temperature_c' => $temperature,
+        'pressure_pa' => $pressure,
+    ];
+}
+
 /** Parse multiline APRS paste text into normalized record objects with stats. */
 function parse_aprs_raw_text(string $inputText, string $fallbackStation): array
 {
@@ -390,6 +436,8 @@ function parse_aprs_raw_text(string $inputText, string $fallbackStation): array
         $altMeters = round($altFeet * 0.3048, 4);
         [$lat, $lon] = parse_aprs_lat_lon_from_raw_line($trimmed);
         $station = parse_aprs_station_from_raw_line($trimmed, $fallbackStation);
+        $commentText = parse_aprs_comment_from_raw_line($trimmed);
+        $metrics = parse_aprs_comment_metrics($commentText);
 
         $records[] = [
             'source' => 'imported_aprs_raw',
@@ -400,6 +448,10 @@ function parse_aprs_raw_text(string $inputText, string $fallbackStation): array
             'station' => $station,
             'latitude' => $lat,
             'longitude' => $lon,
+            'comment' => $metrics['comment'],
+            'voltage_v' => $metrics['voltage_v'],
+            'temperature_c' => $metrics['temperature_c'],
+            'pressure_pa' => $metrics['pressure_pa'],
         ];
         $parsed++;
     }
@@ -438,7 +490,7 @@ function read_csv_assoc_rows(string $path): array
         throw new RuntimeException('Failed to open CSV file.');
     }
 
-    $header = fgetcsv($fh);
+    $header = fgetcsv($fh, 0, ',', '"', '\\');
     if (!is_array($header) || count($header) === 0) {
         fclose($fh);
         throw new RuntimeException('CSV header row is missing.');
@@ -446,7 +498,7 @@ function read_csv_assoc_rows(string $path): array
 
     $normalizedHeader = array_map(static fn($h): string => strtolower(trim((string)$h)), $header);
     $rows = [];
-    while (($row = fgetcsv($fh)) !== false) {
+    while (($row = fgetcsv($fh, 0, ',', '"', '\\')) !== false) {
         if (!is_array($row)) {
             continue;
         }
@@ -501,6 +553,16 @@ function parse_csv_launch_rows(array $rows, string $fallbackStation, string $tim
 
         $latRaw = (string)($row['lat'] ?? '');
         $lngRaw = (string)($row['lng'] ?? '');
+        $comment = trim((string)($row['comment'] ?? ''));
+        $commentMetrics = parse_aprs_comment_metrics($comment);
+
+        $voltageRaw = $row['voltage_v'] ?? $row['voltage'] ?? null;
+        $temperatureRaw = $row['temperature_c'] ?? $row['temperature'] ?? $row['temp_c'] ?? null;
+        $pressureRaw = $row['pressure_pa'] ?? $row['pressure'] ?? null;
+
+        $voltage = is_numeric($voltageRaw) ? (float)$voltageRaw : $commentMetrics['voltage_v'];
+        $temperature = is_numeric($temperatureRaw) ? (float)$temperatureRaw : $commentMetrics['temperature_c'];
+        $pressure = is_numeric($pressureRaw) ? (float)$pressureRaw : $commentMetrics['pressure_pa'];
 
         $records[] = [
             'source' => 'imported_csv',
@@ -511,6 +573,10 @@ function parse_csv_launch_rows(array $rows, string $fallbackStation, string $tim
             'station' => $fallbackStation,
             'latitude' => is_numeric($latRaw) ? (float)$latRaw : null,
             'longitude' => is_numeric($lngRaw) ? (float)$lngRaw : null,
+            'comment' => $comment,
+            'voltage_v' => $voltage,
+            'temperature_c' => $temperature,
+            'pressure_pa' => $pressure,
         ];
     }
 
@@ -846,6 +912,42 @@ function parse_simulated_station(array $entry, array $config): string
     return $station !== '' ? $station : 'SIM';
 }
 
+/** Parse simulation voltage from known key variants or APRS-style comment text. */
+function parse_simulated_voltage(array $entry): ?float
+{
+    $raw = $entry['voltage_v'] ?? $entry['voltage'] ?? null;
+    if (is_numeric($raw)) {
+        return (float)$raw;
+    }
+
+    $commentMetrics = parse_aprs_comment_metrics((string)($entry['comment'] ?? ''));
+    return $commentMetrics['voltage_v'];
+}
+
+/** Parse simulation temperature from known key variants or APRS-style comment text. */
+function parse_simulated_temperature(array $entry): ?float
+{
+    $raw = $entry['temperature_c'] ?? $entry['temperature'] ?? $entry['temp_c'] ?? null;
+    if (is_numeric($raw)) {
+        return (float)$raw;
+    }
+
+    $commentMetrics = parse_aprs_comment_metrics((string)($entry['comment'] ?? ''));
+    return $commentMetrics['temperature_c'];
+}
+
+/** Parse simulation pressure from known key variants or APRS-style comment text. */
+function parse_simulated_pressure(array $entry): ?float
+{
+    $raw = $entry['pressure_pa'] ?? $entry['pressure'] ?? null;
+    if (is_numeric($raw)) {
+        return (float)$raw;
+    }
+
+    $commentMetrics = parse_aprs_comment_metrics((string)($entry['comment'] ?? ''));
+    return $commentMetrics['pressure_pa'];
+}
+
 /** Capture one datapoint from simulation feed and advance simulation cursor. */
 function capture_from_simulation(array $state, array $config): array
 {
@@ -857,8 +959,24 @@ function capture_from_simulation(array $state, array $config): array
     }
 
     $index = (int)($state['simulation_next_index'] ?? 0);
-    if ($index < 0 || $index >= $count) {
+    if ($index < 0) {
         $index = 0;
+    }
+    if ($index >= $count) {
+        $doneState = update_state([
+            'simulation_file' => $fileName,
+            'simulation_next_index' => $count,
+            'capture_enabled' => false,
+            'last_error' => null,
+        ]);
+
+        return [
+            'ok' => true,
+            'message' => 'Simulation already complete. Capture remains stopped.',
+            'state' => $doneState,
+            'entry' => null,
+            'fetch_source' => 'simulation',
+        ];
     }
 
     $rawEntry = $entries[$index];
@@ -882,6 +1000,10 @@ function capture_from_simulation(array $state, array $config): array
     }
     $latitude = parse_simulated_latitude($rawEntry);
     $longitude = parse_simulated_longitude($rawEntry);
+    $voltage = parse_simulated_voltage($rawEntry);
+    $temperature = parse_simulated_temperature($rawEntry);
+    $pressure = parse_simulated_pressure($rawEntry);
+    $comment = trim((string)($rawEntry['comment'] ?? ''));
 
     add_record([
         'source' => $source,
@@ -893,26 +1015,40 @@ function capture_from_simulation(array $state, array $config): array
         'station' => $station,
         'latitude' => $latitude,
         'longitude' => $longitude,
+        'comment' => $comment,
+        'voltage_v' => $voltage,
+        'temperature_c' => $temperature,
+        'pressure_pa' => $pressure,
     ]);
 
-    $nextIndex = ($index + 1) % $count;
-    $okState = update_state([
+    $isLastEntry = $index === ($count - 1);
+    $nextIndex = $isLastEntry ? $count : ($index + 1);
+    $statePatch = [
         'simulation_file' => $fileName,
         'simulation_next_index' => $nextIndex,
         'last_capture_success_unix' => time(),
         'last_aprs_time_unix' => $timeUnix,
         'last_error' => null,
-    ]);
+    ];
+    if ($isLastEntry) {
+        $statePatch['capture_enabled'] = false;
+    }
+    $okState = update_state($statePatch);
 
     return [
         'ok' => true,
-        'message' => 'Simulation capture complete.',
+        'message' => $isLastEntry
+            ? 'Simulation capture complete. Last datapoint reached; capture stopped.'
+            : 'Simulation capture complete.',
         'state' => $okState,
         'entry' => [
             'source_time_unix' => $timeUnix,
             'altitude_m' => $altitude,
             'latitude' => $latitude,
             'longitude' => $longitude,
+            'voltage_v' => $voltage,
+            'temperature_c' => $temperature,
+            'pressure_pa' => $pressure,
         ],
         'fetch_source' => 'simulation',
     ];
@@ -1046,6 +1182,8 @@ function capture_from_aprs(bool $force = false): array
     $entry = $entries[0];
     $altitude = isset($entry['altitude']) ? (float)$entry['altitude'] : null;
     $timeUnix = isset($entry['lasttime']) ? (int)$entry['lasttime'] : (isset($entry['time']) ? (int)$entry['time'] : null);
+    $comment = trim((string)($entry['comment'] ?? ''));
+    $metrics = parse_aprs_comment_metrics($comment);
     $latitude = null;
     if (isset($entry['lat'])) {
         $latitude = (float)$entry['lat'];
@@ -1085,6 +1223,10 @@ function capture_from_aprs(bool $force = false): array
             'station' => $config['aprs_station'],
             'latitude' => $latitude,
             'longitude' => $longitude,
+            'comment' => $comment,
+            'voltage_v' => $metrics['voltage_v'],
+            'temperature_c' => $metrics['temperature_c'],
+            'pressure_pa' => $metrics['pressure_pa'],
         ]);
     }
 
@@ -1103,6 +1245,9 @@ function capture_from_aprs(bool $force = false): array
             'altitude_m' => $altitude,
             'latitude' => $latitude,
             'longitude' => $longitude,
+            'voltage_v' => $metrics['voltage_v'],
+            'temperature_c' => $metrics['temperature_c'],
+            'pressure_pa' => $metrics['pressure_pa'],
         ],
         'fetch_source' => $result['source'],
     ];

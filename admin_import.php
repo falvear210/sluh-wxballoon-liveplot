@@ -71,7 +71,23 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
                 $created = create_launch_from_records($launchName, $parsed['records']);
                 $createdLaunchId = (string)$created['id'];
                 $createdCount = (int)$parsed['parsed'];
-                $notice = 'Imported launch "' . $createdLaunchId . '" with ' . $createdCount . ' records. Malformed rows: ' . (int)$parsed['malformed'] . '. Duplicates skipped: ' . (int)$parsed['duplicates'] . '.';
+                $tempCount = 0;
+                $pressureCount = 0;
+                $voltageCount = 0;
+                foreach ((array)$parsed['records'] as $record) {
+                    if (isset($record['temperature_c']) && is_numeric($record['temperature_c'])) {
+                        $tempCount++;
+                    }
+                    if (isset($record['pressure_pa']) && is_numeric($record['pressure_pa'])) {
+                        $pressureCount++;
+                    }
+                    if (isset($record['voltage_v']) && is_numeric($record['voltage_v'])) {
+                        $voltageCount++;
+                    }
+                }
+
+                $notice = 'Imported launch "' . $createdLaunchId . '" with ' . $createdCount . ' records. Malformed rows: ' . (int)$parsed['malformed'] . '. Duplicates skipped: ' . (int)$parsed['duplicates'] . '. ' .
+                    'Telemetry extracted -> temp: ' . $tempCount . ', pressure: ' . $pressureCount . ', voltage: ' . $voltageCount . '.';
                 $rawText = '';
                 $launchName = '';
                 $stationInput = '';
@@ -206,7 +222,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
         </label>
         <button type="submit">Import Launch</button>
       </form>
-      <p class="muted" style="margin-top:12px;">Accepted lines look like: <code>YYYY-MM-DD HH:MM:SS CST: ... /A=012345 ...</code></p>
+      <p class="muted" style="margin-top:12px;">Accepted lines look like: <code>YYYY-MM-DD HH:MM:SS CST: ... /A=012345 ...</code>. Comment telemetry such as <code>1.54V,-1C,102211Pa</code> is imported when present.</p>
     <?php endif; ?>
   </div>
 </div>

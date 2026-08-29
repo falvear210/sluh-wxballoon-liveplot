@@ -90,7 +90,23 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
 
                 $created = create_launch_from_records($launchName, $parsed['records']);
                 $createdLaunchId = (string)$created['id'];
-                $notice = 'Imported launch "' . $createdLaunchId . '" with ' . (int)$parsed['parsed'] . ' rows. Malformed: ' . (int)$parsed['malformed'] . ', duplicates: ' . (int)$parsed['duplicates'] . '.';
+                $tempCount = 0;
+                $pressureCount = 0;
+                $voltageCount = 0;
+                foreach ((array)$parsed['records'] as $record) {
+                    if (isset($record['temperature_c']) && is_numeric($record['temperature_c'])) {
+                        $tempCount++;
+                    }
+                    if (isset($record['pressure_pa']) && is_numeric($record['pressure_pa'])) {
+                        $pressureCount++;
+                    }
+                    if (isset($record['voltage_v']) && is_numeric($record['voltage_v'])) {
+                        $voltageCount++;
+                    }
+                }
+
+                $notice = 'Imported launch "' . $createdLaunchId . '" with ' . (int)$parsed['parsed'] . ' rows. Malformed: ' . (int)$parsed['malformed'] . ', duplicates: ' . (int)$parsed['duplicates'] . '. ' .
+                    'Telemetry extracted -> temp: ' . $tempCount . ', pressure: ' . $pressureCount . ', voltage: ' . $voltageCount . '.';
 
                 $launchName = '';
                 $stationInput = '';
@@ -229,7 +245,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
         </label>
         <button type="submit">Import CSV Launch</button>
       </form>
-      <p class="muted" style="margin-top:12px;">Expected columns: <code>time,lasttime,lat,lng,speed,course,altitude,comment</code>.</p>
+      <p class="muted" style="margin-top:12px;">Expected columns: <code>time,lasttime,lat,lng,speed,course,altitude,comment</code>. Telemetry is parsed from comment text like <code>1.54V -1C 102211Pa</code> (or direct telemetry columns if present).</p>
     <?php endif; ?>
   </div>
 </div>
